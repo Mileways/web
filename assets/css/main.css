@@ -1,0 +1,54 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/inter-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/inter-black.ttf") format("truetype");
+    font-weight: 900;
+    font-display: swap;
+}
+
+html {
+    @apply font-body;
+
+    font-size: 16px;
+}
+
+body {
+    @apply text-gray-600;
+}
+
+* {
+    @apply break-words;
+}
+
+p {
+    @apply mb-5;
+}
+
+.h1 {
+    @apply text-5xl text-gray-800 font-black leading-tight;
+}
+
+.h2 {
+    @apply text-4xl text-gray-800 font-black mb-5 mt-10;
+}
+
+.h3 {
+    @apply text-3xl text-gray-800 font-black mb-5 mt-10;
+}
+
+.h4 {
+    @apply text-lg text-gray-800 font-black;
+}
