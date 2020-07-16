@@ -9,7 +9,8 @@ export default {
   },
 
   env: {
-    GTM_CONTAINER_ID: process.env.GTM_CONTAINER_ID
+    GTM_CONTAINER_ID: process.env.GTM_CONTAINER_ID,
+    MAILCHIMP_CONFIG: process.env.MAILCHIMP_CONFIG,
   },
 
   /*
