@@ -1,24 +1,26 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-primary text-center pt-40">
-    <img src="/images/logo_text.svg" alt="Mileways Logo" class="mx-auto">
+  <div
+    class="teaser-page-container"
+  >
+    <div class="container mx-auto">
+      <img src="/images/logo_text.svg" alt="Mileways Logo" class="mx-auto">
 
-    <h1 class="text-6xl font-black text-white">Flying Soon.</h1>
+      <h1 class="text-6xl font-black text-white">Flying Soon.</h1>
 
-    <div class="sm:flex items-center mt-10">
-      <div class="action-item-wrapper ml-auto">
-        <div class="action-item sm:mr-5 mb-5 sm:mb-0">
-          <TwitterFollowButton />
+      <div class="sm:flex items-center mt-10">
+        <div class="action-item-wrapper ml-auto">
+          <div class="action-item sm:mr-5 mb-5 sm:mb-0">
+            <TwitterFollowButton />
+          </div>
         </div>
-      </div>
 
-      <div class="action-item-wrapper mr-auto">
-        <div class="action-item">
-          <MailChimpSignUpForm class="flex-grow" />
+        <div class="action-item-wrapper mr-auto">
+          <div class="action-item">
+            <MailChimpSignUpForm class="flex-grow" />
+          </div>
         </div>
       </div>
     </div>
-
-    <img src="" alt="">
 
     <img
       srcset="
@@ -30,13 +32,6 @@
       alt="Horizontal phone"
       class="mx-auto mt-20"
     >
-
-    <div
-      class="flex-grow bg-no-repeat bg-cover"
-      style="background-image: url('/images/clouds.svg');"
-    >
-
-    </div>
   </div>
 </template>
 
@@ -52,6 +47,16 @@
 </script>
 
 <style scoped>
+  .teaser-page-container {
+    @apply flex flex-col min-h-screen bg-primary text-center pt-20;
+
+    min-height: 60vh;
+    background-image: url(/images/clouds.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding-bottom: 10vh;
+  }
+
   .action-item-wrapper {
     @apply block;
   }
@@ -65,6 +70,12 @@
   @screen sm {
     .action-item-wrapper {
       @apply inline-block;
+    }
+  }
+
+  @screen md {
+    .teaser-page-container {
+      @apply pt-40;
     }
   }
 </style>
