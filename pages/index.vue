@@ -55,6 +55,7 @@
     background-repeat: repeat-x;
     background-position: bottom;
     padding-bottom: 10vh;
+    background-size: 120vh;
   }
 
   .action-item-wrapper {
