@@ -10,8 +10,7 @@
 
     <input
       type="email" placeholder="Sign up for news" autocapitalize="off" autocorrect="off"
-      name="MERGE0" size="16"
-      class="py-2 mx-5 focus:outline-none flex-shrink flex-grow"
+      name="MERGE0" size="1" class="py-2 mx-5 focus:outline-none flex-shrink flex-grow"
     >
 
     <input type="hidden" name="ht" :value="ht">

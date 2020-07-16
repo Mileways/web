@@ -22,16 +22,18 @@
       </div>
     </div>
 
-    <img
-      srcset="
+    <div class="phone-mockup-wrapper">
+      <img
+          srcset="
         /images/mockups/horizontal_phone.png,
         /images/mockups/horizontal_phone_2x.png 2x,
         /images/mockups/horizontal_phone_3x.png 3x
       "
-      src="/images/mockups/horizontal_phone.png"
-      alt="Horizontal phone"
-      class="mx-auto mt-20"
-    >
+          src="/images/mockups/horizontal_phone.png"
+          alt="Horizontal phone"
+          class="mx-auto mt-20"
+      >
+    </div>
   </div>
 </template>
 
@@ -48,14 +50,14 @@
 
 <style scoped>
   .teaser-page-container {
-    @apply flex flex-col min-h-screen bg-primary text-center pt-20;
+    @apply flex flex-col bg-primary text-center pt-20;
+  }
 
-    min-height: 60vh;
+  .phone-mockup-wrapper {
+    @apply bg-no-repeat bg-bottom mt-auto;
+
     background-image: url(/images/clouds.svg);
-    background-repeat: repeat-x;
-    background-position: bottom;
-    padding-bottom: 10vh;
-    background-size: 120vh;
+    background-size: 100% 75%;
   }
 
   .action-item-wrapper {
