@@ -23,16 +23,18 @@
     </div>
 
     <div class="phone-mockup-wrapper">
-      <img
-          srcset="
-        /images/mockups/horizontal_phone.png,
-        /images/mockups/horizontal_phone_2x.png 2x,
-        /images/mockups/horizontal_phone_3x.png 3x
-      "
-          src="/images/mockups/horizontal_phone.png"
-          alt="Horizontal phone"
-          class="mx-auto mt-20"
-      >
+      <div class="container mx-auto mt-20">
+        <img
+            srcset="
+              /images/mockups/horizontal_phone.png,
+              /images/mockups/horizontal_phone_2x.png 2x,
+              /images/mockups/horizontal_phone_3x.png 3x
+            "
+            src="/images/mockups/horizontal_phone.png"
+            class="mx-auto"
+            alt="Horizontal phone"
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -57,9 +59,9 @@
     @apply bg-no-repeat mt-auto;
 
     background-image: url(/images/clouds.svg);
-    /* workaround for a strange Webpack mobile behaviour where a tiny white line appears at the bottom of the image */
-    background-position: 0 calc(99.9999999% + 1px);
-    background-size: 100% 75%;
+    background-position: center calc(99.99999% + 1px);
+    background-repeat: repeat-x;
+    background-size: auto 7rem;
   }
 
   .action-item-wrapper {
@@ -76,11 +78,19 @@
     .action-item-wrapper {
       @apply inline-block;
     }
+
+    .phone-mockup-wrapper {
+      background-size: auto 10rem;
+    }
   }
 
   @screen md {
     .teaser-page-container {
       @apply pt-40;
+    }
+
+    .phone-mockup-wrapper {
+      background-size: auto 15rem;
     }
   }
 </style>
