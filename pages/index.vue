@@ -50,13 +50,15 @@
 
 <style scoped>
   .teaser-page-container {
-    @apply flex flex-col bg-primary text-center pt-20;
+    @apply flex flex-col text-center pt-20 bg-primary;
   }
 
   .phone-mockup-wrapper {
-    @apply bg-no-repeat bg-bottom mt-auto;
+    @apply bg-no-repeat mt-auto;
 
     background-image: url(/images/clouds.svg);
+    /* workaround for a strange Webpack mobile behaviour where a tiny white line appears at the bottom of the image */
+    background-position: 0 calc(99.9999999% + 1px);
     background-size: 100% 75%;
   }
 
