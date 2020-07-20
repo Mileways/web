@@ -9,7 +9,8 @@ export default {
   },
 
   env: {
-    GTM_CONTAINER_ID: process.env.GTM_CONTAINER_ID
+    GTM_CONTAINER_ID: process.env.GTM_CONTAINER_ID,
+    MAILCHIMP_CONFIG: process.env.MAILCHIMP_CONFIG,
   },
 
   /*
@@ -62,6 +63,11 @@ export default {
   ** Build configuration
   */
   build: {
+    filenames: {
+      app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
+      chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js'
+    },
+
     postcss: {
       plugins: {
         tailwindcss: {},

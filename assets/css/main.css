@@ -38,17 +38,17 @@ p {
 }
 
 .h1 {
-    @apply text-5xl text-gray-800 font-black leading-tight;
+    @apply text-5xl font-black leading-tight;
 }
 
 .h2 {
-    @apply text-4xl text-gray-800 font-black mb-5 mt-10;
+    @apply text-4xl font-black mb-5 mt-10;
 }
 
 .h3 {
-    @apply text-3xl text-gray-800 font-black mb-5 mt-10;
+    @apply text-3xl font-black mb-5 mt-10;
 }
 
 .h4 {
-    @apply text-lg text-gray-800 font-black;
+    @apply text-lg font-black;
 }
