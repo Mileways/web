@@ -13,9 +13,6 @@
       name="MERGE0" size="1" class="py-2 mx-5 focus:outline-none flex-shrink flex-grow"
     >
 
-    <input type="hidden" name="ht" :value="ht">
-    <input type="hidden" name="mc_signupsource" value="hosted">
-
     <button class="bg-primary py-2 px-5 rounded-lg flex-shrink-0">
       <img src="/images/icons/send.svg" alt="Send icon">
     </button>
@@ -33,14 +30,13 @@
       return {
         u: null,
         id: null,
-        ht: null,
         formUrl: null
       }
     },
 
     computed: {
       isReady() {
-        return this.u && this.id && this.ht && this.formUrl
+        return this.u && this.id && this.formUrl
       }
     },
 
@@ -53,7 +49,6 @@
 
       this.u = config.u
       this.id = config.id
-      this.ht = config.ht
       this.formUrl = config.formUrl
     }
   })
