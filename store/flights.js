@@ -18,7 +18,7 @@ export const actions = {
   async loadFlightData(context, id) {
     const flight = await this.$milewaysApiClient.fetchFlightData(id)
 
-    if (!flight) return
+    if (flight instanceof Error) return
 
     context.commit('setFlightData', flight)
   }

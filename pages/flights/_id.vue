@@ -1,16 +1,28 @@
 <template>
-  <div class="w-11/12 mx-auto max-w-5xl">
-    <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
-      Title
+  <div class="text-center">
+    <div
+      v-if="flight"
+      class="w-11/12 mx-auto max-w-5xl"
+    >
+      <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
+        Title
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
+        Map
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
+        {{ flight }}
+      </div>
     </div>
 
-    <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
-      Map
-    </div>
-
-    <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
-      {{ flight }}
-    </div>
+    <p
+      v-else
+      class="text-2xl"
+    >
+      Sorry, we couldn't find that flight.
+    </p>
   </div>
 </template>
 
@@ -21,8 +33,8 @@
   export default Vue.extend({
     name: 'FlightView',
 
-    middleware ({ store, params }) {
-      store.dispatch('flights/loadFlightData', params.id)
+    async middleware ({ store, params }) {
+      await store.dispatch('flights/loadFlightData', params.id)
     },
 
     computed: {
