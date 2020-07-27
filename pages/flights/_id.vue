@@ -9,7 +9,7 @@
     </div>
 
     <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
-      Details
+      {{ flight }}
     </div>
   </div>
 </template>
@@ -19,7 +19,21 @@
   import Vue from 'vue'
 
   export default Vue.extend({
-    name: 'FlightView'
+    name: 'FlightView',
+
+    middleware ({ store, params }) {
+      store.dispatch('flights/loadFlightData', params.id)
+    },
+
+    computed: {
+      flightId() {
+        return this.$route.params.id
+      },
+
+      flight() {
+        return this.$store.getters['flights/flightById'](this.flightId)
+      }
+    }
   })
 </script>
 

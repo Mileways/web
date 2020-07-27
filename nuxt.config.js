@@ -9,8 +9,9 @@ export default {
   },
 
   env: {
+    API_BASE_URL: process.env.API_BASE_URL,
     GTM_CONTAINER_ID: process.env.GTM_CONTAINER_ID,
-    MAILCHIMP_CONFIG: process.env.MAILCHIMP_CONFIG,
+    MAILCHIMP_CONFIG: process.env.MAILCHIMP_CONFIG
   },
 
   /*
@@ -56,7 +57,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/google-tag-manager.client.js'
+    '~/plugins/google-tag-manager.client.js',
+    '~/plugins/api-clients.js',
   ],
 
   /*
