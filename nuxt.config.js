@@ -62,6 +62,12 @@ export default {
     '~/plugins/api-clients.js',
   ],
 
+  generate: {
+    exclude: [
+      /^\/flights/
+    ]
+  },
+
   /*
   ** Build configuration
   */
