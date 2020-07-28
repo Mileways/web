@@ -5,7 +5,13 @@
       class="w-11/12 mx-auto max-w-5xl"
     >
       <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
-        {{ flight }}
+        <a href="https://apps.apple.com/us/app/mileways/id572415446">
+          <img
+            src="/images/download.svg"
+            alt="Download on the App Store"
+            class="mx-auto h-12"
+          >
+        </a>
       </div>
 
       <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-10">
@@ -17,17 +23,16 @@
         </no-ssr>
       </div>
 
-      <div class="bg-white rounded-lg shadow-lg pb-10 px-10 mb-10">
-        <span class="font-semibold">{{ flight.airline.name }}</span>
-        <br>
-        <span class="text-gray-500">{{ flight.fsCode }} {{ flight.flightNumber }}</span>
+      <div class="bg-white rounded-lg shadow-lg pb-10 mb-10">
+        <div class="px-10 pt-5">
+          <span class="font-semibold">{{ flight.airline.name }}</span>
+          <br>
+          <span class="text-gray-500">{{ flight.fsCode }} {{ flight.flightNumber }}</span>
+        </div>
 
-        <hr>
+        <SectionSeparator />
 
-        <br>
-        <br>
-
-        <div class="flex items-center">
+        <div class="flex items-center px-10">
           <AirportInfo
             class="flex-grow w-1/3"
             :airport-info="flight.departure"
@@ -49,24 +54,15 @@
           />
         </div>
 
-        <hr>
-
-        <br>
-        <br>
+        <SectionSeparator>Date & time</SectionSeparator>
 
         <span>{{ flight.departureTimeZoned }}</span>
         <span>{{ flight.estimatedDepartureTimeZoned }}</span>
 
-        <br>
-        <br>
-
         <span>{{ flight.arrivalTimeZoned }}</span>
         <span>{{ flight.estimatedArrivalTime }}</span>
 
-        <hr>
-
-        <br>
-        <br>
+        <SectionSeparator>Airport</SectionSeparator>
 
         <span>{{ flight.arrivalGate }}</span>
         <span>{{ flight.arrivalTerminal }}</span>
@@ -94,11 +90,12 @@
 
   import FlightMap from '../../components/FlightMap'
   import AirportInfo from '../../components/flights/AirportInfo'
+  import SectionSeparator from '../../components/general/SectionSeparator'
 
   export default Vue.extend({
     name: 'FlightView',
 
-    components: { FlightMap, AirportInfo },
+    components: { FlightMap, AirportInfo, SectionSeparator },
 
     async middleware ({ store, params }) {
       await store.dispatch('flights/loadFlightData', params.id)

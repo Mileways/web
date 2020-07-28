@@ -92,7 +92,7 @@
 
         const normUnitVec = [normVec[0] / normVecLength, normVec[1] / normVecLength]
 
-        const curvature = 3
+        const curvature = 1
 
         const controlA = [
           this.departureCoordinates[0] + normUnitVec[0] * curvature,
