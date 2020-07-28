@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center w-full">
+  <div class="w-full">
     <div
       v-if="flight"
       class="w-11/12 mx-auto max-w-5xl"
@@ -17,27 +17,37 @@
         </no-ssr>
       </div>
 
-      <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
-        <span>{{ flight.airline.name }}</span>
-        <span>{{ flight.fsCode }} {{ flight.flightNumber }}</span>
+      <div class="bg-white rounded-lg shadow-lg pb-10 px-10 mb-10">
+        <span class="font-semibold">{{ flight.airline.name }}</span>
+        <br>
+        <span class="text-gray-500">{{ flight.fsCode }} {{ flight.flightNumber }}</span>
 
         <hr>
 
         <br>
         <br>
 
-        <span>{{ flight.departure.name }}</span>
-        <span>{{ flight.departure.fs }}</span>
-        <span>{{ flight.departure.countryCode }}</span>
-        <span>{{ flight.departure.countryName }}</span>
+        <div class="flex items-center">
+          <AirportInfo
+            class="flex-grow w-1/3"
+            :airport-info="flight.departure"
+            alignment="left"
+          />
 
-        <br>
-        <br>
+          <div class="w-1/3">
+            <img
+              src="/images/icons/plane.svg"
+              alt="Plane Icon"
+              class="mx-auto"
+            >
+          </div>
 
-        <span>{{ flight.arrival.name }}</span>
-        <span>{{ flight.arrival.fs }}</span>
-        <span>{{ flight.arrival.countryCode }}</span>
-        <span>{{ flight.arrival.countryName }}</span>
+          <AirportInfo
+            class="flex-grow w-1/3"
+            :airport-info="flight.arrival"
+            alignment="right"
+          />
+        </div>
 
         <hr>
 
@@ -83,11 +93,12 @@
   import Vue from 'vue'
 
   import FlightMap from '../../components/FlightMap'
+  import AirportInfo from '../../components/flights/AirportInfo'
 
   export default Vue.extend({
     name: 'FlightView',
 
-    components: { FlightMap },
+    components: { FlightMap, AirportInfo },
 
     async middleware ({ store, params }) {
       await store.dispatch('flights/loadFlightData', params.id)
