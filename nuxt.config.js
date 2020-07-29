@@ -12,7 +12,8 @@ export default {
     API_BASE_URL: process.env.API_BASE_URL,
     GTM_CONTAINER_ID: process.env.GTM_CONTAINER_ID,
     MAILCHIMP_CONFIG: process.env.MAILCHIMP_CONFIG,
-    APPLE_MAPKIT_TOKEN: process.env.APPLE_MAPKIT_TOKEN
+    APPLE_MAPKIT_TOKEN: process.env.APPLE_MAPKIT_TOKEN,
+    APP_STORE_URL: process.env.APP_STORE_URL
   },
 
   /*

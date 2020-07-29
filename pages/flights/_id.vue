@@ -5,7 +5,7 @@
       class="w-11/12 mx-auto max-w-5xl"
     >
       <div class="bg-white rounded-xl shadow-lg py-10 px-10 mb-10">
-        <a href="https://apps.apple.com/us/app/mileways/id572415446">
+        <a :href="appStoreUrl" target="_blank">
           <img
             src="/images/download.svg"
             alt="Download on the App Store"
@@ -23,7 +23,7 @@
         </no-ssr>
       </div>
 
-      <div class="bg-white rounded-xl shadow-lg pb-10 mb-10">
+      <div class="bg-white rounded-xl shadow-lg pb-10">
         <FlightInfo
           :airline-info="flight.airline"
           :flight-number="flight.flightNumber"
@@ -137,6 +137,10 @@
 
       flight() {
         return this.$store.getters['flights/flightById'](this.flightId)
+      },
+
+      appStoreUrl() {
+        return process.env.APP_STORE_URL
       }
     }
   })
