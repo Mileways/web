@@ -73,14 +73,31 @@
 
         <SectionSeparator>Airport</SectionSeparator>
 
-        <span>{{ flight.arrivalGate }}</span>
-        <span>{{ flight.arrivalTerminal }}</span>
+        <div class="flex items-start px-10">
+          <div>
+            <InfoChip
+              title="Gate"
+              :text="flight.departureGate || '-'"
+              :bottom-text="flight.departureTerminal ? ('Terminal ' + flight.departureTerminal) : null"
+            />
+          </div>
 
-        <br>
-        <br>
+          <div class="ml-auto flex items-start">
+            <InfoChip
+              title="Belt"
+              icon-url="/images/icons/belt.svg"
+              text="23"
+              class="mr-5 text-right"
+            />
 
-        <span>{{ flight.departureGate }}</span>
-        <span>{{ flight.departureTerminal }}</span>
+            <InfoChip
+              title="Gate"
+              :text="flight.arrivalGate || '-'"
+              :bottom-text="flight.arrivalTerminal ? ('Terminal ' + flight.arrivalTerminal) : null"
+              class="text-right"
+            />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -101,12 +118,13 @@
   import AirportInfo from '../../components/flights/AirportInfo'
   import FlightInfo from '../../components/flights/FlightInfo'
   import TimeInfo from '../../components/flights/TimeInfo'
+  import InfoChip from '../../components/general/InfoChip'
   import SectionSeparator from '../../components/general/SectionSeparator'
 
   export default Vue.extend({
     name: 'FlightView',
 
-    components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, SectionSeparator },
+    components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, InfoChip, SectionSeparator },
 
     async middleware ({ store, params }) {
       await store.dispatch('flights/loadFlightData', params.id)
