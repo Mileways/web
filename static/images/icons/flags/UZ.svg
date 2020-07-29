@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>UZ</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <path d="M12,0 C18.627417,-1.21743675e-15 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 8.11624501e-16,18.627417 0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="UZ" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+            </g>
+        </g>
+        <polygon id="Rectangle" fill="#2BB8FF" mask="url(#mask-2)" points="0 0 24 0 24 7.5 0 7.5"></polygon>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="9.5" cy="6.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="11.5" cy="6.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="13.5" cy="6.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="15.5" cy="6.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="17.5" cy="6.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="17.5" cy="4.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="15.5" cy="4.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="13.5" cy="4.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="11.5" cy="4.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="17.5" cy="2.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="15.5" cy="2.5" r="1"></circle>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="13.5" cy="2.5" r="1"></circle>
+        <path d="M7.5,2 C7.67138643,2 7.83874484,2.01724601 8.00043449,2.05009729 C6.85916789,2.2813059 6,3.29031824 6,4.5 C6,5.70968176 6.85916789,6.7186941 8.00057405,6.9501074 C7.83874484,6.98275399 7.67138643,7 7.5,7 C6.11928813,7 5,5.88071187 5,4.5 C5,3.11928813 6.11928813,2 7.5,2 Z" id="Combined-Shape" fill="#FFFFFF" mask="url(#mask-2)"></path>
+        <polygon id="Rectangle" fill="#FFFFFF" mask="url(#mask-2)" points="0 8 24 8 24 16 0 16"></polygon>
+        <polygon id="Rectangle" fill="#18A454" mask="url(#mask-2)" points="0 16.5 24 16.5 24 24 0 24"></polygon>
+        <rect id="Rectangle" fill="#F12339" mask="url(#mask-2)" x="0" y="16" width="24" height="1"></rect>
+        <rect id="Rectangle" fill="#F12339" mask="url(#mask-2)" x="0" y="7.5" width="24" height="1"></rect>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <path d="M12,0.25 C15.2446729,0.25 18.1821729,1.56516355 20.3085047,3.69149532 C22.4348365,5.81782709 23.75,8.75532709 23.75,12 C23.75,15.2446729 22.4348365,18.1821729 20.3085047,20.3085047 C18.1821729,22.4348365 15.2446729,23.75 12,23.75 C8.75532709,23.75 5.81782709,22.4348365 3.69149532,20.3085047 C1.56516355,18.1821729 0.25,15.2446729 0.25,12 C0.25,8.75532709 1.56516355,5.81782709 3.69149532,3.69149532 C5.81782709,1.56516355 8.75532709,0.25 12,0.25 Z" id="Mask" stroke-opacity="0.15" stroke="#000000" stroke-width="0.5" fill-rule="nonzero"></path>
+                <rect id="Dark" fill="url(#linearGradient-5)" style="mix-blend-mode: normal;" opacity="0.100000001" x="0" y="12" width="24" height="12"></rect>
+                <rect id="Light" fill="url(#linearGradient-6)" opacity="0.100000001" style="mix-blend-mode: normal;" x="0" y="0" width="24" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

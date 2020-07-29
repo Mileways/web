@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>TN</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <path d="M12,0 C18.627417,-1.21743675e-15 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 8.11624501e-16,18.627417 0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="TN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+            </g>
+        </g>
+        <polygon id="Rectangle" fill="#F12339" mask="url(#mask-2)" points="0 0 24 0 24 24 0 24"></polygon>
+        <circle id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="12" cy="12" r="6"></circle>
+        <path d="M13.365,11.125 L12.0966697,11.131969 L12.0287689,11.1410476 C11.8386704,11.193048 11.7751459,11.4551891 11.9499576,11.5835023 L12.972,12.334 L12.586292,13.5419384 L12.5742987,13.603339 C12.56001,13.8033003 12.792558,13.948885 12.9703892,13.8210014 L14,13.08 L15.0296108,13.8210014 L15.0843001,13.8513815 C15.2700591,13.9267624 15.4803797,13.7505841 15.413708,13.5419384 L15.027,12.334 L16.0500424,11.5835023 L16.099639,11.5362465 C16.2228669,11.3824403 16.1201766,11.1330249 15.9033303,11.131969 L14.634,11.125 L14.2373851,9.92158894 C14.1618147,9.69280369 13.8381853,9.69280369 13.7626149,9.92158894 L13.365,11.125 Z" id="Path" fill="#F12339" mask="url(#mask-2)" transform="translate(14.000000, 11.809571) rotate(-15.000000) translate(-14.000000, -11.809571) "></path>
+        <path d="M12,7.5 C13.3651413,7.5 14.5883044,8.10788089 15.4135735,9.06772677 C14.8636217,8.70917544 14.2062386,8.5 13.5,8.5 C11.5670034,8.5 10,10.0670034 10,12 C10,13.9329966 11.5670034,15.5 13.5,15.5 C14.2062386,15.5 14.8636217,15.2908246 15.4135749,14.9310481 C14.5883044,15.8921191 13.3651413,16.5 12,16.5 C9.51471863,16.5 7.5,14.4852814 7.5,12 C7.5,9.51471863 9.51471863,7.5 12,7.5 Z" id="Combined-Shape" fill="#F12339" mask="url(#mask-2)"></path>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <path d="M12,0.25 C15.2446729,0.25 18.1821729,1.56516355 20.3085047,3.69149532 C22.4348365,5.81782709 23.75,8.75532709 23.75,12 C23.75,15.2446729 22.4348365,18.1821729 20.3085047,20.3085047 C18.1821729,22.4348365 15.2446729,23.75 12,23.75 C8.75532709,23.75 5.81782709,22.4348365 3.69149532,20.3085047 C1.56516355,18.1821729 0.25,15.2446729 0.25,12 C0.25,8.75532709 1.56516355,5.81782709 3.69149532,3.69149532 C5.81782709,1.56516355 8.75532709,0.25 12,0.25 Z" id="Mask" stroke-opacity="0.15" stroke="#000000" stroke-width="0.5" fill-rule="nonzero"></path>
+                <rect id="Dark" fill="url(#linearGradient-5)" style="mix-blend-mode: normal;" opacity="0.100000001" x="0" y="12" width="24" height="12"></rect>
+                <rect id="Light" fill="url(#linearGradient-6)" opacity="0.100000001" style="mix-blend-mode: normal;" x="0" y="0" width="24" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

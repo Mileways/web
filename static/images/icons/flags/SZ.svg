@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SZ</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <path d="M12,0 C18.627417,-1.21743675e-15 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 8.11624501e-16,18.627417 0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="SZ" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+            </g>
+        </g>
+        <polygon id="Rectangle" fill="#F12339" mask="url(#mask-2)" points="0 6 24 6 24 19 0 19"></polygon>
+        <path d="M22.5,11.625 C22.7071068,11.625 22.875,11.7928932 22.875,12 C22.875,12.1812184 22.7464568,12.332414 22.5755756,12.3673813 L22.5,12.375 L1.5,12.375 C1.29289322,12.375 1.125,12.2071068 1.125,12 C1.125,11.8187816 1.25354325,11.667586 1.42442442,11.6326187 L1.5,11.625 L22.5,11.625 Z" id="Path" fill="#FFD400" mask="url(#mask-2)"></path>
+        <path d="M20.5,9.5 C20.6380712,9.5 20.75,9.61192881 20.75,9.75 C20.75,9.86834673 20.6677666,9.96748682 20.5573227,9.99339732 L20.5,10 L3.5,10 C3.36192881,10 3.25,9.88807119 3.25,9.75 C3.25,9.63165327 3.33223341,9.53251318 3.44267729,9.50660268 L3.5,9.5 L20.5,9.5 Z" id="Path" fill="#FFD400" mask="url(#mask-2)"></path>
+        <path d="M11.7167644,16.9947317 C8.98540345,16.8928955 6.44507034,15.3152157 4.10532389,12.3069703 C3.96489204,12.1264151 3.96489204,11.8735849 4.10532389,11.6930297 C6.52575125,8.58105166 9.16083735,7 12,7 L12,7 L12,17 Z" id="Combined-Shape" fill="#2E2E2E" mask="url(#mask-2)"></path>
+        <path d="M12,7 C14.8391627,7 17.4742487,8.58105166 19.8946761,11.6930297 C20.035108,11.8735849 20.035108,12.1264151 19.8946761,12.3069703 C17.4742487,15.4189483 14.8391627,17 12,17 L12,17 Z" id="Combined-Shape" fill="#FFFFFF" mask="url(#mask-2)"></path>
+        <polygon id="Rectangle" fill="#0956BA" mask="url(#mask-2)" points="0 0 24 0 24 4.5 0 4.5"></polygon>
+        <polygon id="Rectangle" fill="#0956BA" mask="url(#mask-2)" points="0 19.5 24 19.5 24 24 0 24"></polygon>
+        <polygon id="Rectangle" fill="#FFD400" mask="url(#mask-2)" points="0 4.5 24 4.5 24 6 0 6"></polygon>
+        <polygon id="Rectangle" fill="#FFD400" mask="url(#mask-2)" points="0 18 24 18 24 19.5 0 19.5"></polygon>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <path d="M12,0.25 C15.2446729,0.25 18.1821729,1.56516355 20.3085047,3.69149532 C22.4348365,5.81782709 23.75,8.75532709 23.75,12 C23.75,15.2446729 22.4348365,18.1821729 20.3085047,20.3085047 C18.1821729,22.4348365 15.2446729,23.75 12,23.75 C8.75532709,23.75 5.81782709,22.4348365 3.69149532,20.3085047 C1.56516355,18.1821729 0.25,15.2446729 0.25,12 C0.25,8.75532709 1.56516355,5.81782709 3.69149532,3.69149532 C5.81782709,1.56516355 8.75532709,0.25 12,0.25 Z" id="Mask" stroke-opacity="0.15" stroke="#000000" stroke-width="0.5" fill-rule="nonzero"></path>
+                <rect id="Dark" fill="url(#linearGradient-5)" style="mix-blend-mode: normal;" opacity="0.100000001" x="0" y="12" width="24" height="12"></rect>
+                <rect id="Light" fill="url(#linearGradient-6)" opacity="0.100000001" style="mix-blend-mode: normal;" x="0" y="0" width="24" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
