@@ -68,7 +68,9 @@ export default {
   generate: {
     exclude: [
       /^\/flights/
-    ]
+    ],
+
+    fallback: true
   },
 
   /*
