@@ -97,7 +97,7 @@
 <script>
   import Vue from 'vue'
 
-  import FlightMap from '../../components/FlightMap'
+  import FlightMap from '../../components/flights/FlightMap'
   import AirportInfo from '../../components/flights/AirportInfo'
   import FlightInfo from '../../components/flights/FlightInfo'
   import TimeInfo from '../../components/flights/TimeInfo'

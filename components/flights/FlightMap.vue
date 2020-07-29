@@ -5,7 +5,7 @@
 <script>
   import Vue from 'vue'
 
-  import tailwindConfig from '../tailwind.config'
+  import tailwindConfig from '../../tailwind.config'
 
   export default Vue.extend({
     name: 'FlightMap',
