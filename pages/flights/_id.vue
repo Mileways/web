@@ -55,11 +55,21 @@
 
         <SectionSeparator>Date & time</SectionSeparator>
 
-        <span>{{ flight.departureTimeZoned }}</span>
-        <span>{{ flight.estimatedDepartureTimeZoned }}</span>
+        <div class="flex items-start px-10">
+          <TimeInfo
+            alignment="left"
+            :time="flight.departureTimeZoned"
+            :estimated-time="flight.estimatedDepartureTimeZoned"
+            class="flex-grow"
+          />
 
-        <span>{{ flight.arrivalTimeZoned }}</span>
-        <span>{{ flight.estimatedArrivalTime }}</span>
+          <TimeInfo
+            alignment="right"
+            :time="flight.arrivalTimeZoned"
+            :estimated-time="flight.estimatedArrivalTime"
+            class="flex-grow"
+          />
+        </div>
 
         <SectionSeparator>Airport</SectionSeparator>
 
@@ -90,12 +100,13 @@
   import FlightMap from '../../components/FlightMap'
   import AirportInfo from '../../components/flights/AirportInfo'
   import FlightInfo from '../../components/flights/FlightInfo'
+  import TimeInfo from '../../components/flights/TimeInfo'
   import SectionSeparator from '../../components/general/SectionSeparator'
 
   export default Vue.extend({
     name: 'FlightView',
 
-    components: { FlightMap, AirportInfo, FlightInfo, SectionSeparator },
+    components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, SectionSeparator },
 
     async middleware ({ store, params }) {
       await store.dispatch('flights/loadFlightData', params.id)
