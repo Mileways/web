@@ -20,6 +20,10 @@ module.exports = {
         },
 
         primary: '#00a1f2'
+      },
+
+      borderRadius: {
+        xl: '24px'
       }
     },
 

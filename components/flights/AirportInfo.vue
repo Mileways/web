@@ -10,10 +10,15 @@
     <br>
 
     <div
-      class="flex"
+      class="flex items-center"
       :class="{ 'flex-row-reverse': alignment === 'right' }"
     >
-      <span>{{ airportInfo.countryCode }}</span>
+      <img
+        :src="countryFlagUrl"
+        :alt="airportInfo.countryCode"
+        class="h-4 w-4"
+      >
+
       <span class="text-gray-500 mx-2">{{ airportInfo.city }}</span>
     </div>
   </div>
@@ -39,6 +44,10 @@
     computed: {
       classes() {
         return ['text-' + this.alignment]
+      },
+
+      countryFlagUrl() {
+        return '/images/icons/flags/' + this.airportInfo.countryCode + '.svg'
       }
     }
   })

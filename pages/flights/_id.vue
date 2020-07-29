@@ -4,7 +4,7 @@
       v-if="flight"
       class="w-11/12 mx-auto max-w-5xl"
     >
-      <div class="bg-white rounded-lg shadow-lg py-10 px-10 mb-10">
+      <div class="bg-white rounded-xl shadow-lg py-10 px-10 mb-10">
         <a href="https://apps.apple.com/us/app/mileways/id572415446">
           <img
             src="/images/download.svg"
@@ -14,7 +14,7 @@
         </a>
       </div>
 
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-10">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
         <no-ssr>
           <FlightMap
             :departure-coordinates="[flight.departure.latitude, flight.departure.longitude]"
@@ -23,12 +23,11 @@
         </no-ssr>
       </div>
 
-      <div class="bg-white rounded-lg shadow-lg pb-10 mb-10">
-        <div class="px-10 pt-5">
-          <span class="font-semibold">{{ flight.airline.name }}</span>
-          <br>
-          <span class="text-gray-500">{{ flight.fsCode }} {{ flight.flightNumber }}</span>
-        </div>
+      <div class="bg-white rounded-xl shadow-lg pb-10 mb-10">
+        <FlightInfo
+          :airline-info="flight.airline"
+          :flight-number="flight.flightNumber"
+        />
 
         <SectionSeparator />
 
@@ -90,12 +89,13 @@
 
   import FlightMap from '../../components/FlightMap'
   import AirportInfo from '../../components/flights/AirportInfo'
+  import FlightInfo from '../../components/flights/FlightInfo'
   import SectionSeparator from '../../components/general/SectionSeparator'
 
   export default Vue.extend({
     name: 'FlightView',
 
-    components: { FlightMap, AirportInfo, SectionSeparator },
+    components: { FlightMap, AirportInfo, FlightInfo, SectionSeparator },
 
     async middleware ({ store, params }) {
       await store.dispatch('flights/loadFlightData', params.id)
