@@ -3,6 +3,8 @@ import tailwindConfig from './tailwind.config'
 export default {
   mode: 'universal',
 
+  target: 'static',
+
   server: {
     port: 8000,
     host: '0.0.0.0'
