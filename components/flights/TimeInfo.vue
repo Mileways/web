@@ -3,7 +3,7 @@
     class="flex-grow w-1/3"
     :class="classes"
   >
-    <span class="text-lg font-semibold">{{ formattedEstimatedDate }}</span>
+    <span class="text-xl font-semibold">{{ formattedEstimatedDate }}</span>
     <br>
 
     <span class="text-gray-500">{{ estimatedWeekday }}</span>
