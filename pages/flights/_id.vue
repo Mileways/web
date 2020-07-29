@@ -23,11 +23,18 @@
         </no-ssr>
       </div>
 
-      <div class="bg-white rounded-xl shadow-lg pb-10">
-        <FlightInfo
-          :airline-info="flight.airline"
-          :flight-number="flight.flightNumber"
-        />
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden pb-10">
+        <div class="flex items-start">
+          <FlightInfo
+            :airline-info="flight.airline"
+            :flight-number="flight.flightNumber"
+          />
+
+          <FlightStatusBox
+            class="ml-auto"
+            :status="flight.status"
+          />
+        </div>
 
         <SectionSeparator />
 
@@ -84,9 +91,10 @@
 
           <div class="ml-auto flex items-start">
             <InfoChip
+              v-if="flight.baggage"
               title="Belt"
               icon-url="/images/icons/belt.svg"
-              text="23"
+              :text="flight.baggage"
               class="mr-5 text-right"
             />
 
@@ -118,13 +126,14 @@
   import AirportInfo from '../../components/flights/AirportInfo'
   import FlightInfo from '../../components/flights/FlightInfo'
   import TimeInfo from '../../components/flights/TimeInfo'
+  import FlightStatusBox from '../../components/flights/FlightStatusBox'
   import InfoChip from '../../components/general/InfoChip'
   import SectionSeparator from '../../components/general/SectionSeparator'
 
   export default Vue.extend({
     name: 'FlightView',
 
-    components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, InfoChip, SectionSeparator },
+    components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, InfoChip, FlightStatusBox, SectionSeparator },
 
     async middleware ({ store, params }) {
       await store.dispatch('flights/loadFlightData', params.id)
