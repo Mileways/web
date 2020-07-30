@@ -15,12 +15,12 @@
       </div>
 
       <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-        <no-ssr>
+        <client-only>
           <FlightMap
             :departure-coordinates="[flight.departure.latitude, flight.departure.longitude]"
             :destination-coordinates="[flight.arrival.latitude, flight.arrival.longitude]"
           />
-        </no-ssr>
+        </client-only>
       </div>
 
       <div class="bg-white rounded-xl shadow-lg overflow-hidden pb-10">
