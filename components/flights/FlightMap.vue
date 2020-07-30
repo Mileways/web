@@ -1,5 +1,5 @@
 <template>
-  <div ref="map" style="height: 500px;" />
+  <div ref="map" style="height: 500px" />
 </template>
 
 <script>
@@ -26,74 +26,109 @@
     },
 
     methods: {
-      addPointToMap(Leaflet, coordinates, map) {
-        Leaflet.circleMarker(coordinates, {radius: 8, fillOpacity: 1, color: 'rgba(0, 0, 0, 0.1)', fill: true}).addTo(map)
-        Leaflet.circleMarker(coordinates, {radius: 5, fillOpacity: 1, color: 'white', fill: true}).addTo(map)
-        Leaflet.circleMarker(coordinates, {radius: 3, fillOpacity: 1, fill: true}).addTo(map)
+      addMarker(mapboxgl, map, coordinates) {
+        const el = document.createElement('div')
+
+        el.className = 'marker'
+        el.style.backgroundImage = 'url(/images/icons/marker.svg)'
+        el.style.width = '20px'
+        el.style.height = '20px'
+
+        const marker = new mapboxgl.Marker(el)
+
+        marker.setLngLat(coordinates)
+
+        marker.addTo(map)
       },
 
       initializeMap() {
-        const Leaflet = require('leaflet')
+        const mapboxgl = require('mapbox-gl')
+        const turf = require('@turf/turf')
 
-        require('@elfalem/leaflet-curve')
+        mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
 
-        const map = Leaflet.map(this.$refs['map'], {
+        const map = new mapboxgl.Map({
+          container: this.$refs['map'],
+          style: 'mapbox://styles/mapbox/streets-v11',
           center: [
-            (this.destinationCoordinates[0] + this.departureCoordinates[0]) / 2,
-            (this.destinationCoordinates[1] + this.departureCoordinates[1]) / 2
+            (this.destinationCoordinates[1] + this.departureCoordinates[1]) / 2,
+            (this.destinationCoordinates[0] + this.departureCoordinates[0]) / 2
           ],
-          zoom: 4,
-          minZoom: 2,
-          attributionControl: false,
-          zoomControl: false
+          zoom: 3
         })
 
-        Leaflet.tileLayer(
-          'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=' +
-          process.env.MAPBOX_ACCESS_TOKEN
-        ).addTo(map);
+        let origin = [this.departureCoordinates[1], this.departureCoordinates[0]]
+        let destination = [this.destinationCoordinates[1], this.destinationCoordinates[0]]
 
-        const vecAB = [
-          this.destinationCoordinates[0] - this.departureCoordinates[0],
-          this.destinationCoordinates[1] - this.departureCoordinates[1]
-        ]
+        this.addMarker(mapboxgl, map, origin)
+        this.addMarker(mapboxgl, map, destination)
 
-        const normVec = [vecAB[1], -vecAB[0]]
+        map.addControl(new mapboxgl.AttributionControl({
+          compact: true
+        }))
 
-        const normVecLength = Math.sqrt(Math.pow(normVec[0], 2) + Math.pow(normVec[1], 2))
+        let route = {
+          'type': 'FeatureCollection',
+          'features': [
+            {
+              'type': 'Feature',
+              'geometry': {
+                'type': 'LineString',
+                'coordinates': [origin, destination]
+              }
+            }
+          ]
+        }
 
-        const normUnitVec = [normVec[0] / normVecLength, normVec[1] / normVecLength]
+        let lineDistance = turf.length(route.features[0], {units: 'kilometers'})
 
-        const curvature = 2
+        const arc = []
 
-        const controlA = [
-          this.departureCoordinates[0] + normUnitVec[0] * curvature,
-          this.departureCoordinates[1] + normUnitVec[1] * curvature
-        ]
+        const steps = 100
 
-        const controlB = [
-          this.destinationCoordinates[0] + normUnitVec[0] * curvature,
-          this.destinationCoordinates[1] + normUnitVec[1] * curvature
-        ]
+        map.on('load', function() {
+          map.addSource('route', {
+            'type': 'geojson',
+            'data': route
+          })
 
-        this.addPointToMap(Leaflet, this.destinationCoordinates, map)
-        this.addPointToMap(Leaflet, this.departureCoordinates, map)
+          map.addLayer({
+            'id': 'route',
+            'source': 'route',
+            'type': 'line',
+            'paint': {
+              'line-width': 2,
+              'line-color': tailwindConfig.theme.extend.colors.primary
+            }
+          })
 
-        Leaflet.curve(
-          [ 'M', this.departureCoordinates, 'C', controlA, controlB, this.destinationCoordinates ],
-          {
-            color: tailwindConfig.theme.extend.colors.primary,
-            animate: {
-              duration: 2000,
-              easing: 'ease'
+          function animate(currentPosition) {
+            let segment = turf.along({
+              'type': 'Feature',
+              'geometry': {
+                'type': 'LineString',
+                'coordinates': [origin, destination]
+              }
+            }, currentPosition, {units: 'kilometers'})
+
+            arc.push(segment.geometry.coordinates)
+
+            // Update the source with this new data.
+            route.features[0].geometry.coordinates = arc
+            map.getSource('route').setData(route)
+
+            if (currentPosition < lineDistance) {
+              requestAnimationFrame(() => animate(currentPosition + lineDistance / steps))
             }
           }
-        ).addTo(map)
+
+          animate(0)
+        })
       }
     }
   })
 </script>
 
 <style>
-  @import 'leaflet';
+  @import 'mapbox-gl'
 </style>

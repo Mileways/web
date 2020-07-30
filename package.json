@@ -11,9 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@elfalem/leaflet-curve": "^0.6.0",
+    "@turf/turf": "^5.1.6",
     "axios": "^0.19.2",
-    "leaflet": "^1.6.0",
+    "mapbox-gl": "^1.11.1",
     "nuxt": "^2.14.0",
     "tailwindcss": "^1.2.0"
   },
