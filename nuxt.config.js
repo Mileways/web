@@ -70,7 +70,7 @@ export default {
       /^\/flights/
     ],
 
-    fallback: '200.html'
+    fallback: 'spa.html'
   },
 
   /*

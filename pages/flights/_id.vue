@@ -109,12 +109,14 @@
       </div>
     </div>
 
-    <p
+    <div
       v-else
-      class="text-2xl"
+      class="w-full text-center"
     >
-      Sorry, we couldn't find that flight.
-    </p>
+      <h1 class="text-2xl">
+        Sorry, we couldn't find that flight.
+      </h1>
+    </div>
   </div>
 </template>
 
