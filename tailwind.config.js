@@ -5,6 +5,23 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js'
+    ],
+    whitelist: ['html', 'body'],
+    whitelistPatterns: [/\[disabled]/g],
+    extractors: [{
+      extractor: content => content.match(/[A-z0-9-:\/]+/g) || [],
+      extensions: ['js', 'vue', 'scss', 'css']
+    }]
+  },
+
   theme: {
     extend: {
       colors: {

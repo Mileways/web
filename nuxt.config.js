@@ -84,18 +84,7 @@ export default {
 
     postcss: {
       plugins: {
-        tailwindcss: {},
-        '@fullhuman/postcss-purgecss': process.env.NODE_ENV === 'production' ? {
-          content: ['./pages/**/*.vue', './layouts/**/*.vue', './components/**/*.vue'],
-          whitelist: ['html', 'body'],
-          whitelistPatterns: [/\[disabled]/g],
-          extractors: [
-            {
-              extractor: content => content.match(/[A-z0-9-:\/]+/g) || [],
-              extensions: ['js', 'vue', 'scss', 'css']
-            }
-          ]
-        } : false
+        tailwindcss: {}
       }
     }
   }
