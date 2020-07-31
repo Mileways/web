@@ -16,8 +16,7 @@
       <div class="section-card pb-10">
         <div class="flex items-start">
           <FlightInfo
-            :airline-info="flight.airlin
-            e"
+            :airline-info="flight.airline"
             :flight-number="flight.flightNumber"
             class="pl-5 sm:pl-10 pt-4 sm:pt-5"
           />
