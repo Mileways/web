@@ -3,14 +3,14 @@
     class="flex-grow w-1/3"
     :class="classes"
   >
-    <span class="text-xl font-semibold">{{ formattedEstimatedDate }}</span>
+    <span class="text-lg sm:text-xl font-semibold">{{ formattedEstimatedDate }}</span>
     <br>
 
-    <span class="text-gray-500">{{ estimatedWeekday }}</span>
+    <span class="text-gray-500 text-sm sm:text-base">{{ estimatedWeekday }}</span>
     <br>
 
     <span
-      class="font-bold text-black text-4xl"
+      class="font-bold text-black text-2xl sm:text-4xl"
       :class="delayColorClass"
     >
       {{ formattedEstimatedTime }}
@@ -19,13 +19,17 @@
 
     <div
       v-if="isDelayed || isEarly"
-      class="flex items-center"
+      class="flex items-center flex-wrap sm:flex-no-wrap"
       :class="{ 'flex-row-reverse': alignment === 'right' }"
     >
-      <span class="text-gray-500 line-through">{{ formattedTime }}</span>
+      <span
+        class="text-gray-500 line-through inline-block w-full sm:w-auto text-sm sm:text-base"
+      >
+        {{ formattedTime }}
+      </span>
 
       <span
-        class="mx-2"
+        class="sm:mx-2 text-sm sm:text-base"
         :class="delayColorClass"
       >
         {{ delayText }}

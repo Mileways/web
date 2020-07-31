@@ -4,17 +4,7 @@
       v-if="flight"
       class="w-11/12 mx-auto max-w-5xl"
     >
-      <div class="bg-white rounded-xl shadow-lg py-10 px-10 mb-10">
-        <a :href="appStoreUrl" target="_blank">
-          <img
-            src="/images/download.svg"
-            alt="Download on the App Store"
-            class="mx-auto h-12"
-          >
-        </a>
-      </div>
-
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+      <div class="section-card">
         <client-only>
           <FlightMap
             :departure-coordinates="[flight.departure.latitude, flight.departure.longitude]"
@@ -23,11 +13,12 @@
         </client-only>
       </div>
 
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden pb-10">
+      <div class="section-card pb-10">
         <div class="flex items-start">
           <FlightInfo
             :airline-info="flight.airline"
             :flight-number="flight.flightNumber"
+            class="pl-5 sm:pl-10 pt-4 sm:pt-5"
           />
 
           <FlightStatusBox
@@ -36,33 +27,33 @@
           />
         </div>
 
-        <SectionSeparator />
+        <SectionSeparator class="mb-5"/>
 
-        <div class="flex items-center px-10">
+        <div class="flex items-center px-5 sm:px-10">
           <AirportInfo
-            class="flex-grow w-1/3"
+            class="flex-grow w-1/2 sm:w-1/3 mr-5 sm:mr-0"
             :airport-info="flight.departure"
             alignment="left"
           />
 
-          <div class="w-1/3">
+          <div class="w-1/3 sm:block">
             <img
               src="/images/icons/plane.svg"
               alt="Plane Icon"
-              class="mx-auto"
+              class="plane mx-auto w-5 sm:w-10"
             >
           </div>
 
           <AirportInfo
-            class="flex-grow w-1/3"
+            class="flex-grow w-1/2 sm:w-1/3 ml-5 sm:ml-0"
             :airport-info="flight.arrival"
             alignment="right"
           />
         </div>
 
-        <SectionSeparator>Date & time</SectionSeparator>
+        <SectionSeparator class="my-8">Date & time</SectionSeparator>
 
-        <div class="flex items-start px-10">
+        <div class="flex items-start px-5 sm:px-10">
           <TimeInfo
             alignment="left"
             :time="flight.departureTimeZoned"
@@ -78,9 +69,9 @@
           />
         </div>
 
-        <SectionSeparator>Airport</SectionSeparator>
+        <SectionSeparator class="my-8">Airport</SectionSeparator>
 
-        <div class="flex items-start px-10">
+        <div class="flex items-start px-5 sm:px-10">
           <div>
             <InfoChip
               title="Gate"
@@ -106,6 +97,16 @@
             />
           </div>
         </div>
+      </div>
+
+      <div class="section-card py-10 px-5 sm:px-10">
+        <a :href="appStoreUrl" target="_blank">
+          <img
+            src="/images/download.svg"
+            alt="Download on the App Store"
+            class="mx-auto h-12"
+          >
+        </a>
       </div>
     </div>
 
@@ -156,6 +157,33 @@
     }
   })
 </script>
+
+<style scoped>
+  .section-card {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden mb-10;
+  }
+
+  .plane {
+    animation: plane-animation 4s ease infinite;
+  }
+
+  @keyframes plane-animation {
+    0% {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+
+    50% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(30px);
+      opacity: 0;
+    }
+  }
+</style>
 
 <style>
   body {

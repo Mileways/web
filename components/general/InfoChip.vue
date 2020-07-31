@@ -4,7 +4,7 @@
       {{ title }}
     </span>
 
-    <div class="bg-gray-200 rounded-lg py-1 px-3 my-3 flex">
+    <div class="bg-gray-200 rounded-lg py-1 px-3 my-1 sm:my-3 flex">
       <img
         v-if="iconUrl"
         :src="iconUrl"
@@ -12,7 +12,7 @@
         class="mr-3"
       >
 
-      <span class="text-4xl font-bold flex-grow text-center">{{ text }}</span>
+      <span class="text-2xl sm:text-4xl font-bold flex-grow text-center">{{ text }}</span>
     </div>
 
     <span

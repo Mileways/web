@@ -1,10 +1,10 @@
 <template>
-  <div class="px-10 pt-5">
+  <div v-if="airlineInfo">
     <div class="flex items-center">
       <img
         :src="airlineLogo"
         :alt="airlineInfo.name"
-        class="h-10 w-10 mr-5"
+        class="h-8 w-8 sm:h-10 sm:w-10 mr-3 sm:mr-5"
       >
 
       <div>

@@ -1,12 +1,12 @@
 <template>
   <div
+    v-if="airportInfo"
     class="flex-grow w-1/3"
     :class="classes"
   >
-    <span class="text-gray-500">{{ airportInfo.name }}</span>
-    <br>
+    <span class="hidden sm:inline-block text-gray-500 truncate w-full">{{ airportInfo.name }}</span>
 
-    <span class="font-bold text-black text-4xl">{{ airportInfo.fs }}</span>
+    <span class="font-bold text-black text-2xl sm:text-4xl">{{ airportInfo.fs }}</span>
     <br>
 
     <div
