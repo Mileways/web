@@ -16,7 +16,8 @@
       <div class="section-card pb-10">
         <div class="flex items-start">
           <FlightInfo
-            :airline-info="flight.airline"
+            :airline-info="flight.airlin
+            e"
             :flight-number="flight.flightNumber"
             class="pl-5 sm:pl-10 pt-4 sm:pt-5"
           />
@@ -51,7 +52,7 @@
           />
         </div>
 
-        <SectionSeparator class="my-8">Date & time</SectionSeparator>
+        <SectionSeparator class="my-6 sm:my-8">Date & time</SectionSeparator>
 
         <div class="flex items-start px-5 sm:px-10">
           <TimeInfo
@@ -69,7 +70,7 @@
           />
         </div>
 
-        <SectionSeparator class="my-8">Airport</SectionSeparator>
+        <SectionSeparator class="my-6 sm:my-8">Airport</SectionSeparator>
 
         <div class="flex items-start px-5 sm:px-10">
           <div>
