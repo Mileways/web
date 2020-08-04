@@ -4,6 +4,21 @@
       v-if="flight"
       class="w-11/12 mx-auto max-w-5xl"
     >
+      <div class="section-card py-10 px-5 sm:px-10 text-center">
+        <UserInfo
+          :user="user"
+          :arrival-city="flight.arrival.city"
+        />
+
+        <a :href="appStoreUrl" target="_blank">
+          <img
+            src="/images/download.svg"
+            alt="Download on the App Store"
+            class="mx-auto h-12"
+          >
+        </a>
+      </div>
+
       <div class="section-card">
         <client-only>
           <FlightMap
@@ -98,16 +113,6 @@
           </div>
         </div>
       </div>
-
-      <div class="section-card py-10 px-5 sm:px-10">
-        <a :href="appStoreUrl" target="_blank">
-          <img
-            src="/images/download.svg"
-            alt="Download on the App Store"
-            class="mx-auto h-12"
-          >
-        </a>
-      </div>
     </div>
 
     <div
@@ -129,6 +134,7 @@
   import AirportInfo from '../../components/flights/AirportInfo'
   import FlightInfo from '../../components/flights/FlightInfo'
   import TimeInfo from '../../components/flights/TimeInfo'
+  import UserInfo from '../../components/flights/UserInfo'
   import FlightStatusBox from '../../components/flights/FlightStatusBox'
   import InfoChip from '../../components/general/InfoChip'
   import SectionSeparator from '../../components/general/SectionSeparator'
@@ -136,7 +142,7 @@
   export default Vue.extend({
     name: 'FlightView',
 
-    components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, InfoChip, FlightStatusBox, SectionSeparator },
+    components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, UserInfo, InfoChip, FlightStatusBox, SectionSeparator },
 
     async middleware ({ store, params }) {
       await store.dispatch('flights/loadFlightData', params.id)
@@ -147,8 +153,20 @@
         return this.$route.params.id
       },
 
-      flight() {
+      flightInfo() {
         return this.$store.getters['flights/flightById'](this.flightId)
+      },
+
+      flight() {
+        if (!this.flightInfo) return
+
+        return this.flightInfo.flights[0]
+      },
+
+      user() {
+        if (!this.flightInfo) return
+
+        return this.flightInfo.user
       },
 
       appStoreUrl() {

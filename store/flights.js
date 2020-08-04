@@ -20,6 +20,9 @@ export const actions = {
 
     if (flight instanceof Error) return
 
-    context.commit('setFlightData', flight)
+    context.commit('setFlightData', {
+      ...flight,
+      id
+    })
   }
 }
