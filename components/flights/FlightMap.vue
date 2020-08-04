@@ -122,10 +122,14 @@
 
           if (!e || !'touches' in e) return
 
-          if (e.touches.length > 1) this.map.dragPan.enable()
+          if (e.touches.length > 1) map.dragPan.enable()
 
-          else this.map.dragPan.disable()
+          else map.dragPan.disable()
         })
+
+        map.on('mousedown', () => map.dragPan.enable())
+
+        window.addEventListener('mouseup', () => map.dragPan.disable())
 
         this.addMarker(mapboxgl, map, origin)
         this.addMarker(mapboxgl, map, destination)
