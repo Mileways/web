@@ -46,12 +46,12 @@
 
         <div class="flex items-center px-5 sm:px-10">
           <AirportInfo
-            class="flex-grow w-1/2 sm:w-1/3 mr-5 sm:mr-0"
+            class="flex-grow w-3/12 sm:w-1/3"
             :airport-info="flight.departure"
             alignment="left"
           />
 
-          <div class="w-1/3 sm:block">
+          <div class="w-1/6 sm:w-1/3 sm:block">
             <img
               src="/images/icons/plane.svg"
               alt="Plane Icon"
@@ -60,7 +60,7 @@
           </div>
 
           <AirportInfo
-            class="flex-grow w-1/2 sm:w-1/3 ml-5 sm:ml-0"
+            class="flex-grow w-3/12 sm:w-1/3"
             :airport-info="flight.arrival"
             alignment="right"
           />

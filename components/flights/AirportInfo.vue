@@ -19,7 +19,7 @@
         class="h-4 w-4"
       >
 
-      <span class="text-gray-500 mx-2">{{ airportInfo.city }}</span>
+      <span class="truncate text-gray-500 mx-2">{{ airportInfo.city }}</span>
     </div>
   </div>
 </template>
