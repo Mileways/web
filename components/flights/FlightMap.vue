@@ -41,24 +41,91 @@
         marker.addTo(map)
       },
 
+      animateRoute(route, map) {
+        const turf = require('@turf/turf')
+
+        const steps = 100
+
+        const origin = route.geometry.coordinates[0]
+        const destination = route.geometry.coordinates[1]
+
+        let lineDistance = turf.length(route, { units: 'kilometers' })
+
+        map.addSource('route', { 'type': 'geojson', 'data': route })
+
+        map.addLayer({
+          'id': 'route',
+          'source': 'route',
+          'type': 'line',
+          'paint': {
+            'line-width': 2,
+            'line-color': tailwindConfig.theme.extend.colors.primary
+          }
+        })
+
+        route.geometry.coordinates = []
+
+        const animate = currentPosition => {
+          let segment = turf.along({
+            'type': 'Feature',
+            'geometry': {
+              'type': 'LineString',
+              'coordinates': [origin, destination]
+            }
+          }, currentPosition, {units: 'kilometers'})
+
+          route.geometry.coordinates.push(segment.geometry.coordinates)
+
+          map.getSource('route').setData(route)
+
+          if (currentPosition < lineDistance)
+            requestAnimationFrame(() => animate(currentPosition + lineDistance / steps))
+        }
+
+        animate(0)
+      },
+
       initializeMap() {
         const mapboxgl = require('mapbox-gl')
         const turf = require('@turf/turf')
 
         mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
 
+        // flip lat long pairs for mapbox
+        let origin = [this.departureCoordinates[1], this.departureCoordinates[0]]
+        let destination = [this.destinationCoordinates[1], this.destinationCoordinates[0]]
+
+        let route = {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'LineString',
+            'coordinates': [origin, destination]
+          }
+        }
+
+        const routeLength = turf.length(route, { units: 'kilometers' })
+
         const map = new mapboxgl.Map({
           container: this.$refs['map'],
           style: 'mapbox://styles/mapbox/streets-v11',
           center: [
-            (this.destinationCoordinates[1] + this.departureCoordinates[1]) / 2,
-            (this.destinationCoordinates[0] + this.departureCoordinates[0]) / 2
+            (destination[0] + origin[0]) / 2,
+            (destination[1] + origin[1]) / 2
           ],
-          zoom: 3
+          zoom: Math.round(4000 / routeLength)
         })
 
-        let origin = [this.departureCoordinates[1], this.departureCoordinates[0]]
-        let destination = [this.destinationCoordinates[1], this.destinationCoordinates[0]]
+        map.dragPan.disable()
+
+        map.on('touchstart', event => {
+          const e = event.originalEvent
+
+          if (!e || !'touches' in e) return
+
+          if (e.touches.length > 1) this.map.dragPan.enable()
+
+          else this.map.dragPan.disable()
+        })
 
         this.addMarker(mapboxgl, map, origin)
         this.addMarker(mapboxgl, map, destination)
@@ -67,62 +134,8 @@
           compact: true
         }))
 
-        let route = {
-          'type': 'FeatureCollection',
-          'features': [
-            {
-              'type': 'Feature',
-              'geometry': {
-                'type': 'LineString',
-                'coordinates': [origin, destination]
-              }
-            }
-          ]
-        }
-
-        let lineDistance = turf.length(route.features[0], {units: 'kilometers'})
-
-        const arc = []
-
-        const steps = 100
-
-        map.on('load', function() {
-          map.addSource('route', {
-            'type': 'geojson',
-            'data': route
-          })
-
-          map.addLayer({
-            'id': 'route',
-            'source': 'route',
-            'type': 'line',
-            'paint': {
-              'line-width': 2,
-              'line-color': tailwindConfig.theme.extend.colors.primary
-            }
-          })
-
-          function animate(currentPosition) {
-            let segment = turf.along({
-              'type': 'Feature',
-              'geometry': {
-                'type': 'LineString',
-                'coordinates': [origin, destination]
-              }
-            }, currentPosition, {units: 'kilometers'})
-
-            arc.push(segment.geometry.coordinates)
-
-            // Update the source with this new data.
-            route.features[0].geometry.coordinates = arc
-            map.getSource('route').setData(route)
-
-            if (currentPosition < lineDistance) {
-              requestAnimationFrame(() => animate(currentPosition + lineDistance / steps))
-            }
-          }
-
-          animate(0)
+        map.on('load', () => {
+          this.animateRoute(route, map)
         })
       }
     }
