@@ -4,7 +4,7 @@
       v-if="flight"
       class="w-11/12 mx-auto max-w-5xl"
     >
-      <div class="section-card py-10 px-5 sm:px-10 text-center">
+      <div class="section-card py-5 px-5 sm:px-10 text-center">
         <UserInfo
           :user="user"
           :arrival-city="flight.arrival.city"
