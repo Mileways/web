@@ -1,5 +1,5 @@
 <template>
-  <div ref="map" style="height: 500px" />
+  <div ref="map" class="flight-map" />
 </template>
 
 <script>
@@ -130,5 +130,21 @@
 </script>
 
 <style>
-  @import 'mapbox-gl'
+  @import 'mapbox-gl';
+
+  .flight-map {
+    height: 300px;
+  }
+
+  @screen sm {
+    .flight-map {
+      height: 400px;
+    }
+  }
+
+  @screen md {
+    .flight-map {
+      height: 500px;
+    }
+  }
 </style>
