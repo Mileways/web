@@ -41,6 +41,8 @@
 <script>
   import Vue from 'vue'
 
+  import { parseISO } from 'date-fns'
+
   const timeFormat = { hour: 'numeric', minute: 'numeric' }
   const dateFormat = { year: 'numeric', month: 'short', day: 'numeric' }
   const delayThreshold = 60 * 1000
@@ -62,8 +64,8 @@
 
     data() {
       return {
-        parsedTime: new Date(this.time),
-        parsedEstimatedTime: new Date(this.estimatedTime || this.time)
+        parsedTime: parseISO(this.time),
+        parsedEstimatedTime: parseISO(this.estimatedTime || this.time)
       }
     },
 
