@@ -34,20 +34,18 @@
       </div>
 
       <div class="section-card pb-10">
-        <div class="flex items-start">
+        <div class="flex mb-10 border-b border-gray-200">
           <FlightInfo
             :airline-info="flight.airline"
             :flight-number="flight.flightNumber"
-            class="pl-5 sm:pl-10 pt-4 sm:pt-5"
+            class="pl-5 sm:pl-10 py-3 sm:py-4"
           />
 
           <FlightStatusBox
-            class="ml-auto"
+            class="self-stretch ml-auto"
             :status="flight.status"
           />
         </div>
-
-        <SectionSeparator class="mb-5"/>
 
         <div class="flex items-center px-5 sm:px-10">
           <AirportInfo

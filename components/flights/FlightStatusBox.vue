@@ -71,11 +71,11 @@
 
 <style scoped>
   .flight-status-box {
-    @apply relative pl-8 pr-5 py-4 flex items-center;
+    @apply relative pl-10 pr-5 py-4 flex items-center;
   }
 
   .flight-status-box > .background-element {
-    @apply w-full h-full absolute top-0 right-0 -mr-2 rounded-bl-xl;
+    @apply w-full h-full absolute top-0 right-0 -mr-3 rounded-bl-xl;
 
     content: '';
     transform: skew(22deg);
@@ -83,7 +83,7 @@
 
   @screen sm {
     .flight-status-box {
-      @apply relative pl-12 pr-10 py-5 flex items-center;
+      @apply relative pl-16 pr-10 py-5 flex items-center;
     }
   }
 </style>
