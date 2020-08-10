@@ -48,7 +48,7 @@
   const delayThreshold = 60 * 1000
 
   export default Vue.extend({
-    name: 'AirportInfo',
+    name: 'TimeInfo',
 
     props: {
       time: { type: String, required: true },
@@ -121,7 +121,7 @@
         else if (minuteDelay) text += minuteDelay + ' min '
 
         if (this.isEarly) text += 'early'
-        else if (this.isDelayed) text += 'delay'
+        else if (this.isDelayed) text += 'late'
 
         return text
       }

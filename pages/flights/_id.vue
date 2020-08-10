@@ -69,7 +69,7 @@
           <TimeInfo
             alignment="right"
             :time="flight.arrivalTimeZoned"
-            :estimated-time="flight.estimatedArrivalTime"
+            :estimated-time="flight.estimatedArrivalTimeZoned"
             class="flex-grow"
           />
         </div>
