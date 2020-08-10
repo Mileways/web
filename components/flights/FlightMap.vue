@@ -87,7 +87,6 @@
 
       initializeMap() {
         const mapboxgl = require('mapbox-gl')
-        const turf = require('@turf/turf')
 
         mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
 
@@ -103,8 +102,6 @@
           }
         }
 
-        const routeLength = turf.length(route, { units: 'kilometers' })
-
         const map = new mapboxgl.Map({
           container: this.$refs['map'],
           style: 'mapbox://styles/mapbox/streets-v11',
@@ -112,7 +109,8 @@
             (destination[0] + origin[0]) / 2,
             (destination[1] + origin[1]) / 2
           ],
-          zoom: Math.round(4000 / routeLength)
+          bounds: [origin, destination],
+          fitBoundsOptions: { padding: 50 }
         })
 
         map.dragPan.disable()
