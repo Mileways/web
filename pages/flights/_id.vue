@@ -9,22 +9,9 @@
           :user="user"
           :arrival-city="flight.arrival.city"
         />
-
-        <a :href="appStoreUrl" target="_blank">
-          <img
-            src="/images/download.svg"
-            alt="Download on the App Store"
-            class="mx-auto h-12"
-          >
-        </a>
       </div>
 
-      <!--
-        Translate3d below is a workaround to fix a known Safari issue where the rounded corners of the parent are not
-          honored by large canvas elements
-          https://bugs.chromium.org/p/chromium/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=137818
-      -->
-      <div class="section-card" style="transform: translate3d(0,0,0);">
+      <div class="section-card">
         <client-only>
           <FlightMap
             :departure-coordinates="[flight.departure.latitude, flight.departure.longitude]"
@@ -170,10 +157,6 @@
         if (!this.flightInfo) return
 
         return this.flightInfo.user
-      },
-
-      appStoreUrl() {
-        return process.env.APP_STORE_URL
       }
     }
   })
@@ -182,6 +165,14 @@
 <style scoped>
   .section-card {
     @apply bg-white rounded-xl shadow-lg overflow-hidden mb-6;
+
+    /*
+      Translate3d below is a workaround to fix a known Safari issue where the rounded corners of the parent are not
+      honored by large canvas elements
+      https://bugs.chromium.org/p/chromium/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=137818
+    */
+
+    transform: translate3d(0, 0, 0);
   }
 
   .plane {

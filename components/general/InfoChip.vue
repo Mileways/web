@@ -1,6 +1,6 @@
 <template>
   <div class="inline-block">
-    <span class="text-sm text-gray-500">
+    <span class="text-gray-500">
       {{ title }}
     </span>
 
@@ -17,7 +17,7 @@
 
     <span
       v-if="bottomText"
-      class="text-sm text-gray-500"
+      class="text-gray-500"
     >
       {{ bottomText }}
     </span>
