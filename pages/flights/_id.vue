@@ -2,7 +2,7 @@
   <div class="w-full">
     <div
       v-if="flight"
-      class="w-11/12 mx-auto max-w-5xl"
+      class="w-11/12 mx-auto max-w-4xl"
     >
       <div class="section-card py-5 px-5 sm:px-10 text-center">
         <UserInfo

@@ -39,6 +39,8 @@ module.exports = {
         red: '#EE3D3D',
         green: '#34C816',
 
+        blue: '#006DA4',
+
         primary: '#00a1f2'
       },
 
