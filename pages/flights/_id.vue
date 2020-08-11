@@ -31,6 +31,11 @@
           <FlightStatusBox
             class="self-stretch ml-auto"
             :status="flight.status"
+            :status-detail="flight.statusDetail"
+            :departure-time="departureTime"
+            :actual-departure-time="actualDepartureTime"
+            :arrival-time="arrivalTime"
+            :actual-arrival-time="actualArrivalTime"
           />
         </div>
 

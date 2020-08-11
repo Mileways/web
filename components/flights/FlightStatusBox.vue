@@ -5,10 +5,13 @@
       :class="backgroundColorClass"
     />
 
-    <div class="relative text-white">
+    <div class="relative text-white text-right">
       <span>{{ formattedStatus }}</span>
+      <br>
 
-      <span class="font-semibold uppercase">{{ statusDetail }}</span>
+      <span class="font-semibold uppercase text-sm">
+        {{ statusMessage }}
+      </span>
     </div>
   </div>
 </template>
@@ -17,12 +20,19 @@
 <script lang="ts">
   import Vue from 'vue'
 
+  import { isEqual, isBefore, isAfter, formatDistance } from 'date-fns'
+
   export default Vue.extend({
     name: 'FlightStatusBox',
 
     props: {
       status: { type: String, required: true },
-      statusDetail: { type: String, required: false, default: null }
+      statusDetail: { type: String, required: false, default: null },
+
+      departureTime: { type: Date, required: false, default: null },
+      actualDepartureTime: { type: Date, required: false, default: null },
+      arrivalTime: { type: Date, required: false, default: null },
+      actualArrivalTime: { type: Date, required: false, default: null }
     },
 
     computed: {
@@ -30,16 +40,61 @@
         const statusMapping = {
           scheduled: 'Scheduled',
           on_time: 'On time',
-          delayed: 'Delayed',
-          in_air: 'In air',
-          departure_due: 'Departure due',
+          delayed: 'Flight Delayed',
           cancelled: 'Cancelled',
-          diverted: 'Diverted',
-          arrival_due: 'Arrival due',
-          arrived: 'Arrived'
+          in_air: 'In air',
+          departure_due: 'Departure Due',
+          arrival_due: 'Arrival Due',
+          diverted: 'Diverted'
         }
 
-        return statusMapping[this.status] || 'Unknown'
+        switch(this.status) {
+          case 'arrived':
+            if (isBefore(this.actualArrivalTime, this.arrivalTime))
+              return 'Early Arrival'
+
+            else if (isAfter(this.actualArrivalTime, this.arrivalTime))
+              return 'Late Arrival'
+
+            return 'Arrived'
+
+          case 'in_air':
+            return null
+
+          default:
+            return statusMapping[this.status] || 'Unknown'
+        }
+      },
+
+      statusMessage() {
+        switch (this.status) {
+          case 'scheduled':
+            return 'In ' + formatDistance(new Date(), this.actualDepartureTime)
+
+          case 'on_time':
+            return 'In ' + formatDistance(new Date(), this.actualDepartureTime)
+
+          case 'delayed':
+            return 'By ' + formatDistance(this.departureTime, this.actualDepartureTime)
+
+          case 'departure_due':
+            return 'Since ' + formatDistance(new Date(), this.actualDepartureTime)
+
+          case 'arrived':
+            if (isEqual(this.arrivalTime, this.actualArrivalTime))
+              return 'On time'
+
+            return 'By ' + formatDistance(this.arrivalTime, this.actualArrivalTime)
+
+          case 'arrival_due':
+            return 'Since ' + formatDistance(this.actualArrivalTime, new Date())
+
+          case 'diverted':
+            return this.statusDetail
+
+          default:
+            return null
+        }
       },
 
       backgroundColorClass() {
