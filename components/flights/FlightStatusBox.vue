@@ -6,12 +6,15 @@
     />
 
     <div class="relative text-white text-right">
-      <span>{{ formattedStatus }}</span>
-      <br>
+      <ProgressBar v-if="status === 'in_air'"
+        :progress="flightProgress"
+      />
 
-      <span class="font-semibold uppercase text-sm">
+      <span v-else>{{ formattedStatus }}</span>
+
+      <div class="font-semibold uppercase text-sm w-full">
         {{ statusMessage }}
-      </span>
+      </div>
     </div>
   </div>
 </template>
@@ -20,10 +23,14 @@
 <script lang="ts">
   import Vue from 'vue'
 
-  import { isEqual, isBefore, isAfter, formatDistance } from 'date-fns'
+  import { isEqual, isBefore, isAfter, formatDistance, differenceInSeconds } from 'date-fns'
+
+  import ProgressBar from '../general/ProgressBar'
 
   export default Vue.extend({
     name: 'FlightStatusBox',
+
+    components: { ProgressBar },
 
     props: {
       status: { type: String, required: true },
@@ -36,13 +43,22 @@
     },
 
     computed: {
+      flightProgress() {
+        const total = differenceInSeconds(this.actualArrivalTime, this.actualDepartureTime)
+        const elapsed = differenceInSeconds(new Date(), this.actualDepartureTime)
+
+        console.log('total', total)
+        console.log('elapsed', elapsed)
+
+        return elapsed / total
+      },
+
       formattedStatus() {
         const statusMapping = {
           scheduled: 'Scheduled',
           on_time: 'On time',
           delayed: 'Flight Delayed',
           cancelled: 'Cancelled',
-          in_air: 'In air',
           departure_due: 'Departure Due',
           arrival_due: 'Arrival Due',
           diverted: 'Diverted'
@@ -76,6 +92,9 @@
 
           case 'delayed':
             return 'By ' + formatDistance(this.departureTime, this.actualDepartureTime)
+
+          case 'in_air':
+            return formatDistance(new Date(), this.actualArrivalTime) + ' to go'
 
           case 'departure_due':
             return 'Since ' + formatDistance(new Date(), this.actualDepartureTime)
