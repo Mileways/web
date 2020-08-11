@@ -1,12 +1,13 @@
 <template>
   <div v-if="user && arrivalCity">
     <img
+      v-if="user.profilePicture"
       :src="user.profilePicture"
       :alt="user.firstName"
-      class="rounded-full h-20 sm:h-16 mx-auto"
+      class="rounded-full h-20 sm:h-16 mx-auto mb-3"
     >
 
-    <span class="text-xl sm:text-2xl mx-auto mt-3 inline-block">
+    <span class="text-xl sm:text-2xl mx-auto inline-block">
       <span class="font-bold">{{ name }}</span>
 
       <span class="text-gray-300">flight to</span>
