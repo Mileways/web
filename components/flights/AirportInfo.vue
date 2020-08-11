@@ -16,7 +16,7 @@
       <img
         :src="countryFlagUrl"
         :alt="airportInfo.countryCode"
-        class="h-4 w-4"
+        class="h-4 w-4 overflow-hidden rounded-full"
       >
 
       <span class="truncate text-gray-500 mx-2">{{ airportInfo.city }}</span>
