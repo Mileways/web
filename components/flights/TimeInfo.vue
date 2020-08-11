@@ -104,8 +104,8 @@
 
       delayColorClass() {
         return {
-          'text-red-500': this.isDelayed,
-          'text-green-500': this.isEarly,
+          'text-red': this.isDelayed,
+          'text-green': this.isEarly,
         }
       },
 

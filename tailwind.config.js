@@ -36,6 +36,9 @@ module.exports = {
           '900': '#272829'
         },
 
+        red: '#EE3D3D',
+        green: '#34C816',
+
         primary: '#00a1f2'
       },
 

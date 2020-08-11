@@ -45,19 +45,17 @@
       backgroundColorClass() {
         switch (this.status) {
           case 'scheduled':
+          case 'arrival-due':
+          case 'departure-due':
             return 'bg-gray-500'
 
           case 'on_time':
-            return 'bg-green-500'
+            return 'bg-green'
 
           case 'delayed':
           case 'cancelled':
-            return 'bg-red-500'
-
-          case 'arrival-due':
-          case 'departure-due':
           case 'diverted':
-            return 'bg-orange-500'
+            return 'bg-red'
 
           case 'in_air':
           case 'arrived':
