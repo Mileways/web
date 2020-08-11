@@ -13,7 +13,7 @@
       class="font-bold text-black text-2xl sm:text-4xl"
       :class="delayColorClass"
     >
-      {{ formattedEstimatedTime }}
+      {{ formattedActualTime }}
     </span>
     <br>
 
@@ -41,8 +41,6 @@
 <script>
   import Vue from 'vue'
 
-  import { parseISO } from 'date-fns'
-
   const timeFormat = { hour: 'numeric', minute: 'numeric' }
   const dateFormat = { year: 'numeric', month: 'short', day: 'numeric' }
   const delayThreshold = 60 * 1000
@@ -51,8 +49,8 @@
     name: 'TimeInfo',
 
     props: {
-      time: { type: String, required: true },
-      estimatedTime: { type: String, required: false, default: null },
+      time: { type: Date, required: true },
+      actualTime: { type: Date, required: true },
       alignment: {
         required: false,
         default: 'left',
@@ -62,36 +60,29 @@
       }
     },
 
-    data() {
-      return {
-        parsedTime: parseISO(this.time),
-        parsedEstimatedTime: parseISO(this.estimatedTime || this.time)
-      }
-    },
-
     computed: {
       classes() {
         return ['text-' + this.alignment]
       },
 
       formattedEstimatedDate() {
-        return new Intl.DateTimeFormat('en-US', dateFormat).format(this.parsedEstimatedTime)
+        return new Intl.DateTimeFormat('en-US', dateFormat).format(this.actualTime)
       },
 
       estimatedWeekday() {
-        return new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(this.parsedEstimatedTime)
+        return new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(this.actualTime)
       },
 
       formattedTime() {
-        return new Intl.DateTimeFormat('en-US', timeFormat).format(this.parsedTime)
+        return new Intl.DateTimeFormat('en-US', timeFormat).format(this.time)
       },
 
-      formattedEstimatedTime() {
-        return new Intl.DateTimeFormat('en-US', timeFormat).format(this.parsedEstimatedTime)
+      formattedActualTime() {
+        return new Intl.DateTimeFormat('en-US', timeFormat).format(this.actualTime)
       },
 
       delay() {
-        return this.parsedEstimatedTime.getTime() - this.parsedTime.getTime()
+        return this.actualTime.getTime() - this.time.getTime()
       },
 
       isDelayed() {

@@ -61,15 +61,15 @@
         <div class="flex items-start px-5 sm:px-10">
           <TimeInfo
             alignment="left"
-            :time="flight.departureTimeZoned"
-            :estimated-time="flight.estimatedDepartureTimeZoned"
+            :time="departureTime"
+            :actual-time="actualDepartureTime"
             class="flex-grow"
           />
 
           <TimeInfo
             alignment="right"
-            :time="flight.arrivalTimeZoned"
-            :estimated-time="flight.estimatedArrivalTimeZoned"
+            :time="arrivalTime"
+            :actual-time="actualArrivalTime"
             class="flex-grow"
           />
         </div>
@@ -120,6 +120,8 @@
 <script>
   import Vue from 'vue'
 
+  import { parseISO } from 'date-fns'
+
   import FlightMap from '../../components/flights/FlightMap'
   import AirportInfo from '../../components/flights/AirportInfo'
   import FlightInfo from '../../components/flights/FlightInfo'
@@ -157,6 +159,30 @@
         if (!this.flightInfo) return
 
         return this.flightInfo.user
+      },
+
+      departureTime() {
+        if (!this.flight) return
+
+        return new Date(parseISO(this.flight.departureTimeZoned))
+      },
+
+      actualDepartureTime() {
+        if (!this.flight) return
+
+        return new Date(parseISO(this.flight.estimatedDepartureTimeZoned || this.flight.departureTimeZoned))
+      },
+
+      arrivalTime() {
+        if (!this.flight) return
+
+        return new Date(parseISO(this.flight.arrivalTimeZoned))
+      },
+
+      actualArrivalTime() {
+        if (!this.flight) return
+
+        return new Date(parseISO(this.flight.estimatedArrivalTimeZoned || this.flight.arrivalTimeZoned))
       }
     }
   })
