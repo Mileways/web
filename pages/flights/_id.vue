@@ -169,25 +169,25 @@
       departureTime() {
         if (!this.flight) return
 
-        return new Date(parseISO(this.flight.departureTimeZoned))
+        return new Date(parseISO(this.flight.departureTime))
       },
 
       actualDepartureTime() {
         if (!this.flight) return
 
-        return new Date(parseISO(this.flight.estimatedDepartureTimeZoned || this.flight.departureTimeZoned))
+        return new Date(parseISO(this.flight.estimatedDepartureTime || this.flight.departureTime))
       },
 
       arrivalTime() {
         if (!this.flight) return
 
-        return new Date(parseISO(this.flight.arrivalTimeZoned))
+        return new Date(parseISO(this.flight.arrivalTime))
       },
 
       actualArrivalTime() {
         if (!this.flight) return
 
-        return new Date(parseISO(this.flight.estimatedArrivalTimeZoned || this.flight.arrivalTimeZoned))
+        return new Date(parseISO(this.flight.estimatedArrivalTime || this.flight.arrivalTime))
       }
     }
   })
