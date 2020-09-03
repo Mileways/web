@@ -78,6 +78,7 @@ export default {
   */
   build: {
     filenames: {
+      // Workaround for Safari HMR issue (https://github.com/nuxt/nuxt.js/issues/3828#issuecomment-508428611)
       app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
       chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js'
     },
