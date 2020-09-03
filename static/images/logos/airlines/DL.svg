@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DL</title>
+    <g id="DL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M26.9688797,22.6571429 L14,16.5142857 L14,3 L26.9688797,22.6571429 Z M28,25 L14,19.1857143 L14,25 L28,25 Z" id="Shape" fill="#98002E" fill-rule="nonzero"></path>
+        <path d="M14,19.1857143 L14,25 L1.32338585e-13,25 L14,19.1857143 Z M14,3 L14,16.5142857 L1.03112033,22.6571429 L14,3 Z" id="Combined-Shape" fill="#E31837" fill-rule="nonzero"></path>
+    </g>
+</svg>

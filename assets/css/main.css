@@ -14,6 +14,20 @@
 
 @font-face {
     font-family: 'Inter';
+    src: url("../fonts/inter-semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/inter-bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
     src: url("../fonts/inter-black.ttf") format("truetype");
     font-weight: 900;
     font-display: swap;
@@ -23,10 +37,6 @@ html {
     @apply font-body;
 
     font-size: 16px;
-}
-
-body {
-    @apply text-gray-600;
 }
 
 * {

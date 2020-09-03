@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BC</title>
+    <g id="BC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="#1E398D" fill-rule="nonzero" points="1.55750603 24.5 22.4740552 24.5 28 11.5634506 22.0747647 11.5634506 7.80044568 19.512508"></polygon>
+        <polygon id="Path" fill="#DCAA0D" fill-rule="nonzero" points="14.0563009 16.6038586 22.0747647 11.5634506 13.4966574 11.5634506 12.6008459 3.5 8.34981127 11.5634506 0 11.5634506 5.73595889 16.5214336 1.55750603 24.5 9.29437446 19.5973011 14.9295557 24.4678497"></polygon>
+        <path d="M1.55750603,24.5 L9.29437446,19.59721 L14.9335577,24.5 L14.0596662,16.6347339 L22.0747647,11.5634506 C22.0747647,11.5634506 9.54086134,12.3234919 1.55750603,24.5 Z" id="Path" fill="#FFDD00" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -40,8 +40,8 @@
 </template>
 
 <script>
-  import MailChimpSignUpForm from '../components/teaser/mailchimp-sign-up-form'
-  import TwitterFollowButton from '../components/teaser/twitter-follow-button'
+  import MailChimpSignUpForm from '../components/teaser/MailchimpSignUpForm'
+  import TwitterFollowButton from '../components/teaser/TwitterFollowButton'
 
   export default {
     layout: 'empty',

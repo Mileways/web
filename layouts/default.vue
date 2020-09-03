@@ -2,8 +2,8 @@
   <div class="default">
     <Header />
 
-    <div class="min-h-screen flex items-center mx-5">
-      <nuxt class="mt-8" />
+    <div class="min-h-screen flex items-start">
+      <nuxt class="mt-10" />
     </div>
 
     <Footer />

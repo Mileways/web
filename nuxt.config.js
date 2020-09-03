@@ -3,14 +3,19 @@ import tailwindConfig from './tailwind.config'
 export default {
   mode: 'universal',
 
+  target: 'static',
+
   server: {
     port: 8000,
     host: '0.0.0.0'
   },
 
   env: {
+    API_BASE_URL: process.env.API_BASE_URL,
     GTM_CONTAINER_ID: process.env.GTM_CONTAINER_ID,
     MAILCHIMP_CONFIG: process.env.MAILCHIMP_CONFIG,
+    MAPBOX_ACCESS_TOKEN: process.env.MAPBOX_ACCESS_TOKEN,
+    APP_STORE_URL: process.env.APP_STORE_URL
   },
 
   /*
@@ -24,7 +29,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'description', name: 'description', content: 'Mileways | Go Travel' },
       { name: 'msapplication-TileColor', content: tailwindConfig.theme.extend.colors.primary },
       { name: 'theme-color', content: tailwindConfig.theme.extend.colors.primary }
     ],
@@ -56,8 +61,17 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/google-tag-manager.client.js'
+    '~/plugins/google-tag-manager.client.js',
+    '~/plugins/api-clients.js',
   ],
+
+  generate: {
+    exclude: [
+      /^\/flights/
+    ],
+
+    fallback: 'spa.html'
+  },
 
   /*
   ** Build configuration
@@ -70,18 +84,7 @@ export default {
 
     postcss: {
       plugins: {
-        tailwindcss: {},
-        '@fullhuman/postcss-purgecss': process.env.NODE_ENV === 'production' ? {
-          content: ['./pages/**/*.vue', './layouts/**/*.vue', './components/**/*.vue'],
-          whitelist: ['html', 'body'],
-          whitelistPatterns: [/\[disabled]/g],
-          extractors: [
-            {
-              extractor: content => content.match(/[A-z0-9-:\/]+/g) || [],
-              extensions: ['js', 'vue', 'scss', 'css']
-            }
-          ]
-        } : false
+        tailwindcss: {}
       }
     }
   }

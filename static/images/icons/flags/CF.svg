@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CF</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <path d="M12,0 C18.627417,-1.21743675e-15 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 8.11624501e-16,18.627417 0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="CF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+            </g>
+        </g>
+        <polygon id="Rectangle" fill="#FFD400" mask="url(#mask-2)" points="0 18 24 18 24 24 0 24"></polygon>
+        <polygon id="Rectangle" fill="#0956BA" mask="url(#mask-2)" points="0 0 24 0 24 6 0 6"></polygon>
+        <path d="M6.0575085,3.00142195 L5.17368898,3.0064975 L5.12637322,3.01310952 C4.99390557,3.05098174 4.94963935,3.24190094 5.07145457,3.33535236 L5.78365156,3.88194495 L5.51487596,4.76169477 L5.50651859,4.80641326 C5.49656164,4.95204647 5.65860974,5.05807677 5.78252912,4.96493825 L6.5,4.42526188 L7.21747088,4.96493825 L7.25558042,4.98706431 C7.3850242,5.04196473 7.53158334,4.91365291 7.48512404,4.76169477 L7.21565161,3.88194495 L7.92854543,3.33535236 L7.96310617,3.30093561 C8.04897589,3.18891746 7.97741749,3.00726651 7.82631102,3.0064975 L6.94179466,3.00142195 L6.66541875,2.12496941 C6.61275849,1.95834353 6.38724151,1.95834353 6.33458125,2.12496941 L6.0575085,3.00142195 Z" id="Path" fill="#FFD400" mask="url(#mask-2)"></path>
+        <polygon id="Rectangle" fill="#FFFFFF" mask="url(#mask-2)" points="0 6 24 6 24 12 0 12"></polygon>
+        <polygon id="Rectangle" fill="#18A454" mask="url(#mask-2)" points="0 12 24 12 24 18 0 18"></polygon>
+        <rect id="Rectangle" fill="#F12339" mask="url(#mask-2)" x="9" y="0" width="6" height="25"></rect>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <path d="M12,0.25 C15.2446729,0.25 18.1821729,1.56516355 20.3085047,3.69149532 C22.4348365,5.81782709 23.75,8.75532709 23.75,12 C23.75,15.2446729 22.4348365,18.1821729 20.3085047,20.3085047 C18.1821729,22.4348365 15.2446729,23.75 12,23.75 C8.75532709,23.75 5.81782709,22.4348365 3.69149532,20.3085047 C1.56516355,18.1821729 0.25,15.2446729 0.25,12 C0.25,8.75532709 1.56516355,5.81782709 3.69149532,3.69149532 C5.81782709,1.56516355 8.75532709,0.25 12,0.25 Z" id="Mask" stroke-opacity="0.15" stroke="#000000" stroke-width="0.5" fill-rule="nonzero"></path>
+                <rect id="Dark" fill="url(#linearGradient-5)" style="mix-blend-mode: normal;" opacity="0.100000001" x="0" y="12" width="24" height="12"></rect>
+                <rect id="Light" fill="url(#linearGradient-6)" opacity="0.100000001" style="mix-blend-mode: normal;" x="0" y="0" width="24" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

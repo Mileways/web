@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>WN</title>
+    <defs>
+        <linearGradient x1="0.285714286%" y1="49.5628931%" x2="100.655844%" y2="49.5628931%" id="linearGradient-1">
+            <stop stop-color="#3656CC" offset="0%"></stop>
+            <stop stop-color="#304CB2" offset="35%"></stop>
+            <stop stop-color="#283B80" offset="72%"></stop>
+        </linearGradient>
+        <linearGradient x1="9.06261682%" y1="22.9142008%" x2="90.6588785%" y2="67.4871627%" id="linearGradient-2">
+            <stop stop-color="#E61C23" offset="30%"></stop>
+            <stop stop-color="#C3161C" offset="80%"></stop>
+        </linearGradient>
+        <linearGradient x1="14.0671384%" y1="16.6302048%" x2="109.964776%" y2="67.2273694%" id="linearGradient-3">
+            <stop stop-color="#FDBC11" offset="0%"></stop>
+            <stop stop-color="#FCB415" offset="25%"></stop>
+            <stop stop-color="#F89E1C" offset="80%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="WN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M19.982906,0.5 C17.5897436,0.5 15.5555556,1.34 14,2.18 C12.4444444,1.34 10.5299145,0.5 8.01709402,0.5 C3.11111111,0.5 0,3.62 0,9.14 C0,15.74 6.34188034,22.22 14,27.5 C21.6581197,22.34 28,15.86 28,9.14 C28,3.62 24.7692308,0.5 19.982906,0.5 Z" id="Path" fill="#CCCCCC" fill-rule="nonzero"></path>
+        <path d="M0.717948718,9.26 C0.717948718,15.98 7.8974359,22.34 13.8803419,26.54 C15.6752137,25.34 17.4700855,23.9 19.1452991,22.46 C11.1282051,15.74 3.47008547,9.62 0.837606838,7.46 C0.837606838,7.94 0.717948718,8.54 0.717948718,9.26 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+        <path d="M26.6837607,12.38 C20.8205128,7.58 17.3504274,5.06 13.5213675,2.78 C12.4444444,2.18 10.4102564,1.22 8.13675214,1.22 C5.98290598,1.22 4.06837607,1.94 2.75213675,3.26 C1.91452991,4.1 1.31623932,5.18 1.07692308,6.5 C4.06837607,8.66 12.3247863,14.54 20.5811966,21.14 C23.3333333,18.5 25.6068376,15.5 26.6837607,12.38 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+        <path d="M25.1282051,3.26 C23.8119658,1.94 22.017094,1.22 19.8632479,1.22 C17.5897436,1.22 15.9145299,1.94 14.5982906,2.66 C16.8717949,3.98 21.7777778,6.74 26.9230769,10.58 C27.042735,10.1 27.042735,9.5 27.042735,9.02 C27.1623932,6.62 26.4444444,4.58 25.1282051,3.26 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+    </g>
+</svg>
