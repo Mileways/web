@@ -153,11 +153,70 @@
         </p>
       </div>
     </section>
+
+    <section class="container mx-auto my-32">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl font-black mb-5 text-center">Crew</h2>
+
+        <p>
+          Certe, inquam, pertinax non possim accommodare torquatos nostros? quos dolores eos, qui dolorem.
+          Alii autem, quibus ego cum memoriter, tum etiam erga nos amice et quasi.
+        </p>
+      </div>
+
+      <div class="relative px-20 mt-10" style="column-count: 2; column-gap: 2rem;">
+        <div
+          class="w-full absolute left-0 rounded-4xl bg-cover"
+
+          style="background-image: url(/images/sky.png); top: 6rem; bottom: 8rem; z-index: -1;"
+        />
+
+        <CrewCard
+          name="Alex Lueck"
+          position="Founder & CEO"
+          responsive-image-path="/images/team/alex{size}.png"
+        />
+
+        <CrewCard
+          name="Ivan Reif"
+          position="Back-End Development"
+          responsive-image-path="/images/team/ivan{size}.png"
+        />
+
+        <CrewCard
+          name="Stephan Krusche"
+          position="iOS Development"
+          responsive-image-path="/images/team/stephan{size}.png"
+        />
+
+        <div class="pt-20">
+          <CrewCard
+            name="Gernot Poetsch"
+            position="iOS Development"
+            responsive-image-path="/images/team/gernot{size}.png"
+          />
+        </div>
+
+        <CrewCard
+          name="Rico Ocepek"
+          position="Front-End Development"
+          responsive-image-path="/images/team/rico{size}.png"
+        />
+
+        <CrewCard
+          name="Yannick Lung"
+          position="UI/UX Design"
+          responsive-image-path="/images/team/yannick{size}.png"
+        />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
   import FeatureCard from '../components/landing/FeatureCard'
+  import CrewCard from '../components/landing/CrewCard'
+
   import ResponsiveImage from '../components/general/ResponsiveImage'
 
   export default {
