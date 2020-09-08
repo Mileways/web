@@ -115,6 +115,37 @@
         </FeatureCard>
       </div>
     </section>
+
+    <section class="container mx-auto my-20">
+      <div class="rounded-xl bg-gray-200 pt-10">
+        <div class="w-9/12 mx-auto">
+          <h2 class="text-4xl font-black mb-5">Details</h2>
+
+          <p>
+            <span class="font-bold">We love what we do.</span>
+            And that’s why our product is not just a combination of third party services.
+            We have challenged every feature built into Mileways, analyzed every detail, questioned the status quo of flight tracking.
+          </p>
+
+          <p>
+            You’ll find many hand crafted elements in our service, from custom airline logos to beautifully designed country flags, everything is made  to tingle a travelers heart.
+          </p>
+        </div>
+
+        <div>
+          <img
+            srcset="
+              /images/airlines.png,
+              /images/airlines_2x.png 2x,
+              /images/airlines_3x.png 3x
+            "
+            src="/images/airlines.png"
+            class="mx-auto mt-10"
+            alt="Airline logos"
+          >
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
