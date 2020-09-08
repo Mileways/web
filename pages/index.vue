@@ -118,7 +118,7 @@
 
     <section class="container mx-auto my-20">
       <div class="rounded-xl bg-gray-200 pt-10">
-        <div class="w-9/12 mx-auto">
+        <div class="max-w-3xl mx-auto">
           <h2 class="text-4xl font-black mb-5">Details</h2>
 
           <p>
@@ -148,7 +148,7 @@
     </section>
 
     <section class="container mx-auto my-20">
-      <div class="w-9/12 mx-auto">
+      <div class="max-w-3xl mx-auto">
         <h2 class="text-4xl font-black mb-5">Story</h2>
 
         <p>
@@ -171,7 +171,7 @@
         >
       </div>
 
-      <div class="w-9/12 mx-auto">
+      <div class="max-w-3xl mx-auto">
         <p>
           But ever since we believed, that the need was big for a simple, elegant and fast flight tracker.
           A place where people would be able to store their past and upcoming flights beautifully,
