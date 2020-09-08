@@ -5,6 +5,22 @@
 
 @import 'tailwindcss/utilities';
 
+@layer utilities {
+    @responsive {
+        .cols-1 {
+            column-count: 1;
+        }
+
+        .cols-2 {
+            column-count: 2;
+        }
+
+        .cols-3 {
+            column-count: 3;
+        }
+    }
+}
+
 @font-face {
     font-family: 'Inter';
     src: url("../fonts/inter-regular.ttf") format("truetype");
