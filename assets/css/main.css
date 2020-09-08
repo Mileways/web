@@ -21,6 +21,7 @@
     }
 }
 
+/* purgecss start ignore */
 @font-face {
     font-family: 'Inter';
     src: url("../fonts/inter-regular.ttf") format("truetype");
@@ -48,6 +49,7 @@
     font-weight: 900;
     font-display: swap;
 }
+/* purgecss end ignore */
 
 html {
     @apply font-body;
