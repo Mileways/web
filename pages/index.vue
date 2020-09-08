@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="welcome-section">
-        <div class="container mx-auto grid grid-cols-2">
+        <div class="container mx-auto grid md:grid-cols-2">
           <div class="mt-5">
             <h1 class="text-5xl sm:text-6xl mt-3 font-black text-white">
               Go Travel.
@@ -25,7 +25,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="mt-10 md:mt-0">
             <ResponsiveImage
               src="/images/mockups/main_mockup{size}.png"
               class="ml-auto"
@@ -42,7 +42,7 @@
         Certe, inquam, pertinax non possim accommodare torquatos nostros? quos dolores eos, qui dolorem. Alii autem, quibus ego cum memoriter, tum etiam erga nos amice et quasi.
       </p>
 
-      <div class="gap-16 cols-2">
+      <div class="gap-16 cols-1 md:cols-2">
         <FeatureCard title="My Flights">
           <template v-slot:cover>
             <ResponsiveImage
@@ -67,7 +67,7 @@
           Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
         </FeatureCard>
 
-        <div class="pt-56">
+        <div class="md:pt-56">
           <FeatureCard title="Friends' Flights">
             <template v-slot:cover>
               <ResponsiveImage
@@ -96,19 +96,21 @@
     </section>
 
     <section class="container mx-auto my-20">
-      <div class="rounded-4xl bg-gray-200 pt-16">
-        <div class="max-w-3xl mx-auto">
-          <h2 class="text-5xl font-black mb-5">Details</h2>
+      <div class="rounded-4xl bg-gray-200">
+        <div class="pt-16 px-10">
+          <div class="max-w-3xl mx-auto">
+            <h2 class="text-5xl font-black mb-5">Details</h2>
 
-          <p class="text-xl">
-            <span class="font-black">We love what we do.</span>
-            And that’s why our product is not just a combination of third party services.
-            We have challenged every feature built into Mileways, analyzed every detail, questioned the status quo of flight tracking.
-          </p>
+            <p class="text-xl">
+              <span class="font-black">We love what we do.</span>
+              And that’s why our product is not just a combination of third party services.
+              We have challenged every feature built into Mileways, analyzed every detail, questioned the status quo of flight tracking.
+            </p>
 
-          <p class="text-xl">
-            You’ll find many hand crafted elements in our service, from custom airline logos to beautifully designed country flags, everything is made  to tingle a travelers heart.
-          </p>
+            <p class="text-xl">
+              You’ll find many hand crafted elements in our service, from custom airline logos to beautifully designed country flags, everything is made  to tingle a travelers heart.
+            </p>
+          </div>
         </div>
 
         <div>
@@ -239,7 +241,7 @@
     background-image: url(/images/clouds.svg);
     background-position: center calc(99.99999% + 1px);
     background-repeat: repeat-x;
-    background-size: auto 7rem;
+    background-size: auto 20rem;
   }
 
   @screen sm {
