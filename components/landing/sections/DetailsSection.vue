@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto my-20">
-    <div class="rounded-4xl bg-gray-200">
+    <div class="rounded-4xl bg-gray-200 overflow-hidden">
       <div class="pt-16 px-10">
         <div class="max-w-3xl mx-auto">
           <h2 class="text-5xl font-black mb-5">Details</h2>

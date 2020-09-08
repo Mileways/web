@@ -59,15 +59,23 @@
 
   @screen sm {
     .welcome-section {
+      @apply pb-40;
+
       background-size: auto 8rem;
     }
   }
 
-  @screen md {
+  @screen lg {
     .welcome-section {
-      @apply pt-40;
+      @apply pt-40 pb-20;
 
       background-size: auto 19rem;
+    }
+  }
+
+  @screen xl {
+    .welcome-section {
+      @apply pb-0;
     }
   }
 </style>

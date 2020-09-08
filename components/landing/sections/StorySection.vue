@@ -13,7 +13,7 @@
     <div class="rounded-4xl bg-gray-200 p-10 my-10">
       <ResponsiveImage
         src="/images/old_webpage{size}.png"
-        class="mx-auto mt-10"
+        class="mx-auto"
         alt="Old webpage"
       />
     </div>
