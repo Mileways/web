@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-200 rounded-xl overflow-hidden mb-16"
+    class="bg-gray-200 rounded-4xl overflow-hidden mb-16"
     style="-webkit-column-break-inside: avoid;"
   >
     <slot name="cover" />

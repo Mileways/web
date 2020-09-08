@@ -92,12 +92,12 @@
     </section>
 
     <section class="container mx-auto my-20">
-      <div class="rounded-xl bg-gray-200 pt-10">
+      <div class="rounded-4xl bg-gray-200 pt-16">
         <div class="max-w-3xl mx-auto">
           <h2 class="text-4xl font-black mb-5">Details</h2>
 
           <p>
-            <span class="font-bold">We love what we do.</span>
+            <span class="font-black">We love what we do.</span>
             And that’s why our product is not just a combination of third party services.
             We have challenged every feature built into Mileways, analyzed every detail, questioned the status quo of flight tracking.
           </p>
@@ -117,18 +117,18 @@
       </div>
     </section>
 
-    <section class="container mx-auto my-20">
+    <section class="container mx-auto my-32">
       <div class="max-w-3xl mx-auto">
         <h2 class="text-4xl font-black mb-5">Story</h2>
 
         <p>
-          <span class="font-bold">We've come a long way.</span>
+          <span class="font-black">We've come a long way.</span>
           Started in 2013, Mileways was first a service for collecting and redeeming miles independently of airlines.
           We’ve learned it the hard way, that this was not really something people asked for.
         </p>
       </div>
 
-      <div class="rounded-xl bg-gray-200 p-10 my-10">
+      <div class="rounded-4xl bg-gray-200 p-10 my-10">
         <ResponsiveImage
           src="/images/old_webpage{size}.png"
           class="mx-auto mt-10"
@@ -238,7 +238,7 @@
 
   @screen sm {
     .welcome-section {
-      background-size: auto 10rem;
+      background-size: auto 8rem;
     }
   }
 
@@ -246,7 +246,7 @@
     .welcome-section {
       @apply pt-40;
 
-      background-size: auto 15rem;
+      background-size: auto 19rem;
     }
   }
 </style>
