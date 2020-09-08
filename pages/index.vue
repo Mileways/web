@@ -22,16 +22,11 @@
           </div>
 
           <div>
-            <img
-              srcset="
-                /images/mockups/main_mockup.png,
-                /images/mockups/main_mockup_2x.png 2x,
-                /images/mockups/main_mockup_3x.png 3x
-              "
-              src="/images/mockups/main_mockup.png"
+            <ResponsiveImage
+              src="/images/mockups/main_mockup{size}.png"
               class="ml-auto"
               alt="Main mockup"
-            >
+            />
           </div>
         </div>
     </section>
@@ -46,16 +41,11 @@
       <div style="column-count: 2; column-gap: 4rem;">
         <FeatureCard title="My Flights">
           <template v-slot:cover>
-            <img
-                srcset="
-                /images/mockups/my_flights.png,
-                /images/mockups/my_flights_2x.png 2x,
-                /images/mockups/my_flights_3x.png 3x
-              "
-                src="/images/mockups/my_flights.png"
-                class="mx-auto mt-10"
-                alt="My flights mockup"
-            >
+            <ResponsiveImage
+              src="/images/mockups/my_flights{size}.png"
+              class="mx-auto mt-10"
+              alt="My flights mockup"
+            />
           </template>
 
           Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
@@ -63,16 +53,11 @@
 
         <FeatureCard title="Flight Details">
           <template v-slot:cover>
-            <img
-                srcset="
-                /images/mockups/flight_details.png,
-                /images/mockups/flight_details_2x.png 2x,
-                /images/mockups/flight_details_3x.png 3x
-              "
-                src="/images/mockups/flight_details.png"
-                class="mx-auto mt-10"
-                alt="Flight details mockup"
-            >
+            <ResponsiveImage
+              src="/images/mockups/flight_details{size}.png"
+              class="mx-auto mt-10"
+              alt="Flight details mockup"
+            />
           </template>
 
           Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
@@ -81,16 +66,11 @@
         <div class="pt-56">
           <FeatureCard title="Friends' Flights">
             <template v-slot:cover>
-              <img
-                  srcset="
-                  /images/mockups/friends_flights.png,
-                  /images/mockups/friends_flights_2x.png 2x,
-                  /images/mockups/friends_flights_3x.png 3x
-                "
-                  src="/images/mockups/friends_flights.png"
-                  class="mx-auto mt-10"
-                  alt="Friends' flights mockup"
-              >
+              <ResponsiveImage
+                src="/images/mockups/friends_flights{size}.png"
+                class="mx-auto mt-10"
+                alt="Friends' flights mockup"
+              />
             </template>
 
             Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
@@ -99,16 +79,11 @@
 
         <FeatureCard title="Notifications">
           <template v-slot:cover>
-            <img
-                srcset="
-                /images/mockups/notifications.png,
-                /images/mockups/notifications_2x.png 2x,
-                /images/mockups/notifications_3x.png 3x
-              "
-                src="/images/mockups/notifications.png"
-                class="mx-auto mt-10"
-                alt="Notifications mockup"
-            >
+            <ResponsiveImage
+              src="/images/mockups/notifications{size}.png"
+              class="mx-auto mt-10"
+              alt="Notifications mockup"
+            />
           </template>
 
           Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
@@ -133,16 +108,11 @@
         </div>
 
         <div>
-          <img
-            srcset="
-              /images/airlines.png,
-              /images/airlines_2x.png 2x,
-              /images/airlines_3x.png 3x
-            "
-            src="/images/airlines.png"
-            class="mx-auto mt-10"
+          <ResponsiveImage
+            src="/images/airlines{size}.png"
+            class="mx-auto mt-10 w-full"
             alt="Airline logos"
-          >
+          />
         </div>
       </div>
     </section>
@@ -159,16 +129,11 @@
       </div>
 
       <div class="rounded-xl bg-gray-200 p-10 my-10">
-        <img
-          srcset="
-            /images/old_webpage.png,
-            /images/old_webpage_2x.png 2x,
-            /images/old_webpage_3x.png 3x
-          "
-          src="/images/old_webpage.png"
+        <ResponsiveImage
+          src="/images/old_webpage{size}.png"
           class="mx-auto mt-10"
           alt="Old webpage"
-        >
+        />
       </div>
 
       <div class="max-w-3xl mx-auto">
@@ -193,11 +158,12 @@
 
 <script>
   import FeatureCard from '../components/landing/FeatureCard'
+  import ResponsiveImage from '../components/general/ResponsiveImage'
 
   export default {
     layout: 'empty',
 
-    components: { FeatureCard }
+    components: { FeatureCard, CrewCard, ResponsiveImage }
   }
 </script>
 
