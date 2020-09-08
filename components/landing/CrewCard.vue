@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded-4xl bg-gray-100 p-5 mb-5 flex relative items-center"
+    class="rounded-4xl bg-gray-100 p-5 mb-5 md:mb-10 flex relative items-center"
     style="break-inside: avoid;"
   >
     <ResponsiveImage
@@ -11,11 +11,11 @@
     />
 
     <div class="flex-grow">
-      <h3 class="font-bold text-lg">
+      <h3 class="font-bold text-2xl">
         {{ name }}
       </h3>
 
-      <span class="text-gray-400">
+      <span class="text-gray-400 text-xl">
         {{ position }}
       </span>
     </div>

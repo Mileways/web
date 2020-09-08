@@ -6,7 +6,7 @@
     <slot name="cover" />
 
     <div class="bg-gray-100 p-10 text-left">
-      <h3 class="text-3xl font-bold">
+      <h3 class="text-3xl font-black">
         {{ title }}
       </h3>
 

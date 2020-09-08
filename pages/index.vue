@@ -2,16 +2,20 @@
   <div>
     <section class="welcome-section">
         <div class="container mx-auto grid grid-cols-2">
-          <div>
+          <div class="mt-5">
             <h1 class="text-5xl sm:text-6xl mt-3 font-black text-white">
               Go Travel.
             </h1>
 
-            <p class="text-white text-4xl">
+            <p class="text-white text-4xl max-w-md">
               Everything you need to know about your flights and your friends' flights.
               <br>
 
-              <span class="font-bold">Fast, convenient and beautiful.</span>
+              <span class="font-bold">
+                Fast, convenient
+                <br>
+                and beautiful.
+              </span>
 
               <img
                 src="/images/download.svg"
@@ -32,13 +36,13 @@
     </section>
 
     <section class="text-center container mx-auto">
-      <h2 class="text-4xl font-black mb-5">Features</h2>
+      <h2 class="text-5xl font-black mb-5">Features</h2>
 
-      <p class="max-w-3xl inline-block mx-auto text-left text-xl text-gray-700 mb-20">
+      <p class="max-w-3xl inline-block mx-auto text-left text-xl text-gray-700 mb-12">
         Certe, inquam, pertinax non possim accommodare torquatos nostros? quos dolores eos, qui dolorem. Alii autem, quibus ego cum memoriter, tum etiam erga nos amice et quasi.
       </p>
 
-      <div style="column-count: 2; column-gap: 4rem;">
+      <div class="gap-16 cols-2">
         <FeatureCard title="My Flights">
           <template v-slot:cover>
             <ResponsiveImage
@@ -94,15 +98,15 @@
     <section class="container mx-auto my-20">
       <div class="rounded-4xl bg-gray-200 pt-16">
         <div class="max-w-3xl mx-auto">
-          <h2 class="text-4xl font-black mb-5">Details</h2>
+          <h2 class="text-5xl font-black mb-5">Details</h2>
 
-          <p>
+          <p class="text-xl">
             <span class="font-black">We love what we do.</span>
             And that’s why our product is not just a combination of third party services.
             We have challenged every feature built into Mileways, analyzed every detail, questioned the status quo of flight tracking.
           </p>
 
-          <p>
+          <p class="text-xl">
             You’ll find many hand crafted elements in our service, from custom airline logos to beautifully designed country flags, everything is made  to tingle a travelers heart.
           </p>
         </div>
@@ -119,9 +123,9 @@
 
     <section class="container mx-auto my-32">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-black mb-5">Story</h2>
+        <h2 class="text-5xl font-black mb-5">Story</h2>
 
-        <p>
+        <p class="text-xl">
           <span class="font-black">We've come a long way.</span>
           Started in 2013, Mileways was first a service for collecting and redeeming miles independently of airlines.
           We’ve learned it the hard way, that this was not really something people asked for.
@@ -137,7 +141,7 @@
       </div>
 
       <div class="max-w-3xl mx-auto">
-        <p>
+        <p class="text-xl">
           But ever since we believed, that the need was big for a simple, elegant and fast flight tracker.
           A place where people would be able to store their past and upcoming flights beautifully,
           a place where relevant information about flights is being sent ridiculously fast,
@@ -146,7 +150,7 @@
           And most of all, a reliable service which supports all air passengers and people serving the sky during their journeys.
         </p>
 
-        <p>
+        <p class="text-xl">
           So we have used all our years of experience in this market,
           all our knowledge and power to deliver the new version of Mileways.
           And we hope you enjoy it as much as wo love to work on it.
@@ -156,58 +160,60 @@
 
     <section class="container mx-auto my-32">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-black mb-5 text-center">Crew</h2>
+        <h2 class="text-5xl font-black mb-5 text-center">Crew</h2>
 
-        <p>
+        <p class="text-xl">
           Certe, inquam, pertinax non possim accommodare torquatos nostros? quos dolores eos, qui dolorem.
           Alii autem, quibus ego cum memoriter, tum etiam erga nos amice et quasi.
         </p>
       </div>
 
-      <div class="relative px-20 mt-10" style="column-count: 2; column-gap: 2rem;">
+      <div class="relative md:px-20 mt-10">
         <div
-          class="w-full absolute left-0 rounded-4xl bg-cover"
+          class="w-full absolute left-0 rounded-4xl bg-cover hidden md:block"
 
           style="background-image: url(/images/sky.png); top: 6rem; bottom: 8rem; z-index: -1;"
         />
 
-        <CrewCard
-          name="Alex Lueck"
-          position="Founder & CEO"
-          responsive-image-path="/images/team/alex{size}.png"
-        />
-
-        <CrewCard
-          name="Ivan Reif"
-          position="Back-End Development"
-          responsive-image-path="/images/team/ivan{size}.png"
-        />
-
-        <CrewCard
-          name="Stephan Krusche"
-          position="iOS Development"
-          responsive-image-path="/images/team/stephan{size}.png"
-        />
-
-        <div class="pt-20">
+        <div class="mx-auto gap-8 cols-1 md:cols-2">
           <CrewCard
-            name="Gernot Poetsch"
+            name="Alex Lueck"
+            position="Founder & CEO"
+            responsive-image-path="/images/team/alex{size}.png"
+          />
+
+          <CrewCard
+            name="Ivan Reif"
+            position="Back-End Development"
+            responsive-image-path="/images/team/ivan{size}.png"
+          />
+
+          <CrewCard
+            name="Stephan Krusche"
             position="iOS Development"
-            responsive-image-path="/images/team/gernot{size}.png"
+            responsive-image-path="/images/team/stephan{size}.png"
+          />
+
+          <div class="md:pt-32">
+            <CrewCard
+              name="Gernot Poetsch"
+              position="iOS Development"
+              responsive-image-path="/images/team/gernot{size}.png"
+            />
+          </div>
+
+          <CrewCard
+            name="Rico Ocepek"
+            position="Front-End Development"
+            responsive-image-path="/images/team/rico{size}.png"
+          />
+
+          <CrewCard
+            name="Yannick Lung"
+            position="UI/UX Design"
+            responsive-image-path="/images/team/yannick{size}.png"
           />
         </div>
-
-        <CrewCard
-          name="Rico Ocepek"
-          position="Front-End Development"
-          responsive-image-path="/images/team/rico{size}.png"
-        />
-
-        <CrewCard
-          name="Yannick Lung"
-          position="UI/UX Design"
-          responsive-image-path="/images/team/yannick{size}.png"
-        />
       </div>
     </section>
   </div>
