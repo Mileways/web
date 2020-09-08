@@ -21,35 +21,33 @@
     }
 }
 
-/* purgecss start ignore */
 @font-face {
     font-family: 'Inter';
-    src: url("../fonts/inter-regular.ttf") format("truetype");
-    font-weight: normal;
+    src: url("/fonts/inter-regular.ttf") format("truetype");
+    font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url("../fonts/inter-semibold.ttf") format("truetype");
+    src: url("/fonts/inter-semibold.ttf") format("truetype");
     font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url("../fonts/inter-bold.ttf") format("truetype");
+    src: url("/fonts/inter-bold.ttf") format("truetype");
     font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url("../fonts/inter-black.ttf") format("truetype");
+    src: url("/fonts/inter-black.ttf") format("truetype");
     font-weight: 900;
     font-display: swap;
 }
-/* purgecss end ignore */
 
 html {
     @apply font-body;
