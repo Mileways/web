@@ -71,7 +71,8 @@ export default {
 
   generate: {
     exclude: [
-      /^\/flights/
+      /^\/flights/,
+      /^\/pages\/plain/,
     ],
 
     fallback: 'spa.html'
