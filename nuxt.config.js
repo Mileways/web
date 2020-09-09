@@ -5,6 +5,10 @@ export default {
 
   target: 'static',
 
+  modules: [
+    '@nuxt/content'
+  ],
+
   server: {
     port: 8000,
     host: '0.0.0.0'
