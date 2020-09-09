@@ -3,9 +3,12 @@
     <div class="container mx-auto">
       <nav class="grid grid-cols-3">
         <ul>
-          <li>Terms & Conditions</li>
-          <li>Privacy Policy</li>
-          <li>About us</li>
+          <li>
+            <nuxt-link to="/pages/terms-and-conditions">Terms & Conditions</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/pages/privacy-policy">Privacy Policy</nuxt-link>
+          </li>
         </ul>
       </nav>
 
