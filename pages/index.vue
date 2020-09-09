@@ -16,8 +16,6 @@
   import CrewSection from '../components/landing/sections/CrewSection'
 
   export default {
-    layout: 'empty',
-
     components: { WelcomeSection, FeatureSection, DetailsSection, StorySection, CrewSection }
   }
 </script>

@@ -1,7 +1,9 @@
 <template>
   <header class="py-5 flex items-center bg-primary">
     <div class="container mx-auto">
-      <img src="/images/logo_text.svg" alt="Mileways Logo">
+      <nuxt-link to="/">
+        <img src="/images/logo_text.svg" alt="Mileways Logo">
+      </nuxt-link>
     </div>
   </header>
 </template>

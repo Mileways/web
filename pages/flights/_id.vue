@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full mt-10">
     <div
       v-if="flight"
       class="w-11/12 mx-auto max-w-4xl"
