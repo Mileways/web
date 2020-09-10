@@ -16,11 +16,13 @@
             and beautiful.
           </span>
 
-          <img
-            src="/images/download.svg"
-            alt="Download on the App Store"
-            class="h-10 mt-5"
-          >
+          <a :href="appStoreUrl">
+            <img
+              src="/images/download.svg"
+              alt="Download on the App Store"
+              class="h-10 mt-5"
+            >
+          </a>
         </p>
       </div>
 
@@ -43,7 +45,13 @@
   export default Vue.extend({
     name: 'WelcomeSection',
 
-    components: { ResponsiveImage }
+    components: { ResponsiveImage },
+
+    computed: {
+      appStoreUrl() {
+        return process.env.APP_STORE_URL
+      }
+    }
   })
 </script>
 

@@ -21,17 +21,18 @@
     }
 }
 
+/* purgecss start ignore */
 @font-face {
     font-family: 'Inter';
-    src: url("/fonts/inter-regular.ttf") format("truetype");
-    font-weight: 400;
+    src: url("/fonts/inter-semibold.ttf") format("truetype");
+    font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url("/fonts/inter-semibold.ttf") format("truetype");
-    font-weight: 600;
+    src: url("/fonts/inter-regular.ttf") format("truetype");
+    font-weight: 400;
     font-display: swap;
 }
 
@@ -48,6 +49,7 @@
     font-weight: 900;
     font-display: swap;
 }
+/* purgecss end ignore */
 
 html {
     @apply font-body;
