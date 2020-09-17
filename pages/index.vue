@@ -5,6 +5,10 @@
     <DetailsSection />
     <StorySection />
     <CrewSection />
+
+    <client-only>
+      <CookieDisclaimer />
+    </client-only>
   </div>
 </template>
 
@@ -15,7 +19,9 @@
   import StorySection from '../components/landing/sections/StorySection'
   import CrewSection from '../components/landing/sections/CrewSection'
 
+  import CookieDisclaimer from '../components/general/CookieDisclaimer'
+
   export default {
-    components: { WelcomeSection, FeatureSection, DetailsSection, StorySection, CrewSection }
+    components: { WelcomeSection, FeatureSection, DetailsSection, StorySection, CrewSection, CookieDisclaimer }
   }
 </script>
