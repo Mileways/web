@@ -4,7 +4,7 @@
     class="disclaimer"
   >
     <p class="text-gray-700">
-       This website uses cookies. By using our website you consent to our use of these cookies. For more information on please visit our
+       This website uses cookies. By using our website you consent to our use of these cookies. For more information on this, please visit our
       <nuxt-link to="/pages/privacy-policy" class="text-primary">Privacy Policy</nuxt-link>.
     </p>
 
