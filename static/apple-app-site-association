@@ -1,0 +1,27 @@
+{
+  "webcredentials": {
+    "apps": [
+      "4MP7YM8URT.com.mileways.app",
+      "R34ZEMABE6.com.mileways.beta"
+    ]
+  },
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "4MP7YM8URT.com.mileways.app",
+        "paths": [
+          "/flights/*",
+          "/traveler/*"
+        ]
+      },
+      {
+        "appID": "R34ZEMABE6.com.mileways.beta",
+        "paths": [
+          "/flights/*",
+          "/traveler/*"
+        ]
+      }
+    ]
+  }
+}
