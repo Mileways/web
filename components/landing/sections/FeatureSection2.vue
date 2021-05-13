@@ -2,11 +2,11 @@
   <section class="bg-black text-white py-24">
     <div class="container mx-auto">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-6xl font-black mb-8 text-primary leading-tight">
+        <h2 class="text-5xl sm:text-6xl font-black mb-8 text-primary leading-tight">
           Some Two Row Sample Headline For a Feature
         </h2>
 
-        <p class="text-4xl mb-12 font-semibold">
+        <p class="text-3xl sm:text-4xl mb-12 font-semibold">
           We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
         </p>
       </div>
@@ -28,8 +28,8 @@
           </div>
         </div>
 
-        <div class="rounded-4xl bg-gray-800 flex items-center overflow-hidden">
-          <div class="w-7/12">
+        <div class="rounded-4xl bg-gray-800 flex flex-wrap lg:flex-no-wrap items-center overflow-hidden">
+          <div class="w-full lg:w-7/12">
             <ResponsiveImage
               src="/images/mockups/greeting_sign{size}.png"
               alt="Airport greeting sign"
@@ -37,7 +37,7 @@
             />
           </div>
 
-          <div class="px-12 w-5/12">
+          <div class="px-12 w-full lg:w-5/12">
             <h3 class="font-black text-3xl mb-6">Airport Greeting Sign</h3>
 
             <p class="text-gray-300 mb-0">
@@ -46,8 +46,8 @@
           </div>
         </div>
 
-        <div class="rounded-4xl bg-gray-800 flex items-center overflow-hidden">
-          <div class="px-12 w-5/12">
+        <div class="rounded-4xl bg-gray-800 flex flex-wrap lg:flex-no-wrap items-center overflow-hidden">
+          <div class="px-12 w-full lg:w-5/12">
             <h3 class="font-black text-3xl mb-6">Web Sharing</h3>
 
             <p class="text-gray-300 mb-0">
@@ -55,7 +55,7 @@
             </p>
           </div>
 
-          <div class="w-7/12">
+          <div class="w-full lg:w-7/12">
             <ResponsiveImage
               src="/images/mockups/web_sharing{size}.png"
               alt="Web Sharing"

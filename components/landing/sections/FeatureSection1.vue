@@ -1,11 +1,11 @@
 <template>
   <section class="container mx-auto py-24">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-6xl font-black mb-8 text-primary leading-tight">
+      <h2 class="text-5xl sm:text-6xl font-black mb-8 text-primary leading-tight">
         Some Two Row Sample Headline For a Feature
       </h2>
 
-      <p class="text-4xl text-gray-700 mb-8 font-semibold">
+      <p class="text-3xl sm:text-4xl text-gray-700 mb-8 font-semibold">
         We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
       </p>
 
@@ -14,15 +14,15 @@
       </p>
     </div>
 
-    <div class="rounded-4xl bg-gray-200 mb-8 flex items-center overflow-hidden">
-      <div class="bg-gray-300 pt-12 px-12 w-5/12">
+    <div class="rounded-4xl bg-gray-200 mb-8 flex flex-wrap lg:flex-no-wrap items-center overflow-hidden">
+      <div class="bg-gray-300 pt-12 px-12 w-full lg:w-5/12">
         <ResponsiveImage
           src="/images/mockups/flights{size}.png"
           alt="Flights"
         />
       </div>
 
-      <div class="px-20 w-7/12">
+      <div class="px-20 w-full lg:w-7/12">
         <h3 class="font-black text-3xl mb-6">Flights</h3>
 
         <p class="text-xl text-gray-700 mb-0">
@@ -31,8 +31,8 @@
       </div>
     </div>
 
-    <div class="rounded-4xl bg-gray-200 mb-8 flex items-center overflow-hidden">
-      <div class="px-20 w-7/12">
+    <div class="rounded-4xl bg-gray-200 mb-8 flex flex-wrap lg:flex-no-wrap items-center overflow-hidden">
+      <div class="px-20 lg:w-7/12">
         <h3 class="font-black text-3xl mb-6">Flight Details</h3>
 
         <p class="text-xl text-gray-700 mb-0">
@@ -40,10 +40,11 @@
         </p>
       </div>
 
-      <div class="bg-gray-300 pt-12 px-12 w-5/12">
+      <div class="bg-gray-300 pt-12 px-12 w-full lg:w-5/12">
         <ResponsiveImage
           src="/images/mockups/flight_details{size}.png"
           alt="Flight details"
+          class="w-full"
         />
       </div>
     </div>

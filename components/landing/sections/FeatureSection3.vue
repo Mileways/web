@@ -2,17 +2,17 @@
   <section class="bg-primary text-white py-24">
     <div class="container mx-auto">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-6xl font-black mb-8 leading-tight">
+        <h2 class="text-5xl sm:text-6xl font-black mb-8 leading-tight">
           Some Two Row Sample Headline For a Feature
         </h2>
 
-        <p class="text-4xl mb-12 font-semibold text-gray-200">
+        <p class="text-3xl sm:text-4xl mb-12 font-semibold text-gray-200">
           We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
         </p>
       </div>
 
-      <div class="rounded-4xl bg-gray-200 mb-8 flex items-center overflow-hidden text-black">
-        <div class="px-20 w-7/12">
+      <div class="rounded-4xl bg-gray-200 mb-8 flex flex-wrap lg:flex-no-wrap items-center overflow-hidden text-black">
+        <div class="px-20 w-full lg:w-7/12">
           <h3 class="font-black text-3xl mb-6">Notifications</h3>
 
           <p class="text-xl text-gray-700">
@@ -24,7 +24,7 @@
           </p>
         </div>
 
-        <div class="bg-gray-300 w-5/12">
+        <div class="bg-gray-300 w-full lg:w-5/12">
           <ResponsiveImage
             src="/images/mockups/notifications{size}.png"
             alt="Notifications"
@@ -34,7 +34,7 @@
       </div>
 
       <div
-        class="-mb-8 text-black gap-8 grid grid-cols-3"
+        class="-mb-8 text-black gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
         <div class="flex flex-col">
           <div
