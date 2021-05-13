@@ -39,7 +39,7 @@
         <div class="flex flex-col">
           <div
               class="rounded-4xl text-white bg-cover bg-center pt-10 px-10 mb-8"
-              style="break-inside: avoid; background-image: url(/images/backgrounds/green_haze.svg);"
+              style="break-inside: avoid; background-image: url(/images/backgrounds/green_haze.jpg);"
           >
             <h3 class="h3">Widgets</h3>
 
