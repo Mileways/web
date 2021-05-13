@@ -2,18 +2,18 @@
   <section class="bg-primary text-white py-24">
     <div class="container mx-auto">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-5xl sm:text-6xl font-black mb-8 leading-tight">
+        <h2 class="h2">
           Some Two Row Sample Headline For a Feature
         </h2>
 
-        <p class="text-3xl sm:text-4xl mb-12 font-semibold text-gray-200">
+        <p class="h4 mb-12 text-gray-200">
           We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
         </p>
       </div>
 
-      <div class="rounded-4xl bg-gray-200 mb-8 flex flex-wrap lg:flex-no-wrap items-center overflow-hidden text-black">
+      <div class="light-card flex-card mb-8">
         <div class="px-20 w-full lg:w-7/12">
-          <h3 class="font-black text-3xl mb-6">Notifications</h3>
+          <h3 class="h3 mb-6">Notifications</h3>
 
           <p class="text-xl text-gray-700">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -38,10 +38,10 @@
       >
         <div class="flex flex-col">
           <div
-              class="rounded-4xl text-white bg-cover bg-center pt-10 px-10 overflow-hidden mb-8"
+              class="rounded-4xl text-white bg-cover bg-center pt-10 px-10 mb-8"
               style="break-inside: avoid; background-image: url(/images/backgrounds/green_haze.svg);"
           >
-            <h3 class="font-black text-3xl mb-3">Widgets</h3>
+            <h3 class="h3">Widgets</h3>
 
             <p>
               Ut placet, inquam tum dicere exorsus est.
@@ -55,10 +55,10 @@
           </div>
 
           <div
-              class="rounded-4xl bg-gray-200 p-10 mb-8 flex-grow"
+              class="light-card p-10 mb-8 flex-grow"
               style="break-inside: avoid;"
           >
-            <h3 class="font-black text-3xl mb-3">Aircraft Illustrations</h3>
+            <h3 class="h3">Aircraft Illustrations</h3>
 
             <p class="text-gray-700 mb-8">
               Ut placet, inquam tum dicere exorsus est consecutus? laudem et impetus.
@@ -74,10 +74,10 @@
 
         <div class="flex flex-col">
           <div
-              class="rounded-4xl bg-gray-200 p-10 mb-8 flex-grow"
+              class="light-card p-10 mb-8 flex-grow"
               style="break-inside: avoid;"
           >
-            <h3 class="font-black text-3xl mb-3">Statistics</h3>
+            <h3 class="h3">Statistics</h3>
 
             <p class="text-gray-700 mb-8">
               Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
@@ -91,11 +91,11 @@
           </div>
 
           <div
-              class="rounded-4xl bg-gray-200 mb-8 overflow-hidden flex-grow"
+              class="light-card mb-8 flex-grow"
               style="break-inside: avoid;"
           >
             <div class="p-10">
-              <h3 class="font-black text-3xl mb-3">Airline Logos</h3>
+              <h3 class="h3">Airline Logos</h3>
 
               <p class="text-gray-700 mb-8">
                 Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus.
@@ -112,10 +112,10 @@
 
         <div class="flex flex-col">
           <div
-              class="rounded-4xl bg-gray-200 p-10 mb-8 flex-grow"
+              class="light-card p-10 mb-8 flex-grow"
               style="break-inside: avoid;"
           >
-            <h3 class="font-black text-3xl mb-3">App Icons</h3>
+            <h3 class="h3">App Icons</h3>
 
             <p class="text-gray-700 mb-8">
               Ut placet, inquam tum.
@@ -129,10 +129,10 @@
           </div>
 
           <div
-              class="rounded-4xl bg-gray-200 p-10 mb-8 flex-grow"
+              class="light-card p-10 mb-8 flex-grow"
               style="break-inside: avoid;"
           >
-            <h3 class="font-black text-3xl mb-3">Country flags</h3>
+            <h3 class="h3">Country flags</h3>
 
             <p class="text-gray-700 mb-8">
               Ut placet, inquam tum dicere exorsus est consecutus? laudem et impetus.
@@ -153,12 +153,11 @@
 <script>
   import Vue from 'vue'
 
-  import FeatureCard from '../FeatureCard'
   import ResponsiveImage from '../../general/ResponsiveImage'
 
   export default Vue.extend({
     name: 'FeatureSection2',
 
-    components: { FeatureCard, ResponsiveImage }
+    components: { ResponsiveImage }
   })
 </script>

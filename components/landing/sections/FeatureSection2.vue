@@ -2,19 +2,19 @@
   <section class="bg-black text-white py-24">
     <div class="container mx-auto">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-5xl sm:text-6xl font-black mb-8 text-primary leading-tight">
+        <h2 class="h2 text-primary">
           Some Two Row Sample Headline For a Feature
         </h2>
 
-        <p class="text-3xl sm:text-4xl mb-12 font-semibold">
+        <p class="h4 mb-12">
           We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
         </p>
       </div>
 
       <div class="grid gap-8">
-        <div class="rounded-4xl bg-gray-800 p-10 overflow-hidden">
+        <div class="dark-card p-10">
           <div class="max-w-2xl mx-auto">
-            <h3 class="font-black text-3xl mb-3">Friend's Flights</h3>
+            <h3 class="h3">Friend's Flights</h3>
 
             <p class="text-gray-300 mb-16">
               Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <div class="rounded-4xl bg-gray-800 flex flex-wrap lg:flex-no-wrap items-center overflow-hidden">
+        <div class="dark-card flex-card">
           <div class="w-full lg:w-7/12">
             <ResponsiveImage
               src="/images/mockups/greeting_sign{size}.png"
@@ -38,7 +38,7 @@
           </div>
 
           <div class="px-12 w-full lg:w-5/12">
-            <h3 class="font-black text-3xl mb-6">Airport Greeting Sign</h3>
+            <h3 class="h3 mb-6">Airport Greeting Sign</h3>
 
             <p class="text-gray-300 mb-0">
               Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
@@ -46,9 +46,9 @@
           </div>
         </div>
 
-        <div class="rounded-4xl bg-gray-800 flex flex-wrap lg:flex-no-wrap items-center overflow-hidden">
+        <div class="dark-card flex-card">
           <div class="px-12 w-full lg:w-5/12">
-            <h3 class="font-black text-3xl mb-6">Web Sharing</h3>
+            <h3 class="h3 mb-6">Web Sharing</h3>
 
             <p class="text-gray-300 mb-0">
               Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
@@ -71,12 +71,11 @@
 <script>
   import Vue from 'vue'
 
-  import FeatureCard from '../FeatureCard'
   import ResponsiveImage from '../../general/ResponsiveImage'
 
   export default Vue.extend({
     name: 'FeatureSection2',
 
-    components: { FeatureCard, ResponsiveImage }
+    components: { ResponsiveImage }
   })
 </script>
