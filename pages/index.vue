@@ -1,10 +1,9 @@
 <template>
   <div>
     <WelcomeSection />
-    <FeatureSection />
-    <DetailsSection />
-    <StorySection />
-    <CrewSection />
+    <FeatureSection1 />
+    <FeatureSection2 />
+    <FeatureSection3 />
 
     <client-only>
       <CookieDisclaimer />
@@ -14,14 +13,13 @@
 
 <script>
   import WelcomeSection from '../components/landing/sections/WelcomeSection'
-  import FeatureSection from '../components/landing/sections/FeatureSection'
-  import DetailsSection from '../components/landing/sections/DetailsSection'
-  import StorySection from '../components/landing/sections/StorySection'
-  import CrewSection from '../components/landing/sections/CrewSection'
+  import FeatureSection1 from '../components/landing/sections/FeatureSection1'
+  import FeatureSection2 from '../components/landing/sections/FeatureSection2'
+  import FeatureSection3 from '../components/landing/sections/FeatureSection3'
 
   import CookieDisclaimer from '../components/general/CookieDisclaimer'
 
   export default {
-    components: { WelcomeSection, FeatureSection, DetailsSection, StorySection, CrewSection, CookieDisclaimer }
+    components: { WelcomeSection, FeatureSection1, FeatureSection2, FeatureSection3, CookieDisclaimer }
   }
 </script>
