@@ -12,7 +12,7 @@
       </div>
 
       <div class="light-card flex-card mb-8">
-        <div class="px-20 w-full lg:w-7/12">
+        <div class="p-10 lg:px-20 lg:py-0 w-full lg:w-7/12">
           <h3 class="h3 mb-6">Notifications</h3>
 
           <p class="text-xl text-gray-700">
@@ -156,7 +156,7 @@
   import ResponsiveImage from '../../general/ResponsiveImage'
 
   export default Vue.extend({
-    name: 'FeatureSection2',
+    name: 'FeatureSection3',
 
     components: { ResponsiveImage }
   })

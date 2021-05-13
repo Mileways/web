@@ -37,7 +37,7 @@
             />
           </div>
 
-          <div class="px-12 w-full lg:w-5/12">
+          <div class="p-10 lg:px-12 lg:py-0 w-full lg:w-5/12">
             <h3 class="h3 mb-6">Airport Greeting Sign</h3>
 
             <p class="text-gray-300 mb-0">
@@ -47,7 +47,7 @@
         </div>
 
         <div class="dark-card flex-card">
-          <div class="px-12 w-full lg:w-5/12">
+          <div class="p-10 lg:px-12 lg:py-0 w-full lg:w-5/12">
             <h3 class="h3 mb-6">Web Sharing</h3>
 
             <p class="text-gray-300 mb-0">

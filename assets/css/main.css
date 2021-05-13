@@ -87,7 +87,7 @@ p {
     }
 }
 
-@screen lg {
+@screen md {
     .flex-card {
         @apply flex-no-wrap;
     }
