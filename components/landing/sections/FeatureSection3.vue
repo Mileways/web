@@ -1,43 +1,45 @@
 <template>
-  <section class="text-center bg-primary text-white py-16">
+  <section class="bg-primary text-white py-24">
     <div class="container mx-auto">
-      <h2 class="text-5xl font-black mb-5">
-        Some Two Row Sample Headline For a Feature
-      </h2>
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-6xl font-black mb-8 leading-tight">
+          Some Two Row Sample Headline For a Feature
+        </h2>
 
-      <p>
-        We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
-      </p>
+        <p class="text-4xl mb-12 font-semibold text-gray-200">
+          We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
+        </p>
+      </div>
 
-      <div class="rounded-4xl bg-gray-200 p-10 my-10">
+      <div class="rounded-4xl bg-gray-200 p-10 mb-8">
 
       </div>
 
       <div
-          class="mt-10"
-          style="column-count: 2;"
+        class="-mb-8"
+        style="column-count: 2;"
       >
-        <div class="rounded-4xl bg-gray-200 p-10 mb-10">
+        <div class="rounded-4xl bg-gray-200 p-10 mb-8">
 
         </div>
 
-        <div class="rounded-4xl bg-gray-200 p-10 mb-10">
+        <div class="rounded-4xl bg-gray-200 p-10 mb-8">
 
         </div>
 
-        <div class="rounded-4xl bg-gray-200 p-10 mb-10">
+        <div class="rounded-4xl bg-gray-200 p-10 mb-8">
 
         </div>
 
-        <div class="rounded-4xl bg-gray-200 p-10 mb-10">
+        <div class="rounded-4xl bg-gray-200 p-10 mb-8">
 
         </div>
 
-        <div class="rounded-4xl bg-gray-200 p-10 mb-10">
+        <div class="rounded-4xl bg-gray-200 p-10 mb-8">
 
         </div>
 
-        <div class="rounded-4xl bg-gray-200 p-10 mb-10">
+        <div class="rounded-4xl bg-gray-200 p-10 mb-8">
 
         </div>
       </div>

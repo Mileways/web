@@ -1,24 +1,28 @@
 <template>
-  <section class="text-center bg-black text-white py-16">
+  <section class="bg-black text-white py-24">
     <div class="container mx-auto">
-      <h2 class="text-5xl font-black mb-5 text-primary">
-        Some Two Row Sample Headline For a Feature
-      </h2>
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-6xl font-black mb-8 text-primary leading-tight">
+          Some Two Row Sample Headline For a Feature
+        </h2>
 
-      <p>
-        We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
-      </p>
-
-      <div class="rounded-4xl bg-gray-200 p-10 my-10">
-
+        <p class="text-4xl mb-12 font-semibold">
+          We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
+        </p>
       </div>
 
-      <div class="rounded-4xl bg-gray-200 p-10 my-10">
+      <div class="grid gap-8">
+        <div class="rounded-4xl bg-gray-200 p-10">
 
-      </div>
+        </div>
 
-      <div class="rounded-4xl bg-gray-200 p-10 my-10">
+        <div class="rounded-4xl bg-gray-200 p-10">
 
+        </div>
+
+        <div class="rounded-4xl bg-gray-200 p-10">
+
+        </div>
       </div>
     </div>
   </section>
