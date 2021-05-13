@@ -26,9 +26,8 @@
 
         <div class="bg-gray-300 w-5/12">
           <ResponsiveImage
-            src="https://placekitten.com/440/610"
-            alt=""
-            :sizes="[]"
+            src="/images/mockups/notifications{size}.png"
+            alt="Notifications"
             class="w-full"
           />
         </div>
@@ -40,7 +39,7 @@
         <div class="flex flex-col">
           <div
               class="rounded-4xl text-white bg-cover bg-center pt-10 px-10 overflow-hidden mb-8"
-              style="break-inside: avoid; background-image: url(https://placekitten.com/g/400/400);"
+              style="break-inside: avoid; background-image: url(/images/backgrounds/green_haze.svg);"
           >
             <h3 class="font-black text-3xl mb-3">Widgets</h3>
 
@@ -49,10 +48,9 @@
             </p>
 
             <ResponsiveImage
-                src="https://placekitten.com/267/183"
-                alt=""
-                :sizes="[]"
-                class="w-full"
+              src="/images/mockups/widgets{size}.png"
+              alt="Widgets"
+              class="w-full"
             />
           </div>
 
@@ -67,10 +65,9 @@
             </p>
 
             <ResponsiveImage
-                src="https://placekitten.com/272/108"
-                alt=""
-                :sizes="[]"
-                class="w-full"
+              src="/images/elements/plane{size}.png"
+              alt="Plane"
+              class="w-full"
             />
           </div>
         </div>
@@ -87,10 +84,9 @@
             </p>
 
             <ResponsiveImage
-                src="https://placekitten.com/240/56"
-                alt=""
-                :sizes="[]"
-                class="w-full"
+              src="/images/elements/counter{size}.png"
+              alt="Mile counter"
+              class="w-full"
             />
           </div>
 
@@ -107,10 +103,9 @@
             </div>
 
             <ResponsiveImage
-                src="https://placekitten.com/320/80"
-                alt=""
-                :sizes="[]"
-                class="w-full"
+              src="/images/elements/airline_logos{size}.png"
+              alt="Airline logos"
+              class="w-full"
             />
           </div>
         </div>
@@ -127,10 +122,9 @@
             </p>
 
             <ResponsiveImage
-                src="https://placekitten.com/208/134"
-                alt=""
-                :sizes="[]"
-                class="w-full"
+              src="/images/elements/app_icons{size}.png"
+              alt="App Icons"
+              class="w-full"
             />
           </div>
 
@@ -145,10 +139,9 @@
             </p>
 
             <ResponsiveImage
-                src="https://placekitten.com/206/144"
-                alt=""
-                :sizes="[]"
-                class="w-full"
+              src="/images/elements/country_flags{size}.png"
+              alt="Country flags"
+              class="w-full"
             />
           </div>
         </div>

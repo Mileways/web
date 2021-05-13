@@ -17,9 +17,8 @@
     <div class="rounded-4xl bg-gray-200 mb-8 flex items-center overflow-hidden">
       <div class="bg-gray-300 pt-12 px-12 w-5/12">
         <ResponsiveImage
-          src="https://placekitten.com/343/610"
-          alt=""
-          :sizes="[]"
+          src="/images/mockups/flights{size}.png"
+          alt="Flights"
         />
       </div>
 
@@ -43,9 +42,8 @@
 
       <div class="bg-gray-300 pt-12 px-12 w-5/12">
         <ResponsiveImage
-            src="https://placekitten.com/343/610"
-            alt=""
-            :sizes="[]"
+          src="/images/mockups/flight_details{size}.png"
+          alt="Flight details"
         />
       </div>
     </div>
@@ -60,9 +58,8 @@
 
         <div class="bg-gray-300 px-8 flex rounded-lg">
           <ResponsiveImage
-            src="https://placekitten.com/343/352"
-            alt=""
-            :sizes="[]"
+            src="/images/mockups/flight_search{size}.png"
+            alt="Flight details"
           />
         </div>
       </div>
@@ -76,9 +73,8 @@
 
         <div class="bg-gray-300 px-8 flex rounded-lg">
           <ResponsiveImage
-            src="https://placekitten.com/343/352"
-            alt=""
-            :sizes="[]"
+            src="/images/mockups/calendar_export{size}.png"
+            alt="Flight details"
           />
         </div>
       </div>

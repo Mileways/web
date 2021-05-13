@@ -14,16 +14,15 @@
       <div class="grid gap-8">
         <div class="rounded-4xl bg-gray-800 p-10 overflow-hidden">
           <div class="max-w-2xl mx-auto">
-            <h3 class="font-black text-3xl mb-3">Friends Flights</h3>
+            <h3 class="font-black text-3xl mb-3">Friend's Flights</h3>
 
             <p class="text-gray-300 mb-16">
               Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
             </p>
 
             <ResponsiveImage
-              src="https://placekitten.com/530/298"
-              alt=""
-              :sizes="[]"
+              src="/images/mockups/friends_flights{size}.png"
+              alt="Friend's flight"
               class="w-full"
             />
           </div>
@@ -32,9 +31,8 @@
         <div class="rounded-4xl bg-gray-800 flex items-center overflow-hidden">
           <div class="w-7/12">
             <ResponsiveImage
-              src="https://placekitten.com/616/560"
-              alt=""
-              :sizes="[]"
+              src="/images/mockups/greeting_sign{size}.png"
+              alt="Airport greeting sign"
               class="w-full"
             />
           </div>
@@ -59,10 +57,9 @@
 
           <div class="w-7/12">
             <ResponsiveImage
-                src="https://placekitten.com/616/560"
-                alt=""
-                :sizes="[]"
-                class="w-full"
+              src="/images/mockups/web_sharing{size}.png"
+              alt="Web Sharing"
+              class="w-full"
             />
           </div>
         </div>
