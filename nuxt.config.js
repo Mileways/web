@@ -5,6 +5,10 @@ export default {
 
   target: 'static',
 
+  modules: [
+    '@nuxt/content'
+  ],
+
   server: {
     port: 8000,
     host: '0.0.0.0'
@@ -67,7 +71,8 @@ export default {
 
   generate: {
     exclude: [
-      /^\/flights/
+      /^\/flights/,
+      /^\/pages\/plain/,
     ],
 
     fallback: 'spa.html'
@@ -78,6 +83,7 @@ export default {
   */
   build: {
     filenames: {
+      // Workaround for Safari HMR issue (https://github.com/nuxt/nuxt.js/issues/3828#issuecomment-508428611)
       app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
       chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js'
     },
