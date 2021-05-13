@@ -12,16 +12,59 @@
       </div>
 
       <div class="grid gap-8">
-        <div class="rounded-4xl bg-gray-200 p-10">
+        <div class="rounded-4xl bg-gray-800 p-10 overflow-hidden">
+          <div class="max-w-2xl mx-auto">
+            <h3 class="font-black text-3xl mb-3">Friends Flights</h3>
 
+            <p class="text-gray-300 mb-16">
+              Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
+            </p>
+
+            <ResponsiveImage
+              src="https://placekitten.com/530/298"
+              alt=""
+              :sizes="[]"
+              class="w-full"
+            />
+          </div>
         </div>
 
-        <div class="rounded-4xl bg-gray-200 p-10">
+        <div class="rounded-4xl bg-gray-800 flex items-center overflow-hidden">
+          <div class="w-7/12">
+            <ResponsiveImage
+              src="https://placekitten.com/616/560"
+              alt=""
+              :sizes="[]"
+              class="w-full"
+            />
+          </div>
 
+          <div class="px-12 w-5/12">
+            <h3 class="font-black text-3xl mb-6">Airport Greeting Sign</h3>
+
+            <p class="text-gray-300 mb-0">
+              Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
+            </p>
+          </div>
         </div>
 
-        <div class="rounded-4xl bg-gray-200 p-10">
+        <div class="rounded-4xl bg-gray-800 flex items-center overflow-hidden">
+          <div class="px-12 w-5/12">
+            <h3 class="font-black text-3xl mb-6">Web Sharing</h3>
 
+            <p class="text-gray-300 mb-0">
+              Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
+            </p>
+          </div>
+
+          <div class="w-7/12">
+            <ResponsiveImage
+                src="https://placekitten.com/616/560"
+                alt=""
+                :sizes="[]"
+                class="w-full"
+            />
+          </div>
         </div>
       </div>
     </div>
