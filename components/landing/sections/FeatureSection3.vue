@@ -1,7 +1,7 @@
 <template>
   <section class="bg-primary text-white py-24">
     <div class="container mx-auto">
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-3xl mx-auto mb-10">
         <h2 class="h2">
           Well-thought-out, down to the last detail.
         </h2>
@@ -71,7 +71,7 @@
           </div>
 
           <div
-              class="light-card p-10 mb-8 flex-grow"
+              class="light-card p-10 mb-8 flex-grow flex flex-col"
               style="break-inside: avoid;"
           >
             <h3 class="h3">Aircraft Illustrations</h3>
@@ -83,7 +83,7 @@
             <ResponsiveImage
               src="/images/elements/plane{size}.png"
               alt="Plane"
-              class="w-full"
+              class="w-full mt-auto"
             />
           </div>
         </div>
