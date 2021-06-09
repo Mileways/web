@@ -16,7 +16,7 @@
       </div>
 
       <div class="grid lg:grid-cols-2 gap-10 mb-10">
-        <div class="light-card p-10">
+        <div class="light-card p-10 flex flex-col">
           <h3 class="h3">Flight Search</h3>
 
           <p class="text-gray-700 mb-16">
@@ -25,7 +25,7 @@
             No problem, with Mileways everything is possible.
           </p>
 
-          <div class="bg-gray-300 px-8 flex rounded-lg">
+          <div class="bg-gray-300 px-8 flex mt-auto rounded-lg">
             <ResponsiveImage
                 src="/images/mockups/flight_search{size}.png"
                 alt="Flight details"
@@ -33,14 +33,14 @@
           </div>
         </div>
 
-        <div class="light-card p-10">
+        <div class="light-card p-10 flex flex-col">
           <h3 class="h3">Calendar Export</h3>
 
           <p class="text-gray-700 mb-16">
             Even outside the app, smart features like calendar export keep you informed and on top of your agenda. Especially helpful for busy people with full schedules.
           </p>
 
-          <div class="bg-gray-300 px-8 flex rounded-lg">
+          <div class="bg-gray-300 px-8 flex mt-auto rounded-lg">
             <ResponsiveImage
                 src="/images/mockups/calendar_export{size}.png"
                 alt="Flight details"
@@ -54,7 +54,7 @@
       >
         <div class="grid grid-cols-1 gap-8">
           <div
-              class="rounded-4xl text-white bg-cover bg-center pt-10 px-10"
+              class="rounded-4xl text-white bg-cover bg-center pt-10 px-10 flex flex-col"
               style="break-inside: avoid; background-image: url(/images/backgrounds/green_haze.jpg);"
           >
             <h3 class="h3">Widgets</h3>
@@ -66,7 +66,7 @@
             <ResponsiveImage
               src="/images/mockups/widgets{size}.png"
               alt="Widgets"
-              class="w-full"
+              class="w-full mt-auto"
             />
           </div>
 
@@ -90,7 +90,7 @@
 
         <div class="grid grid-cols-1 gap-8">
           <div
-              class="light-card p-10 flex-grow"
+              class="light-card p-10 flex-grow flex flex-col"
               style="break-inside: avoid;"
           >
             <h3 class="h3">Statistics</h3>
@@ -102,7 +102,7 @@
             <ResponsiveImage
               src="/images/elements/counter{size}.png"
               alt="Mile counter"
-              class="w-full"
+              class="w-full mt-auto"
             />
           </div>
 
