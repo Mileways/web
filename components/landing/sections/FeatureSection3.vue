@@ -3,33 +3,49 @@
     <div class="container mx-auto">
       <div class="max-w-3xl mx-auto">
         <h2 class="h2">
-          Some Two Row Sample Headline For a Feature
+          Well-thought-out, down to the last detail.
         </h2>
 
-        <p class="h4 mb-12 text-gray-200">
-          We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
+        <p class="h4 text-gray-200">
+          Due to the complexity of data, it is not easy to build an insightful and a simple product at the same time.
+        </p>
+
+        <p class="text-2xl">
+          However, we have gone the extra mile and dedicated ourselves to every detail, no matter how small.
         </p>
       </div>
 
-      <div class="light-card flex-card mb-8">
-        <div class="p-10 lg:px-20 lg:py-0 w-full lg:w-7/12">
-          <h3 class="h3 mb-6">Notifications</h3>
+      <div class="grid lg:grid-cols-2 gap-10 mb-10">
+        <div class="light-card p-10">
+          <h3 class="h3">Flight Search</h3>
 
-          <p class="text-xl text-gray-700">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          <p class="text-gray-700 mb-16">
+            Would you like to add the flight from the comfort of your couch or do you already have the flight number on your clipboard? Or would you rather scan the code directly from the ticket?
+            <br>
+            No problem, with Mileways everything is possible.
           </p>
 
-          <p class="text-xl text-gray-700 mb-0">
-            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
+          <div class="bg-gray-300 px-8 flex rounded-lg">
+            <ResponsiveImage
+                src="/images/mockups/flight_search{size}.png"
+                alt="Flight details"
+            />
+          </div>
         </div>
 
-        <div class="bg-gray-300 w-full lg:w-5/12">
-          <ResponsiveImage
-            src="/images/mockups/notifications{size}.png"
-            alt="Notifications"
-            class="w-full"
-          />
+        <div class="light-card p-10">
+          <h3 class="h3">Calendar Export</h3>
+
+          <p class="text-gray-700 mb-16">
+            Even outside the app, smart features like calendar export keep you informed and on top of your agenda. Especially helpful for busy people with full schedules.
+          </p>
+
+          <div class="bg-gray-300 px-8 flex rounded-lg">
+            <ResponsiveImage
+                src="/images/mockups/calendar_export{size}.png"
+                alt="Flight details"
+            />
+          </div>
         </div>
       </div>
 
@@ -44,7 +60,7 @@
             <h3 class="h3">Widgets</h3>
 
             <p>
-              Ut placet, inquam tum dicere exorsus est.
+              All information about the next flight at a glance.#
             </p>
 
             <ResponsiveImage
@@ -61,7 +77,7 @@
             <h3 class="h3">Aircraft Illustrations</h3>
 
             <p class="text-gray-700 mb-8">
-              Ut placet, inquam tum dicere exorsus est consecutus? laudem et impetus.
+              For the nerds among us, true-to-life images of the aircraft are displayed in the flight details.
             </p>
 
             <ResponsiveImage
@@ -80,7 +96,7 @@
             <h3 class="h3">Statistics</h3>
 
             <p class="text-gray-700 mb-8">
-              Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
+              How far have I already flown in my life? Thanks to detailed statistics, one becomes much more aware of one’s own flight behavior, thus evaluating possibilities for sustainability.
             </p>
 
             <ResponsiveImage
@@ -98,7 +114,7 @@
               <h3 class="h3">Airline Logos</h3>
 
               <p class="text-gray-700 mb-8">
-                Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus.
+                With a collection of over 350 colorful airline logos, navigating the app is 1.000× easier.
               </p>
             </div>
 
@@ -118,7 +134,7 @@
             <h3 class="h3">App Icons</h3>
 
             <p class="text-gray-700 mb-8">
-              Ut placet, inquam tum.
+              Pick one, make it yours.
             </p>
 
             <ResponsiveImage
@@ -135,7 +151,7 @@
             <h3 class="h3">Country flags</h3>
 
             <p class="text-gray-700 mb-8">
-              Ut placet, inquam tum dicere exorsus est consecutus? laudem et impetus.
+              Over 230 hand-drawn country flags optimized for mobile devices contribute to even better orientation.
             </p>
 
             <ResponsiveImage
