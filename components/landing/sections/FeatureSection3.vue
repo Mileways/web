@@ -60,7 +60,7 @@
             <h3 class="h3">Widgets</h3>
 
             <p>
-              All information about the next flight at a glance.#
+              All information about the next flight at a glance.
             </p>
 
             <ResponsiveImage
