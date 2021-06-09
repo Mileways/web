@@ -52,9 +52,9 @@
       <div
         class="-mb-8 text-black gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
-        <div class="flex flex-col">
+        <div class="grid grid-cols-1 gap-8">
           <div
-              class="rounded-4xl text-white bg-cover bg-center pt-10 px-10 mb-8"
+              class="rounded-4xl text-white bg-cover bg-center pt-10 px-10"
               style="break-inside: avoid; background-image: url(/images/backgrounds/green_haze.jpg);"
           >
             <h3 class="h3">Widgets</h3>
@@ -71,7 +71,7 @@
           </div>
 
           <div
-              class="light-card p-10 mb-8 flex-grow flex flex-col"
+              class="light-card p-10 flex-grow flex flex-col"
               style="break-inside: avoid;"
           >
             <h3 class="h3">Aircraft Illustrations</h3>
@@ -88,9 +88,9 @@
           </div>
         </div>
 
-        <div class="flex flex-col">
+        <div class="grid grid-cols-1 gap-8">
           <div
-              class="light-card p-10 mb-8 flex-grow"
+              class="light-card p-10 flex-grow"
               style="break-inside: avoid;"
           >
             <h3 class="h3">Statistics</h3>
@@ -107,13 +107,13 @@
           </div>
 
           <div
-              class="light-card mb-8 flex-grow"
+              class="light-card flex-grow"
               style="break-inside: avoid;"
           >
             <div class="p-10">
               <h3 class="h3">Airline Logos</h3>
 
-              <p class="text-gray-700 mb-8">
+              <p class="text-gray-700">
                 With a collection of over 350 colorful airline logos, navigating the app is 1.000× easier.
               </p>
             </div>
@@ -126,9 +126,9 @@
           </div>
         </div>
 
-        <div class="flex flex-col">
+        <div class="grid md:grid-cols-2 lg:grid-cols-1 md:col-span-2 lg:col-span-1 gap-8">
           <div
-              class="light-card p-10 mb-8 flex-grow"
+              class="light-card p-10 flex-grow"
               style="break-inside: avoid;"
           >
             <h3 class="h3">App Icons</h3>
@@ -145,7 +145,7 @@
           </div>
 
           <div
-              class="light-card p-10 mb-8 flex-grow"
+              class="light-card p-10 flex-grow"
               style="break-inside: avoid;"
           >
             <h3 class="h3">Country flags</h3>
