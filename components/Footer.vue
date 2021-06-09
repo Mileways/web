@@ -4,6 +4,9 @@
       <nav>
         <ul>
           <li class="inline-block w-20">
+            <nuxt-link to="/pages/about">About</nuxt-link>
+          </li>
+          <li class="inline-block w-20">
             <nuxt-link to="/pages/terms-and-conditions">Terms</nuxt-link>
           </li>
           <li class="inline-block w-20">
@@ -12,12 +15,24 @@
         </ul>
       </nav>
 
-      <div class="ml-auto">
+      <div class="ml-auto flex items-center">
         <a
           :href="appStoreUrl"
-          class="bg-primary text-white px-3 py-1 rounded-md"
+          class="bg-primary text-white px-3 py-1 mx-4 rounded-md"
         >
           Download
+        </a>
+
+        <a :href="instagramUrl" target="_blank" class="mx-4">
+          <img src="/images/icons/instagram.svg" alt="Instagram Logo">
+        </a>
+
+        <a :href="twitterUrl" target="_blank" class="mx-4">
+          <img src="/images/icons/twitter.svg" alt="Twitter Logo">
+        </a>
+
+        <a :href="facebookUrl" target="_blank" class="mx-4">
+          <img src="/images/icons/facebook.svg" alt="Facebook Logo">
         </a>
       </div>
     </div>
@@ -32,6 +47,18 @@ export default {
   computed: {
     appStoreUrl() {
       return process.env.APP_STORE_URL
+    },
+
+    instagramUrl() {
+      return process.env.INSTAGRAM_URL
+    },
+
+    twitterUrl() {
+      return process.env.TWITTER_URL
+    },
+
+    facebookUrl() {
+      return process.env.FACEBOOK_URL
     }
   }
 }
