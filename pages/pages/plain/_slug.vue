@@ -1,20 +1,21 @@
 <template>
-  <div
-    v-if="doc"
+  <NuxtContentRenderer
+    :doc="doc"
     class="container mx-auto"
-  >
-    <nuxt-content
-      :document="doc"
-    />
-  </div>
+  />
 </template>
-
 
 <script>
   import Vue from 'vue'
 
+  import NuxtContentRenderer from '../../../components/general/NuxtContentRenderer'
+
   export default Vue.extend({
     name: 'Page',
+
+    components: {
+      NuxtContentRenderer
+    },
 
     layout: 'empty',
 

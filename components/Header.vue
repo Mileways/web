@@ -6,8 +6,12 @@
       </nuxt-link>
 
       <nav class="ml-auto">
-        <ul>
-          <li>
+        <ul class="flex">
+          <li class="mx-5">
+            <a href="/pages/about">About</a>
+          </li>
+
+          <li class="mx-5">
             <a :href="appStoreUrl">Download</a>
           </li>
         </ul>

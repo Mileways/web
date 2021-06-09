@@ -45,7 +45,7 @@ html {
     @apply break-words;
 }
 
-p {
+p:not(:last-child) {
     @apply mb-5;
 }
 
