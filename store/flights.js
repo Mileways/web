@@ -1,28 +1,32 @@
 import Vue from 'vue'
 
 export const state = () => ({
-  flights: {}
+  trips: {}
 })
 
 export const getters = {
-  flightById: state => id => state.flights[id] || null
+  tripById: state => id => state.trips[id] || null
 }
 
 export const mutations = {
-  setFlightData(state, flight) {
-    Vue.set(state.flights, flight.id, flight)
+  setTripData(state, trip) {
+    Vue.set(state.trips, trip.id, trip)
   }
 }
 
 export const actions = {
-  async loadFlightData(context, id) {
-    const flight = await this.$milewaysApiClient.fetchFlightData(id)
+  async loadTripData(context, { tripId, userId, flightId }) {
+    const baseString = `userId=${userId}&flightId=${flightId}&tripId=${tripId}`
 
-    if (flight instanceof Error) return
+    const identifier = btoa(baseString)
 
-    context.commit('setFlightData', {
-      ...flight,
-      id
+    const trip = await this.$milewaysApiClient.fetchTripData(identifier)
+
+    if (trip instanceof Error) return
+
+    context.commit('setTripData', {
+      ...trip,
+      id: tripId
     })
   }
 }

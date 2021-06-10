@@ -17,6 +17,7 @@
     "date-fns": "^2.15.0",
     "mapbox-gl": "^1.11.1",
     "nuxt": "^2.14.0",
+    "vue": "^2.6.11",
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {}
