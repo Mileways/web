@@ -16,7 +16,7 @@
       </div>
 
       <div class="grid gap-8">
-        <div class="dark-card flex-card mb-8">
+        <div class="dark-card flex-card">
           <div class="bg-gray-700 pt-5 px-5 w-full lg:w-5/12">
             <ResponsiveImage
                 src="/images/mockups/friends_flights{size}.png"
