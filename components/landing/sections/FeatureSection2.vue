@@ -16,8 +16,16 @@
       </div>
 
       <div class="grid gap-8">
-        <div class="dark-card p-10">
-          <div class="max-w-2xl mx-auto">
+        <div class="dark-card flex-card mb-8">
+          <div class="bg-gray-700 pt-5 px-5 w-full lg:w-5/12">
+            <ResponsiveImage
+                src="/images/mockups/friends_flights{size}.png"
+                alt="Friend's flight"
+                class="w-full"
+            />
+          </div>
+
+          <div class="p-10 lg:px-20 lg:py-0 w-full lg:w-7/12">
             <h3 class="h3">Friend's Flights</h3>
 
             <p class="text-gray-300 mb-16">
@@ -25,12 +33,6 @@
               <br>
               And in case you have a flight you don’t want to announce, you can choose who can see your data with a quick tap on the privacy settings.
             </p>
-
-            <ResponsiveImage
-              src="/images/mockups/friends_flights{size}.png"
-              alt="Friend's flight"
-              class="w-full"
-            />
           </div>
         </div>
 
