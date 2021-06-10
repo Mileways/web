@@ -65,6 +65,10 @@ p:not(:last-child) {
     @apply rounded-4xl overflow-hidden;
 }
 
+.white-card {
+    @apply card bg-white text-black;
+}
+
 .light-card {
     @apply card bg-gray-200 text-black;
 }

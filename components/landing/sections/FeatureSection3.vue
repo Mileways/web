@@ -16,7 +16,7 @@
       </div>
 
       <div class="grid lg:grid-cols-2 gap-10 mb-10">
-        <div class="light-card p-10 flex flex-col">
+        <div class="white-card p-10 flex flex-col">
           <h3 class="h3">Flight Search</h3>
 
           <p class="text-gray-700 mb-16">
@@ -33,7 +33,7 @@
           </div>
         </div>
 
-        <div class="light-card p-10 flex flex-col">
+        <div class="white-card p-10 flex flex-col">
           <h3 class="h3">Calendar Export</h3>
 
           <p class="text-gray-700 mb-16">
@@ -71,7 +71,7 @@
           </div>
 
           <div
-              class="light-card p-10 flex-grow flex flex-col"
+              class="white-card p-10 flex-grow flex flex-col"
               style="break-inside: avoid;"
           >
             <h3 class="h3">Aircraft Illustrations</h3>
@@ -90,7 +90,7 @@
 
         <div class="grid grid-cols-1 gap-8">
           <div
-              class="light-card p-10 flex-grow flex flex-col"
+              class="white-card p-10 flex-grow flex flex-col"
               style="break-inside: avoid;"
           >
             <h3 class="h3">Statistics</h3>
@@ -107,7 +107,7 @@
           </div>
 
           <div
-              class="light-card flex-grow"
+              class="white-card flex-grow"
               style="break-inside: avoid;"
           >
             <div class="p-10">
@@ -128,7 +128,7 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-1 md:col-span-2 lg:col-span-1 gap-8">
           <div
-              class="light-card p-10 flex-grow"
+              class="white-card p-10 flex-grow"
               style="break-inside: avoid;"
           >
             <h3 class="h3">App Icons</h3>
@@ -145,7 +145,7 @@
           </div>
 
           <div
-              class="light-card p-10 flex-grow"
+              class="white-card p-10 flex-grow"
               style="break-inside: avoid;"
           >
             <h3 class="h3">Country flags</h3>
