@@ -45,7 +45,7 @@ html {
     @apply break-words;
 }
 
-p {
+p:not(:last-child) {
     @apply mb-5;
 }
 
@@ -63,6 +63,10 @@ p {
 
 .card {
     @apply rounded-4xl overflow-hidden;
+}
+
+.white-card {
+    @apply card bg-white text-black;
 }
 
 .light-card {

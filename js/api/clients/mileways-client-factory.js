@@ -1,15 +1,15 @@
 import Axios from 'axios'
 
-async function _fetchFlightData(axios, id) {
+async function _fetchTripData(axios, encodedIdentifiers) {
   try {
-    const result = await axios.get('trips/shared/' + id)
+    const result = await axios.get('trips/shared/' + encodedIdentifiers)
 
     return result.data
   } catch(e) {
-    console.log('Error while fetching flight', e)
+    console.log('Error while fetching trip', e)
   }
 
-  return Error('Flight data could not be fetched')
+  return Error('trip data could not be fetched')
 }
 
 export default baseURL => {
@@ -18,8 +18,8 @@ export default baseURL => {
   })
 
   return {
-    async fetchFlightData(id) {
-      return _fetchFlightData(axiosInstance, id)
+    async fetchTripData(encodedIdentifiers) {
+      return _fetchTripData(axiosInstance, encodedIdentifiers)
     }
   }
 }

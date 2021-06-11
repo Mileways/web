@@ -127,31 +127,41 @@
 
   import { parseISO } from 'date-fns'
 
-  import FlightMap from '../../components/flights/FlightMap'
-  import AirportInfo from '../../components/flights/AirportInfo'
-  import FlightInfo from '../../components/flights/FlightInfo'
-  import TimeInfo from '../../components/flights/TimeInfo'
-  import UserInfo from '../../components/flights/UserInfo'
-  import FlightStatusBox from '../../components/flights/FlightStatusBox'
-  import InfoChip from '../../components/general/InfoChip'
-  import SectionSeparator from '../../components/general/SectionSeparator'
+  import FlightMap from '../components/flights/FlightMap'
+  import AirportInfo from '../components/flights/AirportInfo'
+  import FlightInfo from '../components/flights/FlightInfo'
+  import TimeInfo from '../components/flights/TimeInfo'
+  import UserInfo from '../components/flights/UserInfo'
+  import FlightStatusBox from '../components/flights/FlightStatusBox'
+  import InfoChip from '../components/general/InfoChip'
+  import SectionSeparator from '../components/general/SectionSeparator'
 
   export default Vue.extend({
     name: 'FlightView',
 
     components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, UserInfo, InfoChip, FlightStatusBox, SectionSeparator },
 
-    async middleware ({ store, params }) {
-      await store.dispatch('flights/loadFlightData', params.id)
+    async mounted () {
+      if (
+        !this.$route.query.userId ||
+        !this.$route.query.flightId ||
+        !this.$route.query.tripId
+      ) return
+
+      await this.$store.dispatch('flights/loadTripData', {
+        userId: this.$route.query.userId,
+        flightId: this.$route.query.flightId,
+        tripId: this.$route.query.tripId
+      })
     },
 
     computed: {
-      flightId() {
-        return this.$route.params.id
+      tripId() {
+        return this.$route.query.tripId
       },
 
       flightInfo() {
-        return this.$store.getters['flights/flightById'](this.flightId)
+        return this.$store.getters['flights/tripById'](this.tripId)
       },
 
       flight() {

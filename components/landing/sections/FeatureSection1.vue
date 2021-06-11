@@ -2,15 +2,16 @@
   <section class="container mx-auto py-24">
     <div class="max-w-3xl mx-auto">
       <h2 class="h2 text-primary">
-        Some Two Row Sample Headline For a Feature
+        Flight information as it should be.
       </h2>
 
       <p class="h4 text-gray-700 mb-8 font-semibold">
-        We love messaging. It’s our favorite way of collaborating, but not if it’s overwhelming and disorganized. We believe there’s a better way.
+        Flying can and should be comfortable. Instead, in times like these, we travel with uncertainty and anxiety.
+        We think we can do better.
       </p>
 
       <p class="text-2xl text-gray-700 mb-12">
-        Certe, inquam, pertinax non possim accommodare torquatos nostros? quos dolores eos, qui dolorem. Alii autem, quibus ego cum memoriter, tum etiam erga nos amice et quasi.
+        We have identified the problems faced by many air travelers and translated them into a modern, contemporary user experience, finally creating the a flight tracker that will meet all your needs.
       </p>
     </div>
 
@@ -25,8 +26,15 @@
       <div class="p-10 lg:px-20 lg:py-0 w-full lg:w-7/12">
         <h3 class="h3 mb-6">Flights</h3>
 
+        <p class="text-xl text-gray-700">
+          Flight information can be overwhelming. Airport information, travel times, flight numbers and hey, another gate change…
+        </p>
+
         <p class="text-xl text-gray-700 mb-0">
-          Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
+          It’s easy to lose track of everything, especially if you travel regularly. Reduced to the essential and most important and delivered to you at the right time — the information provided by Mileways will always be relevant and accurate.
+          <br>
+
+          You can have your peace of mind.
         </p>
       </div>
     </div>
@@ -35,8 +43,12 @@
       <div class="p-10 lg:px-20 lg:py-0 lg:w-7/12">
         <h3 class="h3 mb-6">Flight Details</h3>
 
+        <p class="text-xl text-gray-700">
+          As the travel date approaches, any oh so small information around a flight becomes all the more important.
+        </p>
+
         <p class="text-xl text-gray-700 mb-0">
-          Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
+          Is my flight delayed? Is there a time difference? What will the weather be like? All this information is just a tap away.
         </p>
       </div>
 
@@ -49,35 +61,29 @@
       </div>
     </div>
 
-    <div class="grid lg:grid-cols-2 gap-10">
-      <div class="light-card p-10">
-        <h3 class="h3">Flight Search</h3>
-
-        <p class="text-gray-700 mb-16">
-          Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
-        </p>
-
-        <div class="bg-gray-300 px-8 flex rounded-lg">
-          <ResponsiveImage
-            src="/images/mockups/flight_search{size}.png"
-            alt="Flight details"
-          />
-        </div>
+    <div class="light-card flex-card mb-8">
+      <div class="bg-gray-300 w-full lg:w-5/12">
+        <ResponsiveImage
+            src="/images/mockups/notifications{size}.png"
+            alt="Notifications"
+            class="w-full"
+        />
       </div>
 
-      <div class="light-card p-10">
-        <h3 class="h3">Calendar Export</h3>
+      <div class="p-10 lg:px-20 lg:py-0 w-full lg:w-7/12">
+        <h3 class="h3 mb-6">Notifications</h3>
 
-        <p class="text-gray-700 mb-16">
-          Ut placet, inquam tum dicere exorsus est consecutus? laudem et argumentandum et impetus. Ut placet, inquam tum dicere exorsus est laborum et dolorum fuga et fortibus.
+        <p class="text-xl text-gray-700">
+          The closer the date of the next departure gets, the more important the relevant information becomes.
         </p>
 
-        <div class="bg-gray-300 px-8 flex rounded-lg">
-          <ResponsiveImage
-            src="/images/mockups/calendar_export{size}.png"
-            alt="Flight details"
-          />
-        </div>
+        <p class="text-xl text-gray-700">
+          It’s stressful enough at the airport, so you should at least be able to rely on reliable flight updates.
+        </p>
+
+        <p class="text-xl text-gray-700 mb-0">
+          From gate changes to flight cancellations — with Mileways, notifications are accurate to the second.
+        </p>
       </div>
     </div>
   </section>

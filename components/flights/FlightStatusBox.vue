@@ -47,9 +47,6 @@
         const total = differenceInSeconds(this.actualArrivalTime, this.actualDepartureTime)
         const elapsed = differenceInSeconds(new Date(), this.actualDepartureTime)
 
-        console.log('total', total)
-        console.log('elapsed', elapsed)
-
         return elapsed / total
       },
 
