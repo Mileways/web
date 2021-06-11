@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ET</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <path d="M12,0 C18.627417,-1.21743675e-15 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 8.11624501e-16,18.627417 0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ET" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+            </g>
+        </g>
+        <polygon id="Rectangle" fill="#18A454" mask="url(#mask-2)" points="0 0 24 0 24 8 0 8"></polygon>
+        <polygon id="Rectangle" fill="#FFD400" mask="url(#mask-2)" points="0 8 24 8 24 16 0 16"></polygon>
+        <polygon id="Rectangle" fill="#F12339" mask="url(#mask-2)" points="0 16 24 16 24 24 0 24"></polygon>
+        <circle id="Oval" fill="#0956BA" mask="url(#mask-2)" cx="12" cy="12" r="8"></circle>
+        <path d="M10.513,9.953 L6.53020773,9.97315525 L6.46230696,9.98223387 C6.2722085,10.0342342 6.20868399,10.2963754 6.38349564,10.4246886 L9.594,12.781 L8.38209732,16.5757521 L8.37010403,16.6371527 C8.35581525,16.8371141 8.58836332,16.9826987 8.76619455,16.8548151 L12,14.529 L15.2338054,16.8548151 L15.2884948,16.8851952 C15.4742538,16.9605761 15.6845744,16.7843979 15.6179027,16.5757521 L14.405,12.781 L17.6165044,10.4246886 L17.666101,10.3774328 C17.7893288,10.2236265 17.6866385,9.97421113 17.4697923,9.97315525 L13.486,9.953 L12.2373851,6.17158894 C12.1618147,5.94280369 11.8381853,5.94280369 11.7626149,6.17158894 L10.513,9.953 Z M12,7.047 L13.0682975,10.2812931 L13.0954841,10.3382521 C13.1405078,10.4081704 13.2185383,10.4524607 13.3044653,10.4528791 L16.709,10.469 L13.9647095,12.4849016 L13.9189394,12.5283589 C13.8663562,12.592785 13.8483464,12.6806828 13.8745014,12.7625336 L14.911,16.006 L12.1459598,14.0183926 L12.0904857,13.9882917 C12.0129638,13.9581908 11.9238026,13.9682245 11.8540402,14.0183926 L9.088,16.006 L10.1254986,12.7625336 L10.1369838,12.7004729 C10.1416559,12.6174435 10.104561,12.5357468 10.0352905,12.4849016 L7.29,10.469 L10.6955347,10.4528791 C10.8029435,10.4523561 10.898014,10.3832833 10.9317025,10.2812931 L12,7.047 Z" id="Star" fill="#FFD400" mask="url(#mask-2)"></path>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <path d="M12,0.25 C15.2446729,0.25 18.1821729,1.56516355 20.3085047,3.69149532 C22.4348365,5.81782709 23.75,8.75532709 23.75,12 C23.75,15.2446729 22.4348365,18.1821729 20.3085047,20.3085047 C18.1821729,22.4348365 15.2446729,23.75 12,23.75 C8.75532709,23.75 5.81782709,22.4348365 3.69149532,20.3085047 C1.56516355,18.1821729 0.25,15.2446729 0.25,12 C0.25,8.75532709 1.56516355,5.81782709 3.69149532,3.69149532 C5.81782709,1.56516355 8.75532709,0.25 12,0.25 Z" id="Mask" stroke-opacity="0.15" stroke="#000000" stroke-width="0.5" fill-rule="nonzero"></path>
+                <rect id="Dark" fill="url(#linearGradient-5)" style="mix-blend-mode: normal;" opacity="0.100000001" x="0" y="12" width="24" height="12"></rect>
+                <rect id="Light" fill="url(#linearGradient-6)" opacity="0.100000001" style="mix-blend-mode: normal;" x="0" y="0" width="24" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ZT</title>
+    <defs>
+        <radialGradient cx="27.6381884%" cy="48.0915976%" fx="27.6381884%" fy="48.0915976%" r="80.3929461%" id="radialGradient-1">
+            <stop stop-color="#D66D02" offset="0%"></stop>
+            <stop stop-color="#D66D02" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="27.6381885%" cy="48.0915976%" fx="27.6381885%" fy="48.0915976%" r="72.2769937%" id="radialGradient-2">
+            <stop stop-color="#D66D02" offset="0%"></stop>
+            <stop stop-color="#D66D02" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="20.1005049%" cy="64.6310346%" fx="20.1005049%" fy="64.6310346%" r="57.1082988%" id="radialGradient-3">
+            <stop stop-color="#F7B94A" offset="0%"></stop>
+            <stop stop-color="#F7B94A" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="ZT" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M28,14 C28,21.731984 21.7319862,28 14,28 C6.26801335,28 0,21.731984 0,14 C0,6.26801321 6.26801335,0 14,0 C21.7319862,0 28,6.26801321 28,14 Z" id="path3821" fill="#EF9827" fill-rule="nonzero"></path>
+        <path d="M28,14 C28,21.731984 21.7319862,28 14,28 C6.26801335,28 0,21.731984 0,14 C0,6.26801321 6.26801335,0 14,0 C21.7319862,0 28,6.26801321 28,14 Z" id="path3821" fill="#000000" fill-rule="nonzero"></path>
+        <path d="M28,14 C28,21.731984 21.7319862,28 14,28 C6.26801335,28 0,21.731984 0,14 C0,6.26801321 6.26801335,0 14,0 C21.7319862,0 28,6.26801321 28,14 Z" id="path3821" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
+        <path d="M28,14 C28,21.731984 21.7319862,28 14,28 C6.26801335,28 0,21.731984 0,14 C0,6.26801321 6.26801335,0 14,0 C21.7319862,0 28,6.26801321 28,14 Z" id="path3821" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
+        <path d="M28,14 C28,21.731984 21.7319862,28 14,28 C6.26801335,28 0,21.731984 0,14 C0,6.26801321 6.26801335,0 14,0 C21.7319862,0 28,6.26801321 28,14 Z" id="path3821" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
+        <path d="M28,14 C28,21.731984 21.7319862,28 14,28 C6.26801335,28 0,21.731984 0,14 C0,6.26801321 6.26801335,0 14,0 C21.7319862,0 28,6.26801321 28,14 Z" id="path3821" fill="url(#radialGradient-2)" fill-rule="nonzero"></path>
+        <path d="M28,14 C28,21.731984 21.7319862,28 14,28 C6.26801335,28 0,21.731984 0,14 C0,6.26801321 6.26801335,0 14,0 C21.7319862,0 28,6.26801321 28,14 Z" id="path3821" fill="url(#radialGradient-3)" fill-rule="nonzero"></path>
+    </g>
+</svg>

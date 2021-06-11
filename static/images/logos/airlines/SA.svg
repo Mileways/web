@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SA</title>
+    <defs>
+        <linearGradient x1="14.079996%" y1="43.1243361%" x2="55.0734441%" y2="57.5746782%" id="linearGradient-1">
+            <stop stop-color="#820008" offset="0%"></stop>
+            <stop stop-color="#C70D12" offset="34.648523%"></stop>
+            <stop stop-color="#E26A48" offset="45.125481%"></stop>
+            <stop stop-color="#EB9B7B" offset="57.475489%"></stop>
+            <stop stop-color="#E26B49" offset="74.593478%"></stop>
+            <stop stop-color="#CC221B" offset="83.923209%"></stop>
+            <stop stop-color="#940109" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="45.5984255%" x2="72.4250205%" y2="65.5438516%" id="linearGradient-2">
+            <stop stop-color="#0B1838" offset="0%"></stop>
+            <stop stop-color="#032F70" offset="20.781974%"></stop>
+            <stop stop-color="#585E97" offset="35.548043%"></stop>
+            <stop stop-color="#8182B2" offset="45.092228%"></stop>
+            <stop stop-color="#585E98" offset="51.174444%"></stop>
+            <stop stop-color="#032F70" offset="61.763775%"></stop>
+            <stop stop-color="#061C41" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.912633%" y1="25.3169178%" x2="85.1520118%" y2="61.8205679%" id="linearGradient-3">
+            <stop stop-color="#084C11" offset="0%"></stop>
+            <stop stop-color="#027516" offset="39.095074%"></stop>
+            <stop stop-color="#64A378" offset="59.969682%"></stop>
+            <stop stop-color="#88B797" offset="67.405188%"></stop>
+            <stop stop-color="#64A279" offset="75.287592%"></stop>
+            <stop stop-color="#138437" offset="84.919339%"></stop>
+            <stop stop-color="#084C11" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="11.7103071%" y1="86.3105489%" x2="43.2519695%" y2="19.0362615%" id="linearGradient-4">
+            <stop stop-color="#90600C" offset="0%"></stop>
+            <stop stop-color="#C6891C" offset="7.64918%"></stop>
+            <stop stop-color="#F2C876" offset="26.263037%"></stop>
+            <stop stop-color="#FBF1D6" offset="49.584091%"></stop>
+            <stop stop-color="#FBF1D6" offset="69.218808%"></stop>
+            <stop stop-color="#F2C876" offset="84.535122%"></stop>
+            <stop stop-color="#C6891C" offset="94.654179%"></stop>
+            <stop stop-color="#90600C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="40.9797991%" y1="78.2942566%" x2="56.0544805%" y2="17.357503%" id="linearGradient-5">
+            <stop stop-color="#FDE2A0" offset="0%"></stop>
+            <stop stop-color="#CC770D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="60.6769865%" y1="44.2354854%" x2="71.3429596%" y2="56.0955331%" id="linearGradient-6">
+            <stop stop-color="#000002" offset="0%"></stop>
+            <stop stop-color="#5A5A5A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="SA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M5.32907052e-15,22 C7.69030298,22 7.72026407,22 7.72026407,22 L28,4 L6.88189551,4 L5.32907052e-15,22" id="path6864" fill="#FFFFFF" fill-rule="nonzero" transform="translate(14.000000, 13.000000) scale(-1, 1) rotate(-180.000000) translate(-14.000000, -13.000000) "></path>
+        <polyline id="path6986" fill="url(#linearGradient-1)" fill-rule="nonzero" transform="translate(7.452489, 7.363623) scale(-1, 1) rotate(-180.000000) translate(-7.452489, -7.363623) " points="3.1132514 4.86583561 13.7327605 4.66058867 7.62770673 10.0666568 1.17221815 10.0666568 3.1132514 4.86583561"></polyline>
+        <polyline id="path6988" fill="url(#linearGradient-2)" fill-rule="nonzero" transform="translate(16.905933, 18.544306) scale(-1, 1) rotate(-180.000000) translate(-16.905933, -18.544306) " points="26.4136814 15.739177 20.0924813 21.3652647 7.39818459 15.7233476 26.4136814 15.739177"></polyline>
+        <polyline id="path6990" fill="url(#linearGradient-3)" fill-rule="nonzero" transform="translate(11.128308, 15.619932) scale(-1, 1) rotate(-180.000000) translate(-11.128308, -15.619932) " points="14.7278873 20.2778249 19.032082 16.4578036 7.305092 10.0666568 3.22453496 21.1732079 14.7278873 20.2778249"></polyline>
+        <polyline id="path6998" fill="url(#linearGradient-4)" fill-rule="nonzero" transform="translate(9.394861, 15.619932) scale(-1, 1) rotate(-180.000000) translate(-9.394861, -15.619932) " points="3.22453496 21.1732079 10.4809407 16.2573053 7.305092 10.0666568 15.5651865 17.6998382 3.22453496 21.1732079"></polyline>
+        <path d="M4.12068467,8.19378331 C4.53371572,8.92824041 5.52028285,9.16725546 6.32494573,8.72774207 C7.12960753,8.28770082 7.44740606,7.33533346 7.03437501,6.60087637 C6.62134397,5.86589248 5.63424158,5.62687743 4.8295787,6.06744546 C4.02491691,6.50695886 3.70765253,7.45932621 4.12068467,8.19378331" id="path7122" fill="url(#linearGradient-5)" fill-rule="nonzero" transform="translate(5.577473, 7.397229) scale(-1, 1) rotate(-180.000000) translate(-5.577473, -7.397229) "></path>
+        <polyline id="path7072" fill="url(#linearGradient-6)" fill-rule="nonzero" transform="translate(6.852738, 15.619932) scale(-1, 1) rotate(-180.000000) translate(-6.852738, -15.619932) " points="3.22453496 21.1732079 10.4809407 16.2573053 7.305092 10.0666568 3.22453496 21.1732079"></polyline>
+    </g>
+</svg>

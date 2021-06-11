@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>IB</title>
+    <defs>
+        <linearGradient x1="3.3094875%" y1="30.2531435%" x2="103.215928%" y2="63.2722998%" id="linearGradient-1">
+            <stop stop-color="#A61C22" offset="0%"></stop>
+            <stop stop-color="#DC1C2E" offset="50%"></stop>
+            <stop stop-color="#DC1C2E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.22775264%" y1="34.141549%" x2="99.1578257%" y2="67.9552666%" id="linearGradient-2">
+            <stop stop-color="#ED7417" offset="0%"></stop>
+            <stop stop-color="#FACD08" offset="85%"></stop>
+            <stop stop-color="#FACD08" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="IB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4.94692876,15.3117486 L-3.01980663e-14,10.3305188 L-3.01980663e-14,10.3298597 C17.1718621,10.3298597 21.2201902,14.3572931 23.5823206,19.8394802 L23.5823206,19.8394802 L25.5658494,25 C19.7804469,24.8338931 11.0501451,21.4319972 4.94692876,15.3117486" id="path92" fill="url(#linearGradient-1)" fill-rule="nonzero" transform="translate(12.782925, 17.664930) scale(-1, 1) rotate(-180.000000) translate(-12.782925, -17.664930) "></path>
+        <path d="M16.4813932,9.62456449 L10.915355,4 C16.1999198,7.78684202 21.4699483,10.0714712 26.7201548,10.6614144 L26.7201548,10.6614144 L28,13.9914624 C20.2277651,13.9914624 19.1692663,12.2961173 16.4813932,9.62456449" id="path114" fill="url(#linearGradient-2)" fill-rule="nonzero" transform="translate(19.457678, 8.995731) scale(-1, 1) rotate(-180.000000) translate(-19.457678, -8.995731) "></path>
+    </g>
+</svg>

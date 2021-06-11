@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CC</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <path d="M12,0 C18.627417,-1.21743675e-15 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 8.11624501e-16,18.627417 0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="CC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+            </g>
+        </g>
+        <rect id="Rectangle" fill="#18A454" mask="url(#mask-2)" x="0" y="0" width="24" height="24"></rect>
+        <circle id="Oval" fill="#FFD400" mask="url(#mask-2)" cx="2" cy="5" r="5"></circle>
+        <path d="M12,7 C13.4923623,7 14.8320182,7.65381418 15.7481528,8.69062781 C15.1071181,8.25482192 14.3333175,8 13.5,8 C11.290861,8 9.5,9.790861 9.5,12 C9.5,14.209139 11.290861,16 13.5,16 C14.3333175,16 15.1071181,15.7451781 15.7477302,15.309206 C14.8320182,16.3461858 13.4923623,17 12,17 C9.23857625,17 7,14.7614237 7,12 C7,9.23857625 9.23857625,7 12,7 Z" id="Combined-Shape" fill="#FFD400" mask="url(#mask-2)"></path>
+        <path d="M16,10 C15.4477153,10 15,10.4477153 15,11 C15,11.5522847 15.4477153,12 16,12 C16.5522847,12 17,11.5522847 17,11 C17,10.4477153 16.5522847,10 16,10 Z" id="Path" fill="#FFD400" mask="url(#mask-2)"></path>
+        <path d="M22,9 C21.4477153,9 21,9.44771525 21,10 C21,10.5522847 21.4477153,11 22,11 C22.5522847,11 23,10.5522847 23,10 C23,9.44771525 22.5522847,9 22,9 Z" id="Path" fill="#FFD400" mask="url(#mask-2)"></path>
+        <path d="M19,5 C18.4477153,5 18,5.44771525 18,6 C18,6.55228475 18.4477153,7 19,7 C19.5522847,7 20,6.55228475 20,6 C20,5.44771525 19.5522847,5 19,5 Z" id="Path" fill="#FFD400" mask="url(#mask-2)"></path>
+        <path d="M19,17 C18.4477153,17 18,17.4477153 18,18 C18,18.5522847 18.4477153,19 19,19 C19.5522847,19 20,18.5522847 20,18 C20,17.4477153 19.5522847,17 19,17 Z" id="Path" fill="#FFD400" mask="url(#mask-2)"></path>
+        <path d="M20.25,12 C19.8357864,12 19.5,12.3357864 19.5,12.75 C19.5,13.1642136 19.8357864,13.5 20.25,13.5 C20.6642136,13.5 21,13.1642136 21,12.75 C21,12.3357864 20.6642136,12 20.25,12 Z" id="Path" fill="#FFD400" mask="url(#mask-2)"></path>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <path d="M12,0.25 C15.2446729,0.25 18.1821729,1.56516355 20.3085047,3.69149532 C22.4348365,5.81782709 23.75,8.75532709 23.75,12 C23.75,15.2446729 22.4348365,18.1821729 20.3085047,20.3085047 C18.1821729,22.4348365 15.2446729,23.75 12,23.75 C8.75532709,23.75 5.81782709,22.4348365 3.69149532,20.3085047 C1.56516355,18.1821729 0.25,15.2446729 0.25,12 C0.25,8.75532709 1.56516355,5.81782709 3.69149532,3.69149532 C5.81782709,1.56516355 8.75532709,0.25 12,0.25 Z" id="Mask" stroke-opacity="0.15" stroke="#000000" stroke-width="0.5" fill-rule="nonzero"></path>
+                <rect id="Dark" fill="url(#linearGradient-5)" style="mix-blend-mode: normal;" opacity="0.100000001" x="0" y="12" width="24" height="12"></rect>
+                <rect id="Light" fill="url(#linearGradient-6)" opacity="0.100000001" style="mix-blend-mode: normal;" x="0" y="0" width="24" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

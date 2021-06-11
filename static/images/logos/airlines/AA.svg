@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AA</title>
+    <defs>
+        <linearGradient x1="11.0648299%" y1="70.5040253%" x2="24.0343039%" y2="6.34610632%" id="linearGradient-1">
+            <stop stop-color="#AA0000" offset="0%"></stop>
+            <stop stop-color="#EE0000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="57.6991188%" y1="77.8727827%" x2="29.9013663%" y2="20.8178012%" id="linearGradient-2">
+            <stop stop-color="#1A518B" offset="0%"></stop>
+            <stop stop-color="#01ACEA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="60.8164841%" y1="72.8958928%" x2="23.7562129%" y2="32.5600683%" id="linearGradient-3">
+            <stop stop-color="#A11819" offset="0%"></stop>
+            <stop stop-color="#E81C25" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="256.663787%" y1="-27.0004328%" x2="9.87629144%" y2="55.7605432%" id="linearGradient-4">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="AA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10.9429444,18.0896596 L13.1767222,14.5206318 L16.5211667,13.7968318 L18.6052222,16.2927207 C18.6052222,16.2927207 12.1411111,20.1611929 12.1284722,20.0987762 C12.1160472,20.036379 10.9429444,18.0895818 10.9429444,18.0895818 L10.9429444,18.0896596 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+        <path d="M-1.0658141e-14,0.0221928977 L5.21313333,8.59641512 C6.63724444,10.7415262 7.21513333,11.1783262 10.8621333,11.1081707 L14.4935778,11.1095707 L8.26108889,3.40521512 C6.05593333,0.387748453 4.65717778,-0.0572959912 2.02735556,0.00539289767 L-1.0658141e-14,0.0221928977 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+        <path d="M27.9782222,27.5987707 L18.2252,15.8154373 C15.2119333,16.1915862 13.1862889,17.2707062 11.8603333,19.6562596 L14.8575778,24.7111929 C16.9974,27.7784373 19.1311556,27.6107485 20.8864444,27.6056151 L27.9782222,27.5987707 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+        <path d="M21.0871578,13.9876596 C20.1957467,11.9072596 17.2862667,11.6064151 14.8809111,11.6743929 C13.8407733,11.7371471 12.7689333,11.7803465 11.8010667,11.8898685 C11.3220644,11.9449756 10.8048889,12.0636862 10.1664889,12.3845196 C8.13835556,13.6997573 9.01078889,14.7581418 9.46809111,15.6860307 L11.8490244,19.6225196 C11.7208933,14.884764 16.5024689,13.7030085 21.0871578,13.9876751 L21.0871578,13.9876596 Z" id="Path" fill="url(#linearGradient-4)" fill-rule="nonzero"></path>
+    </g>
+</svg>

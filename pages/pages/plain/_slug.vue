@@ -1,0 +1,30 @@
+<template>
+  <NuxtContentRenderer
+    :doc="doc"
+    class="container mx-auto"
+  />
+</template>
+
+<script>
+  import Vue from 'vue'
+
+  import NuxtContentRenderer from '../../../components/general/NuxtContentRenderer'
+
+  export default Vue.extend({
+    name: 'Page',
+
+    components: {
+      NuxtContentRenderer
+    },
+
+    layout: 'empty',
+
+    async asyncData({ $content, params }) {
+      if (!params.slug) return {}
+
+      const doc = await $content(params.slug).fetch()
+
+      return { doc }
+    }
+  })
+</script>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ZF</title>
+    <defs>
+        <linearGradient x1="9.48364927%" y1="85.559698%" x2="78.9119831%" y2="8.67846105%" id="linearGradient-1">
+            <stop stop-color="#7B1215" offset="0%"></stop>
+            <stop stop-color="#7B1215" offset="0.55%"></stop>
+            <stop stop-color="#880F16" offset="12.79%"></stop>
+            <stop stop-color="#AC0919" offset="35.59%"></stop>
+            <stop stop-color="#D4011C" offset="57.69%"></stop>
+            <stop stop-color="#D4011C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ZF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9.49798824,16.7158072 C8.28474157,14.9753363 6.53419994,13.9747758 4.70566388,13.9747758 L1.50990331e-14,13.9747758 L3.33642835,18.7505605 C4.54967502,20.4910314 6.30021665,21.4915919 8.12875271,21.4915919 L12.8344166,21.4915919 L9.49798824,16.7158072 Z" id="Path" fill="#003E69" fill-rule="nonzero"></path>
+        <path d="M22.7917054,6.5 C20.7725162,6.5 18.536676,8.03867713 16.6908078,10.7124439 L11.4998452,18.2124439 L13.7876818,21.5 L14.4289694,21.5 C16.4481585,21.5 18.6839988,19.9613229 20.5298669,17.2875561 L28,6.5 L22.7917054,6.5 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>

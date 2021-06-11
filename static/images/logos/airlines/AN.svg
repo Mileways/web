@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AN</title>
+    <defs>
+        <linearGradient x1="49.9984986%" y1="-0.000764070356%" x2="49.9984986%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FEC766" offset="44.51%"></stop>
+            <stop stop-color="#F9C469" offset="51.25%"></stop>
+            <stop stop-color="#ECBD6F" offset="58.37%"></stop>
+            <stop stop-color="#DAB079" offset="65.67%"></stop>
+            <stop stop-color="#BFA084" offset="73.1%"></stop>
+            <stop stop-color="#9F8E8F" offset="80.62%"></stop>
+            <stop stop-color="#787A99" offset="88.22%"></stop>
+            <stop stop-color="#4566A3" offset="95.74%"></stop>
+            <stop stop-color="#0D5CAA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="AN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="#113362" points="28 27.9259793 28 0.000932822419 0 0.000932822419 0 27.9259793"></polygon>
+        <polygon id="Path" fill="#065CAB" points="14.0040757 0.00350001328 25.1620317 27.9204171 0 27.9259793 0 0.000932822419"></polygon>
+        <polygon id="SVGID_1_" fill="url(#linearGradient-1)" points="11.9610817 8.7854321 4.29835287 27.9208449 2.62045507 27.9208449 14.0040757 -0.000778638158 25.1620317 27.9204171 18.0475906 27.9131434"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="13.8732245 14.7866686 15.3022907 18.3045758 18.7288746 16.6534442 16.863066 19.9612697 20.2939401 21.6034161 16.5378687 22.2105567 17.3886156 25.9107345 14.5708113 23.3589468 12.201333 26.3304702 12.4437294 22.5421522 8.63789167 22.5464309 11.7581552 20.3737317 9.38138359 17.4094819 13.031487 18.4885578"></polygon>
+    </g>
+</svg>

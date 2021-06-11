@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A2</title>
+    <defs>
+        <linearGradient x1="23.5575109%" y1="65.8654185%" x2="98.4801604%" y2="25.5916576%" id="linearGradient-1">
+            <stop stop-color="#8F969C" offset="0%"></stop>
+            <stop stop-color="#44494D" stop-opacity="0.98290598" offset="18.317938%"></stop>
+            <stop stop-color="#44494D" stop-opacity="0.95726496" offset="26.768705%"></stop>
+            <stop stop-color="#E4E5E7" offset="50%"></stop>
+            <stop stop-color="#8F969C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="A2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9.05941988e-14,27.5 L5.68115848,27.5 C11.1226212,16.2360732 20.8957048,13.646813 28,12.3468953 C9.43462558,12.6070594 4.38527782,20.9474711 9.05941988e-14,27.5 Z" id="path4114" fill="url(#linearGradient-1)" fill-rule="nonzero" transform="translate(14.000000, 19.923448) rotate(-360.000000) translate(-14.000000, -19.923448) "></path>
+        <path d="M19.7930585,15.5575993 L25.2054282,27.492141 L21.2589086,27.492141 L16.5230851,17.1191282 L19.7930585,15.5575993 Z M12.802081,0.5 L18.2144507,12.2114662 L14.9444773,13.3268439 L12.5765656,8.41918188 L9.53210762,15.1114483 L5.69834576,15.1114483 L12.5765656,0.5 L12.802081,0.5 Z" id="Combined-Shape" fill="#002E5E" fill-rule="nonzero"></path>
+    </g>
+</svg>

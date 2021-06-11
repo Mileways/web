@@ -11,10 +11,14 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "@nuxt/content": "^1.8.1",
+    "@turf/turf": "^5.1.6",
+    "axios": "^0.19.2",
+    "date-fns": "^2.15.0",
+    "mapbox-gl": "^1.11.1",
+    "nuxt": "^2.14.0",
+    "vue": "^2.6.11",
     "tailwindcss": "^1.2.0"
   },
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0"
-  }
+  "devDependencies": {}
 }

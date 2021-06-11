@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>JM</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <path d="M12,0 C18.627417,-1.21743675e-15 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 8.11624501e-16,18.627417 0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="JM" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+            </g>
+        </g>
+        <polygon id="Path-16" fill="#18A454" mask="url(#mask-2)" points="0 0 12 12 24 0"></polygon>
+        <polygon id="Path-16" fill="#2E2E2E" mask="url(#mask-2)" transform="translate(18.000000, 12.000000) rotate(90.000000) translate(-18.000000, -12.000000) " points="6 6 18 18 30 6"></polygon>
+        <polygon id="Path-16" fill="#18A454" mask="url(#mask-2)" transform="translate(12.000000, 18.000000) rotate(180.000000) translate(-12.000000, -18.000000) " points="0 12 12 24 24 12"></polygon>
+        <polygon id="Path-16" fill="#2E2E2E" mask="url(#mask-2)" transform="translate(6.000000, 12.000000) rotate(270.000000) translate(-6.000000, -12.000000) " points="-6 6 6 18 18 6"></polygon>
+        <path d="M24,-2.77999845e-13 L23.9993398,2.12133983 L14.1213398,11.9993398 L23.9993398,21.8773398 L24,24 L21.8783398,23.9993398 L11.9993398,14.1213398 L2.12133983,23.9993398 L-1.64313008e-13,24 L-0.00066017178,21.8793398 L9.87833983,11.9993398 L-0.00066017178,2.11933983 L-1.64313008e-13,-2.77999845e-13 L2.12033983,-0.00066017178 L11.9993398,9.87833983 L21.8793398,-0.00066017178 L24,-2.77999845e-13 Z" id="Combined-Shape" fill="#FFD400" mask="url(#mask-2)"></path>
+        <g id="Group" mask="url(#mask-2)">
+            <g>
+                <path d="M12,0.25 C15.2446729,0.25 18.1821729,1.56516355 20.3085047,3.69149532 C22.4348365,5.81782709 23.75,8.75532709 23.75,12 C23.75,15.2446729 22.4348365,18.1821729 20.3085047,20.3085047 C18.1821729,22.4348365 15.2446729,23.75 12,23.75 C8.75532709,23.75 5.81782709,22.4348365 3.69149532,20.3085047 C1.56516355,18.1821729 0.25,15.2446729 0.25,12 C0.25,8.75532709 1.56516355,5.81782709 3.69149532,3.69149532 C5.81782709,1.56516355 8.75532709,0.25 12,0.25 Z" id="Mask" stroke-opacity="0.15" stroke="#000000" stroke-width="0.5" fill-rule="nonzero"></path>
+                <rect id="Dark" fill="url(#linearGradient-5)" style="mix-blend-mode: normal;" opacity="0.100000001" x="0" y="12" width="24" height="12"></rect>
+                <rect id="Light" fill="url(#linearGradient-6)" opacity="0.100000001" style="mix-blend-mode: normal;" x="0" y="0" width="24" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
