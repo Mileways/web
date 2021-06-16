@@ -99,11 +99,7 @@
               How far have I already flown in my life? Thanks to detailed statistics, one becomes much more aware of one’s own flight behavior, thus evaluating possibilities for sustainability.
             </p>
 
-            <ResponsiveImage
-              src="/images/elements/counter{size}.png"
-              alt="Mile counter"
-              class="w-full mt-auto"
-            />
+            <MileCounter />
           </div>
 
           <div
@@ -170,10 +166,11 @@
   import Vue from 'vue'
 
   import ResponsiveImage from '../../general/ResponsiveImage'
+  import MileCounter from '../../landing/MileCounter'
 
   export default Vue.extend({
     name: 'FeatureSection3',
 
-    components: { ResponsiveImage }
+    components: { ResponsiveImage, MileCounter }
   })
 </script>
