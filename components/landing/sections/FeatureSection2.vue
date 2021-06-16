@@ -25,10 +25,10 @@
             />
           </div>
 
-          <div class="p-10 lg:px-20 lg:py-0 w-full lg:w-7/12">
+          <div class="p-8 lg:px-20 lg:py-0 w-full lg:w-7/12">
             <h3 class="h3">Friend's Flights</h3>
 
-            <p class="text-gray-300 mb-16">
+            <p class="text-gray-300">
               Automatically available in your feed and keeping you up to date. No more messages like “Send me your flight details” or “My flight is delayed!”
               <br>
               And in case you have a flight you don’t want to announce, you can choose who can see your data with a quick tap on the privacy settings.
@@ -45,7 +45,7 @@
             />
           </div>
 
-          <div class="p-10 lg:px-12 lg:py-0 w-full lg:w-5/12">
+          <div class="p-8 lg:px-12 lg:py-0 w-full lg:w-5/12">
             <h3 class="h3 mb-6">Airport Greeting Sign</h3>
 
             <p class="text-gray-300 mb-0">
@@ -55,7 +55,7 @@
         </div>
 
         <div class="dark-card flex-card">
-          <div class="p-10 lg:px-12 lg:py-0 w-full lg:w-5/12">
+          <div class="p-8 lg:px-12 lg:py-0 w-full lg:w-5/12">
             <h3 class="h3 mb-6">Web Sharing</h3>
 
             <p class="text-gray-300 mb-0">
