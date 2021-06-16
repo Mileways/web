@@ -1,12 +1,12 @@
 <template>
   <section class="welcome-section">
     <div class="container mx-auto grid md:grid-cols-2">
-      <div class="mt-5">
-        <h1 class="text-5xl leading-tight text-5xl sm:text-6xl mt-3 font-black text-white">
+      <div>
+        <h1 class="text-5xl leading-tight sm:text-6xl font-black text-white">
           Go Travel.
         </h1>
 
-        <p class="text-3xl sm:text-4xl text-white max-w-md">
+        <p class="text-2xl sm:text-4xl text-white max-w-md">
           Everything you need to know about your flights and your friends' flights.
           <br>
 
