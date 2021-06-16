@@ -28,7 +28,7 @@
           <div class="p-8 lg:px-20 lg:py-0 w-full lg:w-7/12">
             <h3 class="h3">Friend's Flights</h3>
 
-            <p class="text-gray-300">
+            <p class="lg:text-xl text-gray-300">
               Automatically available in your feed and keeping you up to date. No more messages like “Send me your flight details” or “My flight is delayed!”
               <br>
               And in case you have a flight you don’t want to announce, you can choose who can see your data with a quick tap on the privacy settings.
@@ -48,7 +48,7 @@
           <div class="p-8 lg:px-12 lg:py-0 w-full lg:w-5/12">
             <h3 class="h3 mb-6">Airport Greeting Sign</h3>
 
-            <p class="text-gray-300 mb-0">
+            <p class="lg:text-xl text-gray-300 mb-0">
               If you ever want to pick up a close acquaintance or a business contact from the airport, Mileways has a built-in welcome sign mode that will make you stand out in the queue. All important information such as name is displayed like a banner — large and legible.
             </p>
           </div>
@@ -58,7 +58,7 @@
           <div class="p-8 lg:px-12 lg:py-0 w-full lg:w-5/12">
             <h3 class="h3 mb-6">Web Sharing</h3>
 
-            <p class="text-gray-300 mb-0">
+            <p class="lg:text-xl text-gray-300 mb-0">
               Your friends and family can follow your flight not only through the iOS app, but from any platform using the Web Sharing feature.  Great for staying connected even through other devices.
             </p>
           </div>
