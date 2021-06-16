@@ -2,7 +2,7 @@
   <section class="welcome-section">
     <div class="container mx-auto grid md:grid-cols-2">
       <div>
-        <h1 class="text-5xl leading-tight sm:text-6xl font-black text-white">
+        <h1 class="text-5xl leading-tight sm:text-6xl font-black text-white lg:mt-10">
           Go Travel.
         </h1>
 
