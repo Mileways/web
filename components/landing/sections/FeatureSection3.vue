@@ -10,7 +10,7 @@
           Due to the complexity of data, it is not easy to build an insightful and a simple product at the same time.
         </p>
 
-        <p class="text-2xl">
+        <p class="text-lg lg:text-2xl">
           However, we have gone the extra mile and dedicated ourselves to every detail, no matter how small.
         </p>
       </div>

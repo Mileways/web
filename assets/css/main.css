@@ -50,7 +50,7 @@ p:not(:last-child) {
 }
 
 .h2 {
-    @apply text-5xl font-black mb-8 leading-tight;
+    @apply text-4xl font-black mb-8 leading-tight;
 }
 
 .h3 {
@@ -58,7 +58,7 @@ p:not(:last-child) {
 }
 
 .h4 {
-    @apply text-3xl font-semibold;
+    @apply text-2xl font-semibold;
 }
 
 .card {
@@ -81,7 +81,7 @@ p:not(:last-child) {
     @apply flex flex-wrap items-center;
 }
 
-@screen sm {
+@screen lg {
     .h2 {
         @apply text-6xl;
     }

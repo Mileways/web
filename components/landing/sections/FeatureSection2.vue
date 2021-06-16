@@ -10,7 +10,7 @@
           They say that our social connections define our level of happiness and longevity.
         </p>
 
-        <p class="text-2xl text-white mb-12">
+        <p class="text-lg lg:text-2xl text-white mb-12">
           Finally you have a flight tracker that considers the local aspect of your life. Whether friends, family or colleagues — we care.
         </p>
       </div>

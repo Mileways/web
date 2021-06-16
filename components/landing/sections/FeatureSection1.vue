@@ -10,7 +10,7 @@
         We think we can do better.
       </p>
 
-      <p class="text-2xl text-gray-700 mb-12">
+      <p class="text-lg lg:text-2xl text-gray-700 mb-12">
         We have identified the problems faced by many air travelers and translated them into a modern, contemporary user experience, finally creating the a flight tracker that will meet all your needs.
       </p>
     </div>

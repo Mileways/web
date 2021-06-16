@@ -68,8 +68,8 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         '.container': {
-          paddingLeft: '2rem',
-          paddingRight: '2rem',
+          paddingLeft: '1rem',
+          paddingRight: '1rem',
           maxWidth: '100%',
           '@screen sm': {
             maxWidth: '640px',
