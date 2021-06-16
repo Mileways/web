@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-primary text-white py-24">
+  <section class="bg-primary text-white py-12 lg:py-24">
     <div class="container mx-auto">
       <div class="max-w-3xl mx-auto mb-10">
         <h2 class="h2">
@@ -50,7 +50,7 @@
       </div>
 
       <div
-        class="-mb-8 text-black gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        class="text-black gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
         <div class="grid grid-cols-1 gap-8">
           <div

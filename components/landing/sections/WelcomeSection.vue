@@ -1,8 +1,8 @@
 <template>
   <section class="welcome-section">
     <div class="container mx-auto grid md:grid-cols-2">
-      <div class="mt-5">
-        <h1 class="text-5xl leading-tight sm:text-6xl mt-3 font-black text-white">
+      <div>
+        <h1 class="text-5xl leading-tight sm:text-6xl font-black text-white">
           Go Travel.
         </h1>
 
