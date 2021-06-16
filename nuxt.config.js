@@ -33,7 +33,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Mileways | Go Travel' },
+      { hid: 'description', name: 'description', content: 'Everything you need to know about your flights and your friends\' flights.' },
       { name: 'msapplication-TileColor', content: tailwindConfig.theme.extend.colors.primary },
       { name: 'theme-color', content: tailwindConfig.theme.extend.colors.primary }
     ],
