@@ -63,12 +63,8 @@
       </div>
 
       <div class="light-card flex-card">
-        <div class="bg-gray-300 w-full lg:w-5/12">
-          <ResponsiveImage
-              src="/images/mockups/notifications{size}.png"
-              alt="Notifications"
-              class="w-full"
-          />
+        <div class="w-full lg:w-5/12">
+          <Lockscreen />
         </div>
 
         <div class="p-8 lg:px-20 lg:py-0 w-full lg:w-7/12">
@@ -95,10 +91,11 @@
   import Vue from 'vue'
 
   import ResponsiveImage from '../../general/ResponsiveImage'
+  import Lockscreen from '../../landing/Lockscreen'
 
   export default Vue.extend({
     name: 'FeatureSection1',
 
-    components: { ResponsiveImage }
+    components: { ResponsiveImage, Lockscreen }
   })
 </script>
