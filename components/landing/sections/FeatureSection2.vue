@@ -16,14 +16,11 @@
       </div>
 
       <div class="grid gap-8">
-        <div class="dark-card flex-card">
-          <div class="bg-gray-700 pt-5 px-5 w-full lg:w-5/12">
-            <ResponsiveImage
-                src="/images/mockups/friends_flights{size}.png"
-                alt="Friend's flight"
-                class="w-full"
-            />
-          </div>
+        <div class="dark-card flex-card" ref="friends-card">
+          <FriendsIllustration
+            class="w-full lg:w-5/12"
+            :friends-visible="friendsCardVisible"
+          />
 
           <div class="p-8 lg:px-20 lg:py-0 w-full lg:w-7/12">
             <h3 class="h3">Friend's Flights</h3>
@@ -80,10 +77,33 @@
   import Vue from 'vue'
 
   import ResponsiveImage from '../../general/ResponsiveImage'
+  import FriendsIllustration from '@/components/landing/FriendsIllustration'
 
   export default Vue.extend({
     name: 'FeatureSection2',
 
-    components: { ResponsiveImage }
+    components: { FriendsIllustration, ResponsiveImage },
+
+    data() {
+      return {
+        friendsCardVisible: false
+      }
+    },
+
+    mounted() {
+      const options = {
+        /*
+         a negative margin-bottom means that the intersection viewport is reduced in height by that amount
+         eg. 0px 0px -50% 0px means that the viewport should only be the upper half of the screen
+        */
+        rootMargin: '0px 0px -50% 0px'
+      }
+
+      const observer = new IntersectionObserver((e) => {
+        this.friendsCardVisible = e[0].isIntersecting
+      }, options);
+
+      observer.observe(this.$refs['friends-card']);
+    },
   })
 </script>
