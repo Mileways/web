@@ -114,7 +114,10 @@
       v-else
       class="w-full text-center"
     >
-      <h1 class="text-2xl">
+      <div v-if="flightLoading" class="text-2xl">
+        Flight data is being loaded ...
+      </div>
+      <h1 v-else class="text-2xl">
         Sorry, we couldn't find that flight.
       </h1>
     </div>
@@ -141,14 +144,40 @@
 
     components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, UserInfo, InfoChip, FlightStatusBox, SectionSeparator },
 
-    async mounted () {
+    head () {
+      const title = 'Flight Information | Mileways'
+      const description = 'Find out more about where your friend is headed to and what airline they are using with Mileways. The app all about flights.'
+      return {
+        title: title,
+        htmlAttrs: {
+          lang: 'en',
+        },
+        meta: [
+          { hid: 'description', name: 'description', content: description },
+          { hid: 'og:title', property: 'og:title', content: title },
+          { hid: 'og:description', property: 'og:description', content: description },
+          { hid: 'og:type', property: 'og:type', content: 'website' },
+          { hid: 'og:site_name',  property: 'og:site_name', content: 'Mileways | All about flights' },
+          { hid: 'og:image', property: 'og:image', content: 'https://www.mileways.com/android-chrome-384x384.png' },
+          { hid: 'twitter:card', property: 'twitter:card', content: 'summary' },
+          { hid: 'twitter:title', property: 'twitter:title', content: title },
+          { hid: 'twitter:description', property: 'twitter:description', content: description },
+          { hid: 'twitter:image', property: 'twitter:image', content: 'https://www.mileways.com/android-chrome-384x384.png' }
+        ]
+      }
+    },
+
+    mounted () {
       if (
         !this.$route.query.userId ||
         !this.$route.query.flightId ||
         !this.$route.query.tripId
-      ) return
+      ) {
+        this.$store.commit('flights/setFlightLoading', false)
+        return
+      }
 
-      await this.$store.dispatch('flights/loadTripData', {
+      this.$store.dispatch('flights/loadTripData', {
         userId: this.$route.query.userId,
         flightId: this.$route.query.flightId,
         tripId: this.$route.query.tripId
@@ -168,6 +197,10 @@
         if (!this.flightInfo) return
 
         return this.flightInfo.flights[0]
+      },
+
+      flightLoading () {
+        return this.$store.getters['flights/flightLoading']
       },
 
       user() {

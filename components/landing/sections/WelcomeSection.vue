@@ -3,7 +3,7 @@
     <div class="container mx-auto grid md:grid-cols-2">
       <div>
         <h1 class="text-5xl leading-tight sm:text-6xl font-black text-white lg:mt-10">
-          Go Travel.
+          All about flights.
         </h1>
 
         <p class="text-2xl sm:text-4xl text-white max-w-md">

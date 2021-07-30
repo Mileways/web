@@ -26,7 +26,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Mileways | Go Travel',
+    title: 'Mileways | All about flights',
     htmlAttrs: {
       lang: 'en',
     },
@@ -35,10 +35,18 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Everything you need to know about your flights and your friends\' flights.' },
       { name: 'msapplication-TileColor', content: tailwindConfig.theme.extend.colors.primary },
-      { name: 'theme-color', content: tailwindConfig.theme.extend.colors.primary }
+      { name: 'theme-color', content: tailwindConfig.theme.extend.colors.primary },
+      { hid: 'og:title', property: 'og:title', content: 'Mileways | All about flights' },
+      { hid: 'og:description', property: 'og:description', content: 'Everything you need to know about your flights and your friends\' flights.' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Mileways | All about flights' },
+      { hid: 'og:image', property: 'og:image', content: 'https://www.mileways.com/android-chrome-384x384.png' },
+      { hid: 'twitter:card', property: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:title', property: 'twitter:title', content: 'Mileways | All about flights' },
+      { hid: 'twitter:description', property: 'twitter:description', content: 'Everything you need to know about your flights and your friends\' flights.'},
+      { hid: 'twitter:image', property: 'twitter:image', content: 'https://www.mileways.com/android-chrome-384x384.png' }
     ],
     link: [
-
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
