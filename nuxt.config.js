@@ -26,7 +26,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Mileways | Go Travel',
+    title: 'Mileways | All about flights',
     htmlAttrs: {
       lang: 'en',
     },
