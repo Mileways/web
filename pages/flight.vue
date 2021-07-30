@@ -114,7 +114,10 @@
       v-else
       class="w-full text-center"
     >
-      <h1 class="text-2xl">
+      <div v-if="flightLoading" class="text-2xl">
+        Flight data is being loaded ...
+      </div>
+      <h1 v-else class="text-2xl">
         Sorry, we couldn't find that flight.
       </h1>
     </div>
@@ -141,14 +144,17 @@
 
     components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, UserInfo, InfoChip, FlightStatusBox, SectionSeparator },
 
-    async mounted () {
+    mounted () {
       if (
         !this.$route.query.userId ||
         !this.$route.query.flightId ||
         !this.$route.query.tripId
-      ) return
+      ) {
+        this.$store.commit('flights/setFlightLoading', false)
+        return
+      }
 
-      await this.$store.dispatch('flights/loadTripData', {
+      this.$store.dispatch('flights/loadTripData', {
         userId: this.$route.query.userId,
         flightId: this.$route.query.flightId,
         tripId: this.$route.query.tripId
@@ -168,6 +174,10 @@
         if (!this.flightInfo) return
 
         return this.flightInfo.flights[0]
+      },
+
+      flightLoading () {
+        return this.$store.getters['flights/flightLoading']
       },
 
       user() {
