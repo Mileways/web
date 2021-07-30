@@ -144,6 +144,29 @@
 
     components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, UserInfo, InfoChip, FlightStatusBox, SectionSeparator },
 
+    head () {
+      const title = 'Flight Information | Mileways'
+      const description = 'Find out more about where your friend is headed to and what airline they are using with Mileways. The app all about flights.'
+      return {
+        title: title,
+        htmlAttrs: {
+          lang: 'en',
+        },
+        meta: [
+          { hid: 'description', name: 'description', content: description },
+          { hid: 'og:title', property: 'og:title', content: title },
+          { hid: 'og:description', property: 'og:description', content: description },
+          { hid: 'og:type', property: 'og:type', content: 'website' },
+          { hid: 'og:site_name',  property: 'og:site_name', content: 'Mileways | All about flights' },
+          { hid: 'og:image', property: 'og:image', content: 'https://www.mileways.com/android-chrome-384x384.png' },
+          { hid: 'twitter:card', property: 'twitter:card', content: 'summary' },
+          { hid: 'twitter:title', property: 'twitter:title', content: title },
+          { hid: 'twitter:description', property: 'twitter:description', content: description },
+          { hid: 'twitter:image', property: 'twitter:image', content: 'https://www.mileways.com/android-chrome-384x384.png' }
+        ]
+      }
+    },
+
     mounted () {
       if (
         !this.$route.query.userId ||
