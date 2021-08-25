@@ -5,7 +5,7 @@
     <div class="container mx-auto">
       <img src="/images/logo_text.svg" alt="Mileways Logo" class="mx-auto">
 
-      <h1 class="text-5xl sm:text-6xl mt-3 font-black text-white">Flying August 25th.<br>You may stay excited!</h1>
+      <h1 class="text-5xl sm:text-6xl mt-3 font-black text-white">Flying August 26th.<br>You may stay excited!</h1>
 
       <div class="sm:flex items-center mt-10">
         <div class="action-item-wrapper ml-auto">
