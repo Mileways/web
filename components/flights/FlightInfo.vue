@@ -1,11 +1,9 @@
 <template>
   <div v-if="airlineInfo">
     <div class="flex items-center">
-      <img
-        :src="airlineLogo"
-        :alt="airlineInfo.name"
-        class="h-8 w-8 sm:h-10 sm:w-10 mr-3 sm:mr-5"
-      >
+      <object :data="airlineLogo" type="image/png" class="h-8 w-8 sm:h-10 sm:w-10 mr-3 sm:mr-5">
+        <img src="/images/icons/plane.svg" alt="Fallback airline logo">
+      </object>
 
       <div>
         <span class="font-semibold">{{ airlineInfo.name }}</span>
