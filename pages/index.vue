@@ -4,7 +4,6 @@
     <FeatureSection1 />
     <FeatureSection2 />
     <FeatureSection3 />
-
     <client-only>
       <CookieDisclaimer />
     </client-only>
