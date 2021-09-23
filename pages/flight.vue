@@ -25,7 +25,7 @@
           <FlightInfo
             :airline-info="flight.airline"
             :flight-number="flight.flightNumber"
-            class="pl-5 sm:pl-10 py-3 sm:py-4"
+            class="pl-5 sm:pl-10 py-2 sm:py-4 flex items-center"
           />
 
           <FlightStatusBox

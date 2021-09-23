@@ -5,9 +5,10 @@
       :class="backgroundColorClass"
     />
 
-    <div class="relative text-white text-right">
+    <div class="relative text-white text-right flex flex-col">
       <ProgressBar v-if="status === 'in_air'"
         :progress="flightProgress"
+        class="mb-1"
       />
 
       <span v-else>{{ formattedStatus }}</span>
@@ -91,7 +92,9 @@
             return 'By ' + formatDistance(this.departureTime, this.actualDepartureTime)
 
           case 'in_air':
-            return formatDistance(new Date(), this.actualArrivalTime) + ' to go'
+            const distance = formatDistance(new Date(), this.actualArrivalTime)
+
+            return distance + (distance.length > 12 ? '' : ' to go')
 
           case 'departure_due':
             return 'Since ' + formatDistance(new Date(), this.actualDepartureTime)
@@ -140,7 +143,7 @@
 
 <style scoped>
   .flight-status-box {
-    @apply relative pl-10 pr-5 py-4 flex items-center;
+    @apply relative pl-10 pr-5 py-2 flex items-center;
   }
 
   .flight-status-box > .background-element {
@@ -152,7 +155,7 @@
 
   @screen sm {
     .flight-status-box {
-      @apply relative pl-16 pr-10 py-5 flex items-center;
+      @apply relative pl-16 pr-10 py-4 flex items-center;
     }
   }
 </style>

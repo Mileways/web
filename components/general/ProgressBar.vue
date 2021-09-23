@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue border-rounded w-20 h-2 border border-blue rounded-full inline-block">
+  <div class="bg-blue border-rounded w-full h-2 border border-blue rounded-full inline-block">
     <div
       class="bg-white h-full w-full rounded-full"
       :style="barStyles"
