@@ -11,14 +11,14 @@
       {
         "appID": "4MP7YM8URT.com.mileways.app",
         "paths": [
-          "/flights/*",
+          "/flight/*",
           "/traveler/*"
         ]
       },
       {
         "appID": "R34ZEMABE6.com.mileways.beta",
         "paths": [
-          "/flights/*",
+          "/flight/*",
           "/traveler/*"
         ]
       }
