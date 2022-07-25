@@ -36,6 +36,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Everything you need to know about your flights and your friends\' flights.' },
       { name: 'msapplication-TileColor', content: tailwindConfig.theme.extend.colors.primary },
       { name: 'theme-color', content: tailwindConfig.theme.extend.colors.primary },
+      { name: 'facebook-domain-verification', content: 'jmiu7ulhsk8659axhqbtn3kgnind6d' },
       { hid: 'og:title', property: 'og:title', content: 'Mileways | All about flights' },
       { hid: 'og:description', property: 'og:description', content: 'Everything you need to know about your flights and your friends\' flights.' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
