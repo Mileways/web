@@ -31,4 +31,6 @@ The following environment variables are available:
 ## Deployment
 Deployments are currently done using [Netlify](https://www.netlify.com/)
 
+Any commits to `master` will be automatically deployed to the production site.
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/072bf2d1-89be-4075-9d7a-1919b830d607/deploy-status)](https://app.netlify.com/sites/mileways/deploys)
