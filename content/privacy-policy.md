@@ -158,6 +158,10 @@ We may use third-party Service providers to monitor and analyze the use of our S
   We also encourage you to review the Google's policy for safeguarding your data: https://support.google.com/analytics/answer/6004245
   
   For more information on what type of information Firebase collects, please visit the How Google uses data when you use our partners' sites or apps webpage: https://policies.google.com/technologies/partner-sites
+  
+- **Facebook (Facebook Pixel)**
+- **Adjust**
+- **Google Ads**
 
 ### Email Marketing
 We may use Your Personal Data to contact You with newsletters, marketing or promotional materials and other information that may be of interest to You. You may opt-out of receiving any, or all, of these communications from Us by following the unsubscribe link or instructions provided in any email We send or by contacting Us.
