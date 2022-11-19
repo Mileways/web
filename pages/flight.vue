@@ -121,6 +121,10 @@
         Sorry, we couldn't find that flight.
       </h1>
     </div>
+
+    <div class="flex justify-center items-center w-fit my-12">
+      <EMailButtonBlue />
+    </div>
   </div>
 </template>
 
@@ -138,11 +142,12 @@
   import FlightStatusBox from '../components/flights/FlightStatusBox'
   import InfoChip from '../components/general/InfoChip'
   import SectionSeparator from '../components/general/SectionSeparator'
+  import EMailButtonBlue from '../components/general/EMailButtonBlue.vue'
 
   export default Vue.extend({
     name: 'FlightView',
 
-    components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, UserInfo, InfoChip, FlightStatusBox, SectionSeparator },
+    components: { FlightMap, AirportInfo, FlightInfo, TimeInfo, UserInfo, InfoChip, FlightStatusBox, SectionSeparator, EMailButtonBlue },
 
     head () {
       const title = 'Flight Information | Mileways'

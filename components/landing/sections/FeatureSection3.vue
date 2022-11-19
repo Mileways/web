@@ -50,7 +50,7 @@
       </div>
 
       <div
-        class="text-black gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        class="text-black gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-12 lg:mb-24"
       >
         <div class="grid grid-cols-1 gap-8">
           <div
@@ -158,6 +158,9 @@
           </div>
         </div>
       </div>
+      <div class="flex justify-center items-center">
+        <EMailButtonWhite />
+      </div>
     </div>
   </section>
 </template>
@@ -167,10 +170,11 @@
 
   import ResponsiveImage from '../../general/ResponsiveImage'
   import MileCounter from '../../landing/MileCounter'
+  import EMailButtonWhite from '../../general/EMailButtonWhite.vue'
 
   export default Vue.extend({
     name: 'FeatureSection3',
 
-    components: { ResponsiveImage, MileCounter }
+    components: { ResponsiveImage, MileCounter, EMailButtonWhite }
   })
 </script>
