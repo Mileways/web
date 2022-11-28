@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /email-verified
+Disallow: /email-verification-failed
