@@ -1,5 +1,8 @@
 <template>
-  <div ref="map" class="flight-map" />
+  <div class="w-full h-full">
+    <p v-if="isLoading" class="text-center">Map is loading...</p>
+    <div ref="map" class="flight-map" />
+  </div>
 </template>
 
 <script>
@@ -11,9 +14,8 @@
 
     data() {
       return {
-        scrapedAirports: [
-  
-        ]
+        scrapedAirports: [],
+        isLoading: true
       }
     },
 
@@ -72,9 +74,11 @@
               marker.addTo(map);
               marker.setPopup(popup);
             });
+            this.isLoading = false;
           });
         } catch (error) {
           console.error(error);
+          this.isLoading = false;
         }
       }
     }
