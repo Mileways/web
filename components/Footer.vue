@@ -16,26 +16,35 @@
       </nav>
 
       <div class="mx-auto lg:mr-0 flex flex-wrap lg:flex-no-wrap items-center">
-        <div class="w-full lg:w-auto text-center mb-6 lg:mb-0">
-          <a
-            :href="appStoreUrl"
-            class="bg-primary text-white px-3 py-1 mx-8 rounded-md"
-          >
-            Download
-          </a>
+        <div class="flex space-x-2 mr-4">
+          <div class="w-full lg:w-auto text-center mb-6 lg:mb-0">
+            <a
+              :href="appStoreUrl"
+              class="bg-primary text-white px-3 py-1 mx-2 rounded-md">
+              Download
+            </a>
+          </div>
+
+          <div class="w-full lg:w-auto text-center mb-6 lg:mb-0">
+            <a
+              :href="newsletterUrl"
+              class="bg-primary text-white px-3 py-1 mx-2 rounded-md">
+              E-Mail Updates
+            </a>
+          </div>
         </div>
 
         <div class="grid grid-cols-3 gap-8 mx-auto mb-6 lg:mb-0">
           <a :href="instagramUrl" target="_blank">
-            <img src="/images/icons/instagram.svg" alt="Instagram Logo" class="w-5">
+            <img src="/images/icons/instagram.svg" alt="Instagram Logo" class="w-5" />
           </a>
 
           <a :href="twitterUrl" target="_blank">
-            <img src="/images/icons/twitter.svg" alt="Twitter Logo" class="w-5">
+            <img src="/images/icons/twitter.svg" alt="Twitter Logo" class="w-5" />
           </a>
 
           <a :href="facebookUrl" target="_blank">
-            <img src="/images/icons/facebook.svg" alt="Facebook Logo" class="w-5">
+            <img src="/images/icons/facebook.svg" alt="Facebook Logo" class="w-5" />
           </a>
         </div>
       </div>
@@ -44,26 +53,29 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Header',
+  name: "Header",
 
   computed: {
     appStoreUrl() {
-      return process.env.APP_STORE_URL
+      return process.env.APP_STORE_URL;
+    },
+
+    newsletterUrl() {
+      return "http://eepurl.com/g-rWrH";
     },
 
     instagramUrl() {
-      return process.env.INSTAGRAM_URL
+      return process.env.INSTAGRAM_URL;
     },
 
     twitterUrl() {
-      return process.env.TWITTER_URL
+      return process.env.TWITTER_URL;
     },
 
     facebookUrl() {
-      return process.env.FACEBOOK_URL
-    }
-  }
-}
+      return process.env.FACEBOOK_URL;
+    },
+  },
+};
 </script>
