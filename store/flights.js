@@ -1,42 +1,42 @@
-import Vue from 'vue'
+import Vue from "vue";
 
 export const state = () => ({
   trips: {},
-  flightLoading: true
-})
+  flightLoading: true,
+});
 
 export const getters = {
-  tripById: state => id => state.trips[id] || null,
-  flightLoading: state => state.flightLoading
-}
+  tripById: (state) => (id) => state.trips[id] || null,
+  flightLoading: (state) => state.flightLoading,
+};
 
 export const mutations = {
   setTripData(state, trip) {
-    Vue.set(state.trips, trip.id, trip)
+    Vue.set(state.trips, trip.id, trip);
   },
-  setFlightLoading (state, value) {
-    state.flightLoading = value
-  }
-}
+  setFlightLoading(state, value) {
+    state.flightLoading = value;
+  },
+};
 
 export const actions = {
   async loadTripData(context, { tripId, userId, flightId }) {
-    const baseString = `userId=${userId}&flightId=${flightId}&tripId=${tripId}`
+    const baseString = `userId=${userId}&flightId=${flightId}&tripId=${tripId}`;
 
-    const identifier = btoa(baseString)
+    const identifier = Buffer.from(baseString).toString("base64");
 
-    context.commit('setFlightLoading', true)
+    context.commit("setFlightLoading", true);
     try {
-      const trip = await this.$milewaysApiClient.fetchTripData(identifier)
+      const trip = await this.$milewaysApiClient.fetchTripData(identifier);
 
-      if (trip instanceof Error) return
+      if (trip instanceof Error) return;
 
-      context.commit('setTripData', {
+      context.commit("setTripData", {
         ...trip,
-        id: tripId
-      })
+        id: tripId,
+      });
     } finally {
-      context.commit('setFlightLoading', false)
+      context.commit("setFlightLoading", false);
     }
-  }
-}
+  },
+};
