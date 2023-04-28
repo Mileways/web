@@ -119,6 +119,7 @@ import Vue from "vue";
 
 import { parseISO } from "date-fns";
 
+import Axios from "axios";
 import AirportInfo from "../components/flights/AirportInfo";
 import FlightInfo from "../components/flights/FlightInfo";
 import FlightMap from "../components/flights/FlightMap";
@@ -146,9 +147,16 @@ export default Vue.extend({
     EMailButtonBlue,
     LinkButtonBlue,
   },
+
+  async asyncData({ query }) {
+    const baseString = `userId=${query.userId}&flightId=${query.flightId}&tripId=${query.tripId}`;
+    const encodedIdentifiers = Buffer.from(baseString).toString("base64");
+    const result = await Axios.get('https://mileways-flieger.xyz/api/v1/trips/shared/' + encodedIdentifiers)
+    return { asyncFlight: result.data.flights[0] };
+  },
   
   head() {
-    const title = `Flying from ${this.flight?.departure.city} to ${this.flight?.arrival.city} with ${this.flight?.airline.name}`;
+    const title = `Flying from ${this.asyncFlight.departure.city} to ${this.asyncFlight.arrival.city} with ${this.asyncFlight.airline.name}`
     const description =
       "Find out more about where your friend is headed to and what airline they are using with Mileways. The app all about flights.";
     return {
