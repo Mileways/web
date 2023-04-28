@@ -131,6 +131,7 @@ import LinkButtonBlue from "../components/general/LinkButtonBlue";
 import SectionSeparator from "../components/general/SectionSeparator";
 
 export default Vue.extend({
+  ssr: true,
   name: "FlightView",
 
   components: {
