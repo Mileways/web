@@ -146,29 +146,9 @@ export default Vue.extend({
     EMailButtonBlue,
     LinkButtonBlue,
   },
-
-  async asyncData({ store, route }) {
-    if (
-      !route.query.userId ||
-      !route.query.flightId ||
-      !route.query.tripId
-    ) {
-      store.commit("flights/setFlightLoading", false);
-      return;
-    }
-
-    await store.dispatch("flights/loadTripData", {
-      userId: route.query.userId,
-      flightId: route.query.flightId,
-      tripId: route.query.tripId,
-    });
-
-    const asyncFlight = store.getters["flights/tripById"](route.query.tripId);
-    return { asyncFlight: asyncFlight.flights[0] };
-  },
-
+  
   head() {
-    const title = `Flying from ${this.flight.departure.city} to ${this.flight.arrival.city} with ${this.flight.airline.name}`;
+    const title = `Flying from ${this.flight?.departure.city} to ${this.flight?.arrival.city} with ${this.flight?.airline.name}`;
     const description =
       "Find out more about where your friend is headed to and what airline they are using with Mileways. The app all about flights.";
     return {
