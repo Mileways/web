@@ -96,6 +96,29 @@
           </p>
         </div>
       </div>
+
+      <div class="light-card flex-card">
+        <div class="p-8 lg:px-12 lg:py-0 w-full lg:w-6/12">
+          <h3 class="h3 mb-6">Beautiful Aircraft Illustrations</h3>
+
+          <p>Mileways Exclusive</p>
+
+          <p class="lg:text-xl text-gray-700 mb-0">
+            Now even in the design of your favourite airline.
+            Curious about your aircraft? Mileways has true-to-life
+            illustrations of your aircraft, some even with the livery
+            of your airline.
+          </p>
+        </div>
+
+        <div class="w-full lg:w-1/2">
+          <div class="bg-gray-300 p-8">
+            <ResponsiveImage
+              src="/images/mockups/airline-aircraft{size}.png"
+              alt="Airport greeting sign" class="w-full" />
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
