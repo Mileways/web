@@ -94,9 +94,3 @@ p:not(:last-child) {
         @apply rounded-4xl;
     }
 }
-
-@screen md {
-    .flex-card {
-        @apply flex-no-wrap;
-    }
-}

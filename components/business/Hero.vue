@@ -1,10 +1,11 @@
 <template>
     <section class="bg-white py-12">
         <div
-            class="px-24 mx-auto flex flex-col md:flex-row space-x-12 items-center">
+            class="px-24 max-w-[1500px] mx-auto flex flex-col md:flex-row space-x-10 items-center">
             <div class="space-y-6">
                 <h1 class="text-5xl leading-tight font-bold lg:mt-10">
-                    Reach the largest community of air travelers in the
+                    Reach the largest community of air travelers in
+                    the
                     world.
                 </h1>
 
@@ -19,9 +20,8 @@
                 </a>
             </div>
 
-            <div class="mt-10 md:mt-0 hidden md:block">
-                <ResponsiveImage
-                    src="/images/elements/people/traveler.jpg"
+            <div class="mt-10 max-w-4xl md:mt-0 hidden md:block">
+                <ResponsiveImage src="/images/backgrounds/airport.jpg"
                     class="ml-auto" alt="Main mockup" />
             </div>
 
