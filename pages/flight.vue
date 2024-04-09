@@ -108,7 +108,7 @@
       <h1 v-else class="text-2xl">Sorry, we couldn't find that flight.</h1>
     </div>
 
-    <div class="flex justify-center items-center w-fit my-12">
+    <div class="flex justify-center items-center w-full my-12">
       <span><LinkButtonBlue :href="appStoreUrl">Download Mileways</LinkButtonBlue></span>
     </div>
   </div>
@@ -151,12 +151,14 @@ export default Vue.extend({
   async asyncData({ query }) {
     const baseString = `userId=${query.userId}&flightId=${query.flightId}&tripId=${query.tripId}`;
     const encodedIdentifiers = Buffer.from(baseString).toString("base64");
-    const result = await Axios.get('https://mileways-flieger.xyz/api/v1/trips/shared/' + encodedIdentifiers)
+    const result = await Axios.get(
+      "https://mileways-flieger.xyz/api/v1/trips/shared/" + encodedIdentifiers,
+    );
     return { asyncFlight: result.data.flights[0] };
   },
-  
+
   head() {
-    const title = `Flying from ${this.asyncFlight.departure.city} to ${this.asyncFlight.arrival.city} with ${this.asyncFlight.airline.name}`
+    const title = `Flying from ${this.asyncFlight.departure.city} to ${this.asyncFlight.arrival.city} with ${this.asyncFlight.airline.name}`;
     const description =
       "Find out more about where your friend is headed to and what airline they are using with Mileways. The app all about flights.";
     return {
@@ -248,8 +250,8 @@ export default Vue.extend({
 
       return new Date(
         parseISO(
-          this.flight.estimatedDepartureTimeZoned || this.flight.departureTimeZoned
-        )
+          this.flight.estimatedDepartureTimeZoned || this.flight.departureTimeZoned,
+        ),
       );
     },
 
@@ -263,7 +265,7 @@ export default Vue.extend({
       if (!this.flight) return;
 
       return new Date(
-        parseISO(this.flight.estimatedArrivalTimeZoned || this.flight.arrivalTimeZoned)
+        parseISO(this.flight.estimatedArrivalTimeZoned || this.flight.arrivalTimeZoned),
       );
     },
 
