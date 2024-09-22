@@ -32,7 +32,7 @@
             d="M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337ZM13.0003 21.667C17.7868 21.667 21.667 17.7868 21.667 13.0003C21.667 8.21385 17.7868 4.33366 13.0003 4.33366C8.21385 4.33366 4.33366 8.21385 4.33366 13.0003C4.33366 17.7868 8.21385 21.667 13.0003 21.667ZM11.917 7.58366H14.0837V9.75033H11.917V7.58366ZM11.917 11.917H14.0837V18.417H11.917V11.917Z"
             fill="#0D1012" />
         </svg>
-        <div class="space-y-2">
+        <div class="space-y-1">
           <p class="font-semibold mb-0 leading-[20px] flex items-center">
             You can now migrate your App in the Air flight history into Mileways!
           </p>
@@ -60,13 +60,26 @@
   </div>
 </template>
 
+<style scoped>
+p:not(:last-child) {
+  margin-bottom: 0; /* Override the mb-5 class */
+}
+</style>
+
 <script>
 export default {
   methods: {
     scrollToGuide() {
       const guideElement = document.getElementById("migration-guide");
       if (guideElement) {
-        guideElement.scrollIntoView({ behavior: "smooth" });
+        const headerOffset = 80;
+        const elementPosition = guideElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
       }
     },
   },

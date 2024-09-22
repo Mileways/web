@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h2 class="text-3xl font-bold mb-8">How does Mileways compare to App in the Air?</h2>
+    <h2 class="text-4xl font-semibold w-1/2 mb-8">
+      How does Mileways compare <br />to App in the Air?
+    </h2>
     <div class="overflow-hidden">
       <table class="w-full border-collapse">
         <thead>

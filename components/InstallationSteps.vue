@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto mt-24" id="migration-guide">
+  <div class="max-w-4xl mx-auto mt-24">
     <div class="relative">
       <!-- Background line -->
       <div class="absolute left-[10%] right-[10%] top-[24px]">
