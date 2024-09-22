@@ -1,8 +1,8 @@
 <template>
   <footer class="py-10 bg-gray-100 text-sm">
     <div
-      class="container mx-auto flex flex-col lg:flex-row lg:items-start lg:justify-between">
-      <div class="w-full lg:w-1/4 mb-6 lg:mb-0">
+      class="container mx-auto grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="col-span-1">
         <h3 class="font-bold mb-2">Navigation</h3>
         <ul class="flex flex-col space-y-2">
           <li>
@@ -20,7 +20,7 @@
         </ul>
       </div>
 
-      <div class="w-full lg:w-1/4 mb-6 lg:mb-0">
+      <div class="col-span-1">
         <h3 class="font-bold mb-2">Comparisons</h3>
         <ul class="flex flex-col space-y-2">
           <li>
@@ -32,19 +32,18 @@
         </ul>
       </div>
 
-      <div class="w-full lg:w-1/4 flex flex-col space-y-4">
+      <div class="col-span-1 flex flex-col space-y-4">
         <a :href="appStoreUrl"
-          class="bg-primary rounded-full text-white px-4 py-2 text-center font-bold cursor-pointer">
-          Download on App Store
+          class="bg-primary rounded-full text-white px-4 py-2 text-center font-bold cursor-pointer w-fit">
+          Download
         </a>
         <a :href="newsletterUrl"
-          class=" text-black px-4 py-2 text-center font-bold underline underline-offset-4">
+          class="text-black font-bold underline underline-offset-4 w-fit text-left">
           Get E-Mail Updates
         </a>
       </div>
 
-      <div
-        class="w-full lg:w-1/4 flex flex-col items-center lg:items-end">
+      <div class="col-span-1 flex flex-col items-start sm:items-end">
         <h3 class="font-bold mb-2">Follow us</h3>
         <div class="flex space-x-4">
           <a :href="instagramUrl" target="_blank"

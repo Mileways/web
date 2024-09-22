@@ -1,5 +1,6 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 relative z-10 pt-12 pb-4">
+  <div
+    class="grid grid-cols-1 md:grid-cols-3 gap-4 relative z-10 md:pt-12 pb-4 px-8 md:px-0">
     <FeatureCard
       title="Easily track your friends’ and family’s flights."
       description="Your friend’s flight automatically appear on the friends’ tab as they add their flights to Mileways."
