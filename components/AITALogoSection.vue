@@ -21,7 +21,7 @@
       <div
         class="relative md:absolute md:top-0 md:right-0 md:w-3/4 md:h-full">
         <div class="absolute top-0 right-0 w-full md:w-2/3 z-0">
-          <img src="/images/map-plane.svg" alt="Plane Map"
+          <img src="/images/map-plane.png" alt="Plane Map"
             class="w-full h-auto object-contain md:object-right md:pl-12 md:pt-24 mt-4 md:mt-0 max-w-lg" />
         </div>
         <div class="z-0">
