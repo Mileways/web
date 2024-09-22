@@ -1,5 +1,5 @@
 <template>
-    <div class="space-y-16">
+    <div class="space-y-16 pb-12">
         <div class="max-w-3xl mx-auto px-5 font-sans"
             id="migration-guide">
             <h1 class="text-4xl font-semibold text-center mb-12 px-8">
@@ -32,11 +32,13 @@
             </div>
         </div>
         <FeaturedAirlines />
+        <GetStarted />
     </div>
 </template>
 
 <script>
-import FeaturedAirlines from "@/components/FeaturedAirlines.vue";
+import FeaturedAirlines from "@/components/FeaturedAirlines";
+import GetStarted from "@/components/GetStarted";
 
 export default {
     name: 'MigrateToMileways',
@@ -71,6 +73,7 @@ export default {
     },
     components: {
         FeaturedAirlines,
+        GetStarted
     }
 }
 </script>

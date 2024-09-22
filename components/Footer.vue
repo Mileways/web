@@ -1,50 +1,66 @@
 <template>
   <footer class="py-10 bg-gray-100 text-sm">
-    <div class="container mx-auto flex flex-wrap-reverse lg:flex-no-wrap items-center">
-      <nav class="mx-auto lg:mx-0">
-        <ul class="grid grid-cols-3 gap-4 lg:gap-8">
-          <li class="inline-block">
-            <nuxt-link to="/pages/about">About</nuxt-link>
+    <div
+      class="container mx-auto flex flex-col lg:flex-row lg:items-start lg:justify-between">
+      <div class="w-full lg:w-1/4 mb-6 lg:mb-0">
+        <h3 class="font-bold mb-2">Navigation</h3>
+        <ul class="flex flex-col space-y-2">
+          <li>
+            <nuxt-link to="/pages/about"
+              class="inline-flex items-center">About</nuxt-link>
           </li>
-          <li class="inline-block">
-            <nuxt-link to="/pages/terms-and-conditions">Terms</nuxt-link>
+          <li>
+            <nuxt-link to="/pages/terms-and-conditions"
+              class="inline-flex items-center">Terms</nuxt-link>
           </li>
-          <li class="inline-block">
-            <nuxt-link to="/pages/privacy-policy">Privacy</nuxt-link>
+          <li>
+            <nuxt-link to="/pages/privacy-policy"
+              class="inline-flex items-center">Privacy</nuxt-link>
           </li>
         </ul>
-      </nav>
+      </div>
 
-      <div class="mx-auto lg:mr-0 flex flex-wrap lg:flex-no-wrap items-center">
-        <div class="flex space-x-2 mr-4">
-          <div class="w-full lg:w-auto text-center mb-6 lg:mb-0">
-            <a
-              :href="appStoreUrl"
-              class="bg-primary text-white px-3 py-1 mx-2 rounded-md">
-              Download
-            </a>
-          </div>
+      <div class="w-full lg:w-1/4 mb-6 lg:mb-0">
+        <h3 class="font-bold mb-2">Comparisons</h3>
+        <ul class="flex flex-col space-y-2">
+          <li>
+            <nuxt-link to="/comparisons/app-in-the-air"
+              class="inline-flex items-center">App in the
+              Air</nuxt-link>
+          </li>
+          <!-- Add more comparison links here if needed -->
+        </ul>
+      </div>
 
-          <div class="w-full lg:w-auto text-center mb-6 lg:mb-0">
-            <a
-              :href="newsletterUrl"
-              class="bg-primary text-white px-3 py-1 mx-2 rounded-md">
-              E-Mail Updates
-            </a>
-          </div>
-        </div>
+      <div class="w-full lg:w-1/4 flex flex-col space-y-4">
+        <a :href="appStoreUrl"
+          class="bg-primary rounded-full text-white px-4 py-2 text-center font-bold cursor-pointer">
+          Download on App Store
+        </a>
+        <a :href="newsletterUrl"
+          class=" text-black px-4 py-2 text-center font-bold underline underline-offset-4">
+          Get E-Mail Updates
+        </a>
+      </div>
 
-        <div class="grid grid-cols-3 gap-8 mx-auto mb-6 lg:mb-0">
-          <a :href="instagramUrl" target="_blank">
-            <img src="/images/icons/instagram.svg" alt="Instagram Logo" class="w-5" />
+      <div
+        class="w-full lg:w-1/4 flex flex-col items-center lg:items-end">
+        <h3 class="font-bold mb-2">Follow us</h3>
+        <div class="flex space-x-4">
+          <a :href="instagramUrl" target="_blank"
+            class="inline-flex items-center">
+            <img src="/images/icons/instagram.svg"
+              alt="Instagram Logo" class="w-6 h-6" />
           </a>
-
-          <a :href="twitterUrl" target="_blank">
-            <img src="/images/icons/twitter.svg" alt="Twitter Logo" class="w-5" />
+          <a :href="twitterUrl" target="_blank"
+            class="inline-flex items-center">
+            <img src="/images/icons/twitter.svg" alt="Twitter Logo"
+              class="w-6 h-6" />
           </a>
-
-          <a :href="facebookUrl" target="_blank">
-            <img src="/images/icons/facebook.svg" alt="Facebook Logo" class="w-5" />
+          <a :href="facebookUrl" target="_blank"
+            class="inline-flex items-center">
+            <img src="/images/icons/facebook.svg" alt="Facebook Logo"
+              class="w-6 h-6" />
           </a>
         </div>
       </div>
@@ -54,25 +70,21 @@
 
 <script>
 export default {
-  name: "Header",
+  name: "Footer",
 
   computed: {
     appStoreUrl() {
       return process.env.APP_STORE_URL;
     },
-
     newsletterUrl() {
       return "http://eepurl.com/g-rWrH";
     },
-
     instagramUrl() {
       return process.env.INSTAGRAM_URL;
     },
-
     twitterUrl() {
       return process.env.TWITTER_URL;
     },
-
     facebookUrl() {
       return process.env.FACEBOOK_URL;
     },
