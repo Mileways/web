@@ -2,7 +2,7 @@
   <div class="default">
     <Header />
 
-    <div class="min-h-screen">
+    <div class="min-h-screen bg-[#FAFAFA]">
       <nuxt />
     </div>
 
@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default {
-  components: { Header, Footer }
-}
+  components: { Header, Footer },
+};
 </script>
