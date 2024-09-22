@@ -12,7 +12,7 @@
             </div>
             <div>
                 <div
-                    class="inline-flex items-center text-sm text-primary font-medium mb-4">
+                    class="inline-flex items-center text-sm text-primary font-semibold mb-4">
                     <img src="/images/icons/globe.svg" alt="Global"
                         class="w-4 h-4 mr-2" />
                     GLOBAL

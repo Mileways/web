@@ -1,5 +1,11 @@
 <template>
     <section>
+        <div
+            class="inline-flex items-center text-sm text-primary font-semibold mb-4">
+            <img src="/images/icons/two-arrows.svg" alt="Global"
+                class="w-4 h-4 mr-2" />
+            COMPARE FEATURES
+        </div>
         <h2
             class="text-4xl text-center md:text-left font-semibold md:w-1/2 mb-8">
             How does Mileways compare <br />to App in the Air?
