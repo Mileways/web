@@ -1,10 +1,10 @@
 <template>
-  <div class="max-w-5xl mx-auto px-4 py-8 space-y-24">
-    <GoodbyeLetter />
-    <AITALogoSection />
-    <ComparisonTable />
-    <MigrateToMileways />
-  </div>
+    <div class="max-w-5xl mx-auto px-4 py-8 space-y-24">
+        <GoodbyeLetter />
+        <AITALogoSection />
+        <ComparisonTable />
+        <MigrateToMileways />
+    </div>
 </template>
 
 <script>
@@ -14,6 +14,11 @@ import GoodbyeLetter from "@/components/GoodbyeLetter.vue";
 import MigrateToMileways from "@/components/MigrateToMileways.vue";
 
 export default {
-  components: { AITALogoSection, GoodbyeLetter, ComparisonTable, MigrateToMileways },
+    components: {
+        AITALogoSection,
+        GoodbyeLetter,
+        ComparisonTable,
+        MigrateToMileways,
+    },
 };
 </script>
