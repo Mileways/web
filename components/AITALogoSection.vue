@@ -7,8 +7,7 @@
         <img src="/icons/mw-logo.svg" alt="Mileways Logo"
           class="h-8 w-auto md:h-10" />
       </div>
-      <h1
-        class="font-semibold text-3xl md:text-5xl my-4 md:my-6 relative z-10">
+      <h1 class="font-semibold text-5xl my-4 md:my-6 relative z-10">
         Mileways vs<br />App in the Air
       </h1>
       <p
