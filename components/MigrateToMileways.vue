@@ -31,7 +31,10 @@
                 </div>
             </div>
         </div>
-        <FeaturedAirlines />
+        <div class="bg-red-200 w-full h-full">
+            <FeaturedAirlines class="hidden md:block" />
+            <FeaturedAirlinesMobile class="md:hidden" />
+        </div>
         <GetStarted />
     </div>
 </template>
@@ -39,7 +42,7 @@
 <script>
 import FeaturedAirlines from "@/components/FeaturedAirlines";
 import GetStarted from "@/components/GetStarted";
-
+import FeaturedAirlinesMobile from "@/components/FeaturedAirlinesMobile";
 export default {
     name: 'MigrateToMileways',
     data() {
@@ -73,6 +76,7 @@ export default {
     },
     components: {
         FeaturedAirlines,
+        FeaturedAirlinesMobile,
         GetStarted
     }
 }
