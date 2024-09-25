@@ -20,11 +20,11 @@
             <a href="/pages/about">About</a>
           </li>
 
-          <li class="mx-2 lg:mx-5">
+          <!-- <li class="mx-2 lg:mx-5">
             <a href="/comparisons/app-in-the-air">
               App in the Air
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </div>

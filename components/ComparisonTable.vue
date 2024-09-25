@@ -14,7 +14,7 @@
                 <thead>
                     <tr>
                         <th
-                            class="text-left pl-4 font-semibold text-[#9B9C9D] uppercase text-sm pb-4 align-bottom w-1/3 md:w-auto">
+                            class="text-left pl-4 font-semibold text-[#9B9C9D] uppercase text-sm pb-4 align-bottom w-auto">
                             Essential Features
                         </th>
                         <th
