@@ -1,6 +1,5 @@
 <template>
     <div class="text-center py-8 px-4 relative ">
-        <p>TEST</p>
         <!-- Airline icons grid for mobile -->
         <div class="grid grid-cols-3 gap-4 mb-8">
             <div v-for="(airline, index) in airlines" :key="airline"
