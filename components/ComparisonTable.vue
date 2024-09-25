@@ -9,32 +9,29 @@
         <h2 class="text-4xl text-left font-semibold md:w-1/2 mb-8">
             How does Mileways compare <br />to App in the Air?
         </h2>
-        <div class="overflow-hidden">
+        <div class="overflow-x-auto">
             <table class="w-full border-collapse">
                 <thead>
                     <tr>
                         <th
-                            class="text-left pl-4 font-semibold text-[#9B9C9D] uppercase text-sm pb-4 align-bottom w-auto">
+                            class="text-left pl-4 pr-4 font-semibold text-[#9B9C9D] uppercase text-sm pb-4 align-bottom w-1/2 md:w-auto">
                             Essential Features
                         </th>
-                        <th
-                            class="text-left pb-4 pr-8 w-1/3 md:w-auto">
+                        <th class="text-center pb-4 w-1/4 md:w-auto">
                             <img src="/icons/mw-logo.svg"
                                 alt="Mileways"
-                                class="w-12 h-12 mb-4" />
+                                class="w-12 h-12 mb-4 mx-auto" />
                             <div
-                                class="text-lg md:text-xl font-semibold">
+                                class="text-lg md:text-xl font-semibold hidden md:block">
                                 Mileways</div>
                         </th>
-                        <th
-                            class="text-left pb-4 pr-2 w-1/3 md:w-auto">
+                        <th class="text-center pb-4 w-1/4 md:w-auto">
                             <img src="/icons/aita-logo.svg"
                                 alt="App in the Air"
-                                class="w-12 h-12 mb-4" />
+                                class="w-12 h-12 mb-4 mx-auto" />
                             <div
-                                class="text-lg md:text-xl font-semibold">
-                                App in
-                                the Air</div>
+                                class="text-lg md:text-xl font-semibold hidden md:block">
+                                App in the Air</div>
                         </th>
                     </tr>
                 </thead>
@@ -43,43 +40,41 @@
                         :key="feature.name"
                         :class="{ 'bg-white': index % 2 === 0 }">
                         <td
-                            class="py-4 font-medium pl-4 first:rounded-l-[16px] w-1/3 md:w-auto">
+                            class="py-4 font-medium pl-4 pr-4 first:rounded-l-[16px] w-1/2 md:w-auto">
                             {{ feature.name }}
                         </td>
-                        <td class="py-4 w-1/3 md:w-auto">
+                        <td class="py-4 w-1/4 md:w-auto text-center">
                             <div v-if="feature.mileways === 'Available'"
-                                class="flex items-center">
+                                class="inline-flex items-center justify-center">
                                 <img src="/images/icons/checkmark-circle.svg"
-                                    alt="Checkmark"
-                                    class="w-4 h-4 mr-2" />
+                                    alt="Checkmark" class="w-4 h-4" />
                                 <span
-                                    class="text-xs md:text-base">Available</span>
+                                    class="hidden md:inline ml-2 text-xs md:text-base">Available</span>
                             </div>
                             <div v-else
-                                class="flex items-center text-[#9B9C9D]">
+                                class="inline-flex items-center justify-center text-[#9B9C9D]">
                                 <img src="/images/icons/cross-circle.svg"
-                                    alt="Cross"
-                                    class="w-5 h-5 mr-2" />
-                                <span class="text-xs md:text-base">{{
+                                    alt="Cross" class="w-5 h-5" />
+                                <span
+                                    class="hidden md:inline ml-2 text-xs md:text-base">{{
                                     feature.mileways }}</span>
                             </div>
                         </td>
                         <td
-                            class="py-4 pr-2 last:rounded-r-[16px] w-1/3 md:w-auto">
+                            class="py-4 w-1/4 md:w-auto text-center last:rounded-r-[16px]">
                             <div v-if="feature.appInTheAir === 'Available'"
-                                class="flex items-center">
+                                class="inline-flex items-center justify-center">
                                 <img src="/images/icons/checkmark-circle.svg"
-                                    alt="Checkmark"
-                                    class="w-4 h-4 mr-2" />
+                                    alt="Checkmark" class="w-4 h-4" />
                                 <span
-                                    class="text-xs md:text-base">Available</span>
+                                    class="hidden md:inline ml-2 text-xs md:text-base">Available</span>
                             </div>
                             <div v-else
-                                class="flex items-center text-[#9B9C9D]">
+                                class="inline-flex items-center justify-center text-[#9B9C9D]">
                                 <img src="/images/icons/cross-circle.svg"
-                                    alt="Cross"
-                                    class="w-5 h-5 mr-2" />
-                                <span class="text-xs md:text-base">{{
+                                    alt="Cross" class="w-5 h-5" />
+                                <span
+                                    class="hidden md:inline ml-2 text-xs md:text-base">{{
                                     feature.appInTheAir }}</span>
                             </div>
                         </td>
@@ -88,21 +83,21 @@
             </table>
         </div>
         <hr class="my-4" />
-        <div class="overflow-hidden">
+        <div class="overflow-x-auto">
             <table class="w-full border-collapse">
                 <thead>
                     <tr>
                         <th
-                            class="text-left pl-4 font-semibold text-[#9B9C9D] uppercase text-sm pb-4 align-bottom w-1/3 md:w-auto">
+                            class="text-left pl-4 pr-4 font-semibold text-[#9B9C9D] uppercase text-sm pb-4 align-bottom w-1/2 md:w-auto">
                             Additional Features you'll love
                         </th>
                         <th
-                            class="text-left pb-4 invisible pr-8 w-1/3 md:w-auto">
+                            class="text-center pb-4 invisible w-1/4 md:w-auto">
                             <div class="text-xl font-semibold">
                                 Mileways</div>
                         </th>
                         <th
-                            class="text-left pb-4 invisible w-1/3 md:w-auto">
+                            class="text-center pb-4 invisible w-1/4 md:w-auto">
                             <div class="text-xl font-semibold">App in
                                 the Air</div>
                         </th>
@@ -112,42 +107,40 @@
                     <tr v-for="(feature, index) in additionalFeatures"
                         :key="feature.name"
                         :class="{ 'bg-white': index % 2 === 0 }">
-                        <td class="py-4 font-medium pl-4 first:rounded-l-[16px] w-1/3 md:w-auto"
+                        <td class="py-4 font-medium pl-4 pr-4 first:rounded-l-[16px] w-1/2 md:w-auto"
                             v-html="feature.name"></td>
-                        <td class="py-4 w-1/3 md:w-auto">
+                        <td class="py-4 w-1/4 md:w-auto text-center">
                             <div v-if="feature.mileways === 'Available'"
-                                class="flex items-center">
+                                class="inline-flex items-center justify-center">
                                 <img src="/images/icons/checkmark-circle.svg"
-                                    alt="Checkmark"
-                                    class="w-4 h-4 mr-2" />
+                                    alt="Checkmark" class="w-4 h-4" />
                                 <span
-                                    class="text-xs md:text-base">Available</span>
+                                    class="hidden md:inline ml-2 text-xs md:text-base">Available</span>
                             </div>
                             <div v-else
-                                class="flex items-center text-[#9B9C9D]">
+                                class="inline-flex items-center justify-center text-[#9B9C9D]">
                                 <img src="/images/icons/cross-circle.svg"
-                                    alt="Cross"
-                                    class="w-5 h-5 mr-2" />
-                                <span class="text-xs md:text-base">{{
+                                    alt="Cross" class="w-5 h-5" />
+                                <span
+                                    class="hidden md:inline ml-2 text-xs md:text-base">{{
                                     feature.mileways }}</span>
                             </div>
                         </td>
                         <td
-                            class="py-4 pr-2 last:rounded-r-[16px] w-1/3 md:w-auto">
+                            class="py-4 w-1/4 md:w-auto text-center last:rounded-r-[16px]">
                             <div v-if="feature.appInTheAir === 'Available'"
-                                class="flex items-center">
+                                class="inline-flex items-center justify-center">
                                 <img src="/images/icons/checkmark-circle.svg"
-                                    alt="Checkmark"
-                                    class="w-4 h-4 mr-2" />
+                                    alt="Checkmark" class="w-4 h-4" />
                                 <span
-                                    class="text-xs md:text-base">Available</span>
+                                    class="hidden md:inline ml-2 text-xs md:text-base">Available</span>
                             </div>
                             <div v-else
-                                class="flex items-center text-[#9B9C9D]">
+                                class="inline-flex items-center justify-center text-[#9B9C9D]">
                                 <img src="/images/icons/cross-circle.svg"
-                                    alt="Cross"
-                                    class="w-5 h-5 mr-2" />
-                                <span class="text-xs md:text-base">{{
+                                    alt="Cross" class="w-5 h-5" />
+                                <span
+                                    class="hidden md:inline ml-2 text-xs md:text-base">{{
                                     feature.appInTheAir }}</span>
                             </div>
                         </td>
