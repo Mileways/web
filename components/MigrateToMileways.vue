@@ -71,7 +71,7 @@ export default {
     },
     methods: {
         downloadMileways() {
-            window.open('https://apps.apple.com/app/mileways/id1234567890', '_blank')
+            window.open(process.env.APP_STORE_URL, '_blank')
         }
     },
     components: {
